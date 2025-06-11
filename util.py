@@ -14,6 +14,9 @@ def remove_dupe_and_na(df):
 
     return df
 
+def remove_rows_where_columns_match(df, col_1, col_2):
+    return df[df[col_1] != df[col_2]]
+
 def is_valid_token(token):
     return (
         not token.is_stop and 
@@ -37,7 +40,9 @@ def compute_metrics(df, methods_arr=["fuzzy", "tfidf"]):
     I was checking the index before but because there are duplicates 
     (multiple foods can map to the same ingredients and vice-versa (I think)) - 
     decided to just check if the match is what we actually expected - so even if
-    there are duplicates we can still evaluate the results...
+    there are duplicates we can still evaluate the results... uhh this comment is sort of just true for foodb
+    where i misunderstood the problem a bit / was trying stuff - want to keep it here for a bit so i can refresh
+    my memory later
     """
     res = []
 
@@ -61,6 +66,10 @@ def compute_metrics(df, methods_arr=["fuzzy", "tfidf"]):
         })
 
     return pd.DataFrame(res)
+
+def incorrect_matches(df, method="fuzzy"):
+    col = f"match_{method}"
+    return df[df["ingredient_description_clean"] != df[col]]
 
 def merge_results():
     pass

@@ -1,5 +1,6 @@
 import pandas as pd
-from util import clean_text, compute_metrics, save_results, remove_dupe_and_na
+from util import clean_text, compute_metrics, save_results
+from util import remove_dupe_and_na, remove_rows_where_columns_match, incorrect_matches
 from string_matcher import match
 
 if __name__ == "__main__":
@@ -8,6 +9,8 @@ if __name__ == "__main__":
     df.columns = ["ingredient_description", "orig_food_common_name"]
 
     df = remove_dupe_and_na(df)
+    df = remove_rows_where_columns_match(df, "ingredient_description", "orig_food_common_name")
+    print(len(df))
 
     df["index"] = [i for i in range(len(df))]
 
@@ -26,4 +29,6 @@ if __name__ == "__main__":
     res_df = compute_metrics(merged_df)
     print(res_df)
 
-    save_results(df, "output_ASA24.csv")
+    save_results(merged_df, "output_ASA24.csv")
+
+    incorrect_matches(merged_df, method="fuzzy").to_csv("results/incorrect_matches.csv", index=False)
