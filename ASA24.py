@@ -6,19 +6,19 @@ from string_matcher import match
 if __name__ == "__main__":
     df = pd.read_excel("data/ASA24_FooDB_codematches.xlsx", sheet_name=0)
     df = df[["Ingredient_description", "orig_food_common_name"]]
-    df.columns = ["ingredient_description", "orig_food_common_name"]
+    df.columns = ["input", "target"]
 
     df = remove_dupe_and_na(df)
-    df = remove_rows_where_columns_match(df, "ingredient_description", "orig_food_common_name")
+    df = remove_rows_where_columns_match(df, "input", "target")
     print(len(df))
 
     df["index"] = [i for i in range(len(df))]
 
-    df["orig_food_common_name_clean"] = clean_text(df["orig_food_common_name"])
-    df["ingredient_description_clean"] = clean_text(df["ingredient_description"])
+    df["input_clean"] = clean_text(df["input"])
+    df["target_clean"] = clean_text(df["target"])
 
-    arr_1 = list(df["orig_food_common_name_clean"])
-    arr_2 = list(df["ingredient_description_clean"])
+    arr_1 = list(df["input_clean"])
+    arr_2 = list(df["target_clean"])
 
     df_results = match(arr_1, arr_2, method="fuzzy")
     df_results2 = match(arr_1, arr_2, method="tfidf")

@@ -47,14 +47,16 @@ def compute_metrics(df, methods_arr=["fuzzy", "tfidf"]):
     res = []
 
     for method in methods_arr:
+        assert "target_clean" in df.columns
+        assert f"match_{method}" in df.columns
+
         col = f"match_{method}"
 
         # assuming "ingredient_description_clean" is the output we are looking for
         # TODO right now this is hard coded but eventually change to output
-        if "ingredient_description_clean" in df.columns:
-            correct = (df["ingredient_description_clean"] == df[col]).sum()
-        else:
-            correct = (df["food_name"] == df[col]).sum()
+        if "target_clean" in df.columns:
+            correct = (df["target_clean"] == df[col]).sum()
+        
 
         total = len(df)
         
@@ -69,7 +71,7 @@ def compute_metrics(df, methods_arr=["fuzzy", "tfidf"]):
 
 def incorrect_matches(df, method="fuzzy"):
     col = f"match_{method}"
-    return df[df["ingredient_description_clean"] != df[col]]
+    return df[df["target_clean"] != df[col]]
 
 def merge_results():
     pass
