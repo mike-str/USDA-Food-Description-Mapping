@@ -2,12 +2,74 @@ import spacy
 import pandas as pd
 import re
 import os
+import numpy as np
+
+def load_nhanes():
+    # df = pd.read_csv("data/nhanes_dfg2_map_all.csv")
+    # df.loc[df["replace"].notna() & (df["replace"] != ""), "simple_name"] = df["replace"]
+
+    # # Drop rows where 'match' == "n" and 'replace' is empty
+    # df = df[~((df["match"] == "n") & (df["replace"].isna() | (df["replace"] == "")))]
+    # df = df[df["match"] != "n"]
+
+    # df = df[["ingred_desc", "simple_name", "match"]]
+    # # df.columns = ["input", "target", "match"]
+
+    # df = df[["ingred_desc", "simple_name"]]
+    # df.columns = ["input", "target"]
+
+    # df = df.drop_duplicates(subset="input", keep="first")
+
+    df = pd.read_csv("data/nhanes_dfg2_labels.csv")
+
+    df = df[["ingred_desc", "simple_name", "label"]]
+    df.columns = ["input", "target", "label"]
+
+    return df
+
+def load_nhanes2():
+    df = pd.read_csv("archive/data/nhanes_dfg2_map_all.csv")
+    # df.loc[df["replace"].notna() & (df["replace"] != ""), "simple_name"] = df["replace"]
+
+    df["label"] = df["match"].apply(lambda x: 0 if x == "n" else 1)
+
+    df = df[["ingred_desc", "simple_name", "label"]]
+    df.columns = ["input", "target", "label"]
+
+    df = df.drop_duplicates(subset="input", keep="first")
+
+    return df
+
+def load_asa():
+    df = pd.read_excel("data/ASA24_FooDB_codematches_6-24-2025.xlsx", sheet_name=0)
+    df = df[["Ingredient_description", "orig_food_common_name", "Ingredient_code", "orig_food_id"]]
+    df.columns = ["input", "target", "input_id", "target_id"]
+
+    columns_to_lower = ["input", "target"]
+    df[columns_to_lower] = df[columns_to_lower].apply(lambda x: x.str.lower())
+
+    # remove row if input or target is NA
+    df = df.dropna(subset=["input", "target"])
+    print(f"Number of Rows After NA Removed: {len(df)}")
+
+    # if the input exists twice, it should map to the same target - no reason to keep this
+    df = df.drop_duplicates(subset="input", keep="first")
+    print(f"Number of Rows After Duplicate Inputs Removed: {len(df)}")
+
+    id_dict = dict()
+    for i in range(len(df)):
+        input_desc, input_id = df.iloc[i]["input"], df.iloc[i]["input_id"]
+        target_desc, target_id = df.iloc[i]["target"], df.iloc[i]["target_id"]
+
+        if pd.notna(input_id): id_dict[input_desc] = int(input_id)
+        if pd.notna(target_id): id_dict[target_desc] = int(target_id)
+
+    return df, id_dict
 
 def remove_dupe_and_na(df):
     print(f"Number of Rows: {len(df)}")
 
-    df = df.dropna()
-    print(f"Number of Rows After NA Removed: {len(df)}")
+    
     
     df = df.drop_duplicates()
     print(f"Number of Rows After Duplicates Dropped: {len(df)}")
@@ -35,43 +97,9 @@ def clean_text(arr):
     cleaned_tokens = [" ".join([token.lemma_.lower() for token in nlp(s) if is_valid_token(token)]) for s in arr]
     return cleaned_tokens
 
-def compute_metrics(df, methods_arr=["fuzzy", "tfidf"]):
-    """
-    I was checking the index before but because there are duplicates 
-    (multiple foods can map to the same ingredients and vice-versa (I think)) - 
-    decided to just check if the match is what we actually expected - so even if
-    there are duplicates we can still evaluate the results... uhh this comment is sort of just true for foodb
-    where i misunderstood the problem a bit / was trying stuff - want to keep it here for a bit so i can refresh
-    my memory later
-    """
-    res = []
-
-    for method in methods_arr:
-        assert "target_clean" in df.columns
-        assert f"match_{method}" in df.columns
-
-        col = f"match_{method}"
-
-        # assuming "ingredient_description_clean" is the output we are looking for
-        # TODO right now this is hard coded but eventually change to output
-        if "target_clean" in df.columns:
-            correct = (df["target_clean"] == df[col]).sum()
-        
-
-        total = len(df)
-        
-        accuracy = correct / total
-
-        res.append({
-            "method": method,
-            "accuracy": accuracy
-        })
-
-    return pd.DataFrame(res)
-
 def incorrect_matches(df, method="fuzzy"):
     col = f"match_{method}"
-    return df[df["target_clean"] != df[col]]
+    return df[df["target"] != df[col]]
 
 def merge_results():
     pass

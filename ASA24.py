@@ -1,34 +1,38 @@
-import pandas as pd
-from util import clean_text, compute_metrics, save_results
+from util import load_asa
+from util import clean_text, save_results
 from util import remove_dupe_and_na, remove_rows_where_columns_match, incorrect_matches
+from util_metrics import compute_metrics
 from string_matcher import match
+import pandas as pd
+import numpy as np
 
 if __name__ == "__main__":
-    df = pd.read_excel("data/ASA24_FooDB_codematches.xlsx", sheet_name=0)
-    df = df[["Ingredient_description", "orig_food_common_name"]]
-    df.columns = ["input", "target"]
+    asa_df, id_dict = load_asa()
 
-    df = remove_dupe_and_na(df)
-    df = remove_rows_where_columns_match(df, "input", "target")
-    print(len(df))
+    # this can be all possile targets in the original database - or it can be just the target matches in the provided dataframe
+    candidate_matches = list(set(asa_df["target"]))
+    candidate_matches_clean = clean_text(candidate_matches)
 
+    num_correct = (asa_df["input_id"] == asa_df["target_id"]).sum()
+    print(num_correct)
+    print(num_correct / len(asa_df))
+
+    df = asa_df[asa_df["input_id"] != asa_df["target_id"]]
     df["index"] = [i for i in range(len(df))]
 
-    df["input_clean"] = clean_text(df["input"])
-    df["target_clean"] = clean_text(df["target"])
+    input_desc = df["input"].to_list()
 
-    arr_1 = list(df["input_clean"])
-    arr_2 = list(df["target_clean"])
-
-    df_results = match(arr_1, arr_2, method="fuzzy")
-    df_results2 = match(arr_1, arr_2, method="tfidf")
-
+    print(f"len_df: {len(df)}")
+    df_results = match(input_desc, candidate_matches, method="embed")
     merged_df = pd.merge(df, df_results, on="index", how="left")
-    merged_df = pd.merge(merged_df, df_results2, on="index", how="left")
 
-    res_df = compute_metrics(merged_df)
-    print(res_df)
+    print((merged_df["target"] == merged_df["match_embed"]).sum())
+    num_correct += (merged_df["target"] == merged_df["match_embed"]).sum()
 
-    save_results(merged_df, "output_ASA24.csv")
+    print(f"len_df: {len(merged_df)}")
+    print(num_correct / len(asa_df))
 
-    incorrect_matches(merged_df, method="fuzzy").to_csv("results/incorrect_matches.csv", index=False)
+  
+    incorrect_matches_df = merged_df[merged_df["target"] != merged_df["match_embed"]]
+    del incorrect_matches_df["index"]
+    incorrect_matches_df.to_csv("results/incorrect_predictions_asa24.csv", index=False)
