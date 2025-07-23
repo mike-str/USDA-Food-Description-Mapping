@@ -23,7 +23,7 @@ This dataset assumes that every input description has a corresponding match in t
 
 - **NHANES**<br>
 ***File***: `nhanes_dfg2_labels.csv`<br>
-In this dataset, each input description was labeled as either having a valid match or not. Matches were considered to exist if there was a good match for the exact food **or** for a food with similar carbohydrate content, which served as a proxy when no direct match was available.
+In this dataset, each ingredient description (ingred_desc) derived from the dietary data was labeled as either having a valid match (label = 1) or not (label = 0) to the food description (simple_name) in the Davis Food Glycopedia 2.0. Matches were considered to exist if there was a good match for the exact food **or** for a food with similar carbohydrate content, which served as a proxy when no direct match was available.
 
 **Data provenance**   > *[add citation / download URL here]*
 
