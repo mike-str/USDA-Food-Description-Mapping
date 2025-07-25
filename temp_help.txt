@@ -1,0 +1,55 @@
+For 2 of the experiments a classification step is needed to also access accuracy. So two different prompts are used, when we use an LLM to find mappings.
+
+The exact files that were sent to LLM are located in data/llm/{experiment_title}
+- input_desc_list.csv
+- target_desc_list.csv
+
+output files are found in that same directory and are called "o3_predictions.json"
+
+Title: asa24_experiment_1
+Inputs:  ASA24_FooDB_codematches_6-26-2025.xlsx
+Targets: ASA24_FooDB_codematches_6-26-2025.xlsx
+LLM Prompt: llm_misc/o3_prompt.txt
+Platform:   ChatGPT
+Model:      o3
+Date: 7/25/2025
+
+Title: asa24_experiment_2
+Inputs:  ASA24_FooDB_codematches_6-26-2025.xlsx
+Targets: FooDB_Unique_Descriptions.csv
+LLM Prompt: llm_misc/o3_prompt.txt
+Platform:   ChatGPT
+Model:      o3
+Date: 7/25/2025
+
+Title: nhanes_experiment_1
+Inputs:  nhanes_dfg2_labels.csv and label == 1
+Targets: nhanes_dfg2_labels.csv and label == 1
+LLM Prompt: llm_misc/o3_prompt.txt
+Platform:   ChatGPT
+Model:      o3
+Date: 7/25/2025
+
+Title: nhanes_experiment_2
+Inputs:  nhanes_dfg2_labels.csv
+Targets: nhanes_dfg2_labels.csv
+LLM Prompt: llm_misc/o3_prompt2.txt
+Platform:   ChatGPT
+Model:      o3
+Date: 7/25/2025
+
+Title: nhanes_experiment_3
+Inputs:  nhanes_dfg2_labels.csv and label == 1
+Targets: dfg2_food_descriptions.csv
+LLM Prompt: llm_misc/o3_prompt.txt
+Platform:   ChatGPT
+Model:      o3
+Date: 7/25/2025
+
+Title: nhanes_experiment_4
+Inputs:  nhanes_dfg2_labels.csv
+Targets: dfg2_food_descriptions.csv
+LLM Prompt: llm_misc/o3_prompt2.txt
+Platform:   ChatGPT
+Model:      o3
+Date: 7/25/2025
