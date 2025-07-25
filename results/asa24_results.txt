@@ -1,3 +1,0 @@
-Fuzzy Match Accuracy: 0.89
-TF-IDF Match Accuracy: 0.88
-Embed Match Accuracy: 0.92
