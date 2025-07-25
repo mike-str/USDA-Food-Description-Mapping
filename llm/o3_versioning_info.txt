@@ -1,9 +1,0 @@
-AI Platform: ChatGPT
-AI Model Version: o3
-Date: 7/6/2025
-Prompt: llm/prompts/o3_asa24_prompt.txt
-Inputs: 
-	- data/llm/asa24_input.csv
-	- data/llm/asa24_unique_target.csv
-Output: 
-	- data/llm/asa24_o3_predicted_matches.json
