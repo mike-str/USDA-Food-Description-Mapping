@@ -5,8 +5,8 @@ input_desc,target_desc,label,index,match_fuzzy,score_fuzzy,match_tfidf,score_tfi
 "cream, sour, cultured",sour cream,1,3,sour cream,55.172413793103445,sour cream,0.7500348192387138,sour cream,0.93645614,NO MATCH
 "milk, whole, 3.25% milkfat, with added vitamin d",whole milk,1,4,multigrain bread (trade joes),42.307692307692314,whole milk,0.45735500955768255,whole milk,0.90500206,NO MATCH
 "milk, reduced fat, fluid, 2% milkfat, with added vitamin a and vitamin d",whole milk,1,5,steamed red chard leaves and stalk (cal-organic),39.13043478260869,whole milk,0.29303370089801173,lowfat chocolate milk,0.88070315,NO MATCH
-"egg, whole, raw, fresh",whole brown egg,1,6,freeze dried mango flesh,51.42857142857142,whole brown egg,0.4999026838707218,whole brown egg,0.9056526,red whole grain bulgur
-"egg, yolk, raw, fresh",brown egg yolk,1,7,brown egg yolk,50.0,brown egg yolk,0.7315176334403157,brown egg yolk,0.8990291,NO MATCH
+"egg, whole, raw, fresh",whole brown egg,1,6,freeze dried mango flesh,51.42857142857142,whole brown egg,0.4999026838707218,whole brown egg,0.9056525,red whole grain bulgur
+"egg, yolk, raw, fresh",brown egg yolk,1,7,freeze dried mango flesh,50.0,brown egg yolk,0.7315176334403157,brown egg yolk,0.8990291,NO MATCH
 "chicken, broiler or fryers, breast, skinless, boneless, meat only, raw",chicken breast,1,8,chicken breast tender,50.0,chicken breast,0.5092489835510975,chicken breast,0.8957643,NO MATCH
 "soup, chicken broth, ready-to-serve",low sodium chicken broth,1,9,low sodium chicken broth,62.96296296296296,low sodium chicken broth,0.4419694286401744,chicken noodle soup,0.8904292,low sodium chicken broth
 "garlic, raw",garlic,1,10,garlic,75.0,garlic,0.9256539688825582,garlic,0.93631166,garlic
@@ -16,7 +16,7 @@ input_desc,target_desc,label,index,match_fuzzy,score_fuzzy,match_tfidf,score_tfi
 "peppers, sweet, green, raw",steamed whole green bell pepper w/o seed,1,14,frozen whole sweet green peas (flav r pac),58.18181818181818,steamed whole green bell pepper w/o seed,0.44830627072061796,steamed whole green bell pepper w/o seed,0.87532336,frozen whole sweet green peas (flav r pac)
 "tomatoes, red, ripe, raw, year round average",whole green house (large) tomato,1,15,steamed whole red bell pepper w/o seed,47.05882352941176,tomato ketchup,0.2057704892435691,whole green house (large) tomato,0.86881423,NO MATCH
 "tomatoes, red, ripe, canned, packed in tomato juice",muir's diced tomatoes,1,16,pasta sauce w/ tomato and basil,47.61904761904761,tomato ketchup,0.41489453420983174,canned pumpkin,0.8658378,NO MATCH
-"seaweed, wakame, raw",roasted seaweed,1,17,steamed whole snow peas,52.94117647058824,roasted seaweed,0.5291477734139749,roasted seaweed,0.89456016,"peeled, steamed beetroot"
+"seaweed, wakame, raw",roasted seaweed,1,17,steamed whole snow peas,52.94117647058824,roasted seaweed,0.5291477734139749,roasted seaweed,0.89456034,"peeled, steamed beetroot"
 "peppers, jalapeno, raw",jalapeno,1,18,jalapeno,59.25925925925925,jalapeno,0.7670861202238276,jalapeno,0.9288431,jalapeno
 "beverages, coffee, brewed, prepared with tap water",brewed coffee,1,19,steamed whole green bell pepper w/o seed,47.22222222222222,brewed coffee,0.6070185759676866,brewed coffee,0.90719247,NO MATCH
 "refried beans, canned, traditional style",refried beans,1,20,refried beans,50.0,refried beans,0.6181417776678673,refried beans,0.9567616,NO MATCH
@@ -24,7 +24,7 @@ input_desc,target_desc,label,index,match_fuzzy,score_fuzzy,match_tfidf,score_tfi
 "cocoa, dry powder, unsweetened",cocoa powder,1,22,cocoa powder,61.53846153846154,cocoa powder,0.782351442345519,cocoa powder,0.942178,cocoa powder
 "sugars, granulated",table sugar,1,23,arugula,54.54545454545454,table sugar,0.3676400572780659,table sugar,0.8862502,NO MATCH
 "barley, pearled, raw",whole grain pearl barley,1,24,whole bartlett pear w/o seed,63.1578947368421,whole grain pearl barley,0.8255420996316654,whole grain pearl barley,0.91920334,whole bartlett pear flesh only
-cornstarch,corn starch,1,25,corn starch,95.23809523809523,pomegranate w/ seeds,0.0,corn starch,0.9641041,corn starch
+cornstarch,corn starch,1,25,corn starch,95.23809523809523,pixie tangerine,0.0,corn starch,0.9641041,corn starch
 "rice, white, long-grain, regular, raw, enriched",enriched long white rice (mahatma),1,26,enriched long white rice (mahatma),48.57142857142858,enriched long white rice (mahatma),0.6798813915410961,enriched long white rice (mahatma),0.92752385,NO MATCH
 "wheat flour, white, all-purpose, enriched, bleached",all purpose flour,1,27,enriched long white rice (mahatma),49.27536231884058,all purpose flour,0.5758963697736094,all purpose flour,0.9134213,NO MATCH
 "beef, top sirloin, steak, separable lean only, trimmed to 1/8"" fat, choice, raw",beef round tip steak,1,28,wheat farina cereal/cream of wheat,45.238095238095234,beef round tip steak,0.3110411206775665,beef round tip steak,0.8732094,NO MATCH
@@ -55,22 +55,22 @@ cornstarch,corn starch,1,25,corn starch,95.23809523809523,pomegranate w/ seeds,0
 "sugars, brown",table sugar,1,53,whole grain brown lentils,53.333333333333336,whole brown egg,0.4300411280756974,table sugar,0.87882215,NO MATCH
 "candies, chocolate, dark, nfs (45-59% cacao solids 90%; 60-69% cacao solids 5%; 70-85% cacao solids 5%)",chocolate,1,54,chocolate chip cookies,40.963855421686745,chocolate,0.17272994744354814,chocolate,0.8952332,NO MATCH
 "beef, short loin, top loin, steak, separable lean only, trimmed to 1/8"" fat, all grades, cooked, broiled",beef round tip steak,1,55,frozen golden corn kernels (siganture select),40.36697247706422,beef round tip steak,0.22532573078263352,beef round tip steak,0.8690829,NO MATCH
-"cheese spread, pasteurized process, american",american cheese,1,56,freeze dried apple rings,46.875,american cheese,0.5751836653427771,american cheese,0.8975555,NO MATCH
+"cheese spread, pasteurized process, american",american cheese,1,56,freeze dried apple rings,46.875,american cheese,0.5751836653427771,american cheese,0.89755535,NO MATCH
 "lettuce, iceberg (includes crisphead types), raw",steamed iceberg lettuce,1,57,steamed iceberg lettuce,46.15384615384615,steamed iceberg lettuce,0.5728973819265168,steamed iceberg lettuce,0.9355373,NO MATCH
 "chicken, broiler, rotisserie, bbq, breast, meat only",chicken breast,1,58,chicken breast tender,50.79365079365079,chicken breast,0.5589096928213739,chicken breast,0.90108645,NO MATCH
 "orange juice, chilled, includes from concentrate",pulp free orange juice,1,59,brown rice rice cake,48.275862068965516,pulp free orange juice,0.32544862597421875,pulp free orange juice,0.8874442,NO MATCH
 "mung beans, mature seeds, sprouted, raw",bean sprouts,1,60,steamed whole brussel sprouts,51.85185185185186,bean sprouts,0.5954043705621044,bean sprouts,0.87831795,NO MATCH
 "onions, young green, tops only",green onion,1,61,frozen chopped spinach (green giant),50.0,green onion,0.57832935565272,green onion,0.90270233,NO MATCH
-"nuts, almonds",roasted almonds,1,62,roasted almonds,66.66666666666667,roasted almonds,0.6178611550227678,roasted almonds,0.90459013,roasted almonds
+"nuts, almonds",roasted almonds,1,62,roasted almonds,66.66666666666667,roasted almonds,0.6178611550227678,roasted almonds,0.9045903,roasted almonds
 "nuts, walnuts, english",walnuts,1,63,walnuts,50.0,walnuts,0.6442241981902604,walnuts,0.93537396,NO MATCH
 "beverages, carbonated, cola, without caffeine",coca cola,1,64,orange jam (bonne maman),51.85185185185186,coca cola,0.36167516269176053,coca cola,0.86181587,NO MATCH
 "beverages, coffee, brewed, prepared with tap water, decaffeinated",brewed coffee,1,65,steamed whole green bell pepper w/o seed,44.705882352941174,brewed coffee,0.5509909134342059,brewed coffee,0.90143496,NO MATCH
 "beverages, tea, black, brewed, prepared with tap water",black tea,1,66,mixed vegetable burger patty,52.17391304347826,black tea,0.5340781264040935,black tea,0.90602165,NO MATCH
 "cornmeal, degermed, enriched, yellow",cornmeal,1,67,commercial mac and cheese,47.05882352941176,cornmeal,0.556175076025444,cornmeal,0.9182714,NO MATCH
 "cheese, mozzarella, low moisture, part-skim",low moisture part skim mozarella cheese,1,68,low moisture part skim mozarella cheese,49.27536231884058,low moisture part skim mozarella cheese,0.7031035934585205,low moisture part skim mozarella cheese,0.9456043,low moisture part skim mozarella cheese
-"cheese product, pasteurized process, american, reduced fat, fortified with vitamin d",american cheese,1,69,hot cereal whole grain creamy buckwheat,37.735849056603776,american cheese,0.4432970737923647,american cheese,0.90411675,NO MATCH
-"cheese, pasteurized process, american, without added vitamin d",american cheese,1,70,freeze dried apple rings,39.43661971830986,american cheese,0.5656631362855945,american cheese,0.90175325,NO MATCH
-"cheese spread, american or cheddar cheese base, reduced fat",american cheese,1,71,wheat farina cereal/cream of wheat,47.61904761904761,american cheese,0.6073584652106497,american cheese,0.87438667,NO MATCH
+"cheese product, pasteurized process, american, reduced fat, fortified with vitamin d",american cheese,1,69,hot cereal whole grain creamy buckwheat,37.735849056603776,american cheese,0.4432970737923647,american cheese,0.90411687,NO MATCH
+"cheese, pasteurized process, american, without added vitamin d",american cheese,1,70,plantain banana (steamed 10 in),39.43661971830986,american cheese,0.5656631362855945,american cheese,0.90175325,NO MATCH
+"cheese spread, american or cheddar cheese base, reduced fat",american cheese,1,71,wheat farina cereal/cream of wheat,47.61904761904761,american cheese,0.6073584652106497,american cheese,0.8743868,NO MATCH
 "cheese, cheddar, reduced fat",sharp chedder cheese,1,72,cheese crackers,56.41025641025641,cream cheese,0.2701204956815383,sharp chedder cheese,0.8778418,NO MATCH
 "cranberries, dried, sweetened",cranberry,1,73,cranberry,60.0,cranberry,0.6915976871568338,cranberry,0.90447086,roasted seaweed
 "orange juice, chilled, includes from concentrate, with added calcium and vitamin d",pulp free orange juice,1,74,orange jam (bonne maman),43.90243902439024,pulp free orange juice,0.2730671365674353,pulp free orange juice,0.8664017,NO MATCH
@@ -82,7 +82,7 @@ cornstarch,corn starch,1,25,corn starch,95.23809523809523,pomegranate w/ seeds,0
 "cheese, cream, low fat",cream cheese,1,80,cheese crackers,58.82352941176471,cream cheese,0.7413868670954834,cream cheese,0.9213074,cheese crackers
 "sausage, pork, chorizo, link or ground, cooked, pan-fried",ground pork,1,81,steamed crown broccoli florets and stalk,40.0,ground pork,0.40142904603500346,ground pork,0.88456535,NO MATCH
 "cheese, cottage, creamed, large or small curd",cottage cheese,1,82,steamed red chard leaves and stalk (cal-organic),48.71794871794872,cottage cheese,0.519350608042714,cottage cheese,0.9196364,NO MATCH
-"chicken, broilers or fryers, thigh, meat only, cooked, roasted",chicken breast,1,83,chicken breast tender,51.515151515151516,chicken breast,0.22197695035889958,chicken breast tender,0.8553314,NO MATCH
+"chicken, broilers or fryers, thigh, meat only, cooked, roasted",chicken breast,1,83,chicken breast tender,51.515151515151516,chicken breast,0.22197695035889958,chicken breast tender,0.8553312,NO MATCH
 "cabbage, red, raw",purple cabbage,1,84,cranberry,50.0,purple cabbage,0.4820501459689347,purple cabbage,0.8964194,NO MATCH
 "potatoes, boiled, cooked without skin, flesh, without salt",steamed russet potato flesh only,1,85,steamed crown broccoli florets and stalk,50.74626865671642,steamed russet potato flesh only,0.48538765275683776,steamed russet potato flesh only,0.90681905,NO MATCH
 "nuts, pecans",pecan,1,86,pecan,66.66666666666667,pecan,0.7624806281442562,pecan,0.9349433,pecan
@@ -105,17 +105,17 @@ honey,honey,1,88,honey,100.0,honey,1.0,honey,0.99999976,honey
 "beef, round, top round steak, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, broiled",beef round tip steak,1,103,frozen whole sweet green peas (flav r pac),42.00000000000001,beef round tip steak,0.5288526198420916,beef round tip steak,0.8965709,NO MATCH
 "peanuts, all types, raw",peanuts,1,104,peanut butter crackers,66.66666666666667,peanuts,0.6738645896938836,peanuts,0.91662145,NO MATCH
 "peanuts, all types, dry-roasted, with salt",peanuts,1,105,peanut butter (laura scudder's),58.18181818181818,peanuts,0.5349895177078343,peanuts,0.90444225,NO MATCH
-"egg, whole, cooked, hard-boiled",whole brown egg,1,106,cooked oat bran,51.61290322580645,whole brown egg,0.3897675511395237,whole brown egg,0.9057627,NO MATCH
+"egg, whole, cooked, hard-boiled",whole brown egg,1,106,cooked oat bran,51.61290322580645,whole brown egg,0.3897675511395237,whole brown egg,0.90576273,NO MATCH
 "beef, ground, 85% lean meat / 15% fat, crumbles, cooked, pan-browned",beef round tip steak,1,107,ground non-meat (beyond meat),50.0,ground non-meat (beyond meat),0.3374960096983814,ground pork,0.8534361,NO MATCH
 "beef, ground, 80% lean meat / 20% fat, crumbles, cooked, pan-browned",beef round tip steak,1,108,ground non-meat (beyond meat),50.0,ground non-meat (beyond meat),0.3374960096983814,ground pork,0.8520658,NO MATCH
 "butter, whipped, with salt",unsalted butter,1,109,almond butter (justin's),52.63157894736843,unsalted butter,0.3376778522705535,unsalted butter,0.87516844,NO MATCH
 "yogurt, plain, whole milk",yogurt,1,110,coconut milk,55.172413793103445,yogurt,0.5943693029376405,whole milk,0.9326584,whole milk
 "apple juice, canned or bottled, unsweetened, without added ascorbic acid",apple juice,1,111,steamed red chard leaves and stalk (cal-organic),43.01075268817204,apple juice,0.49426488533994595,apple juice,0.9135764,NO MATCH
-"apricots, raw",whole apricot,1,112,whole apricot,73.6842105263158,pomegranate w/ seeds,0.0,dried apricots,0.9303237,dried apricots
+"apricots, raw",whole apricot,1,112,whole apricot,73.6842105263158,pixie tangerine,0.0,dried apricots,0.9303237,dried apricots
 "blackberries, raw",whole blackberry,1,113,whole blackberry,83.33333333333334,whole blackberry,0.9173254024310391,whole blackberry,0.88283694,whole blackberry
 "grapes, red or green (european type, such as thompson seedless), raw",red seedless grape,1,114,steamed whole green bell pepper w/o seed,51.764705882352935,red seedless grape,0.6169552903734575,red seedless grape,0.92129,NO MATCH
 "peaches, yellow, raw",whole yellow peach (prima farms),1,115,yellow mango,57.14285714285714,whole yellow peach (prima farms),0.59108131020082,whole yellow peach (prima farms),0.9168888,steamed yellow neck squash
-"raspberries, raw",whole raspberry,1,116,whole raspberry,81.81818181818181,whole raspberry,0.9256539688825582,whole raspberry,0.9131641,crisp rice receal
+"raspberries, raw",whole raspberry,1,116,whole raspberry,81.81818181818181,whole raspberry,0.9256539688825582,whole raspberry,0.9131642,crisp rice receal
 "strawberries, raw",whole strawberry,1,117,whole strawberry,83.33333333333334,whole strawberry,0.9105798352878348,whole strawberry,0.90094775,whole strawberry
 "blueberries, frozen, unsweetened",frozen whole blueberry,1,118,whole blueberry,50.0,frozen whole blueberry,0.8350419113561801,frozen whole blueberry,0.93965155,NO MATCH
 "pears, raw",whole bartlett pear w/o seed,1,119,whole wheat bread,52.63157894736843,whole bartlett pear w/o seed,0.5071819973938159,whole shingo pear w/o seed,0.88176507,NO MATCH
@@ -125,14 +125,14 @@ honey,honey,1,88,honey,100.0,honey,1.0,honey,0.99999976,honey
 "squash, summer, all varieties, cooked, boiled, drained, without salt",steamed yellow neck squash,1,123,steamed baby bok choy leaves and stalk,48.0,steamed spaghetti squash,0.2589540823537994,steamed yellow neck squash,0.8859886,NO MATCH
 "cheese, cottage, lowfat, 2% milkfat",cottage cheese,1,124,whole green house (large) tomato,49.056603773584904,cottage cheese,0.6716998753522596,cottage cheese,0.92719793,NO MATCH
 "pineapple, raw, all varieties",gold (golden) pineapple,1,125,spinach leaves,52.94117647058824,gold (golden) pineapple,0.3651286378997752,gold (golden) pineapple,0.8756854,NO MATCH
-"seaweed, laver, raw",roasted seaweed,1,126,steamed celery stalk,59.45945945945945,roasted seaweed,0.5291477734139748,roasted seaweed,0.87575644,steamed celery stalk
+"seaweed, laver, raw",roasted seaweed,1,126,steamed celery stalk,59.45945945945945,roasted seaweed,0.5291477734139748,roasted seaweed,0.8757567,steamed celery stalk
 "beverages, coffee, brewed, espresso, restaurant-prepared",brewed coffee,1,127,steamed whole green bell pepper w/o seed,43.90243902439024,brewed coffee,0.5496508890838687,brewed coffee,0.894434,NO MATCH
 "soy sauce made from soy and wheat (shoyu), low sodium",soy sauce,1,128,pasta sauce w/ tomato and basil,48.38709677419355,soy sauce,0.6923706849183524,soy sauce,0.92383176,NO MATCH
 "syrups, maple",maple syrup,1,129,soy milk,52.63157894736843,maple syrup,1.0000000000000002,maple syrup,0.9526452,NO MATCH
 "oat bran, raw",cooked oat bran,1,130,wheat bran cereal,68.96551724137932,cooked oat bran,0.919859366450787,cooked oat bran,0.94736755,wheat bran cereal
 "rice, white, glutinous, unenriched, cooked",enriched long white rice (mahatma),1,131,righteous rye bread,49.122807017543856,brown rice rice cake,0.28454126371357946,enriched long white rice (mahatma),0.8703048,NO MATCH
 "cherries, sweet, raw",whole sweet cherry,1,132,cheese crackers,53.333333333333336,whole sweet cherry,0.9379687979195356,whole sweet cherry,0.8979456,whole sweet cherry
-"grapefruit, raw, pink and red, all areas",deep red grapefruit,1,133,multi grain cereal,52.17391304347826,deep red grapefruit,0.43377400733287336,deep red grapefruit,0.9172788,NO MATCH
+"grapefruit, raw, pink and red, all areas",deep red grapefruit,1,133,raisin bran cereal,52.17391304347826,deep red grapefruit,0.43377400733287336,deep red grapefruit,0.9172788,NO MATCH
 "lime juice, raw",lime juice,1,134,lime juice,83.33333333333334,lime juice,0.9376803738976803,lime juice,0.9512432,lime juice
 "melons, cantaloupe, raw",cantaloupe melon,1,135,cantaloupe melon,61.111111111111114,cantaloupe melon,0.9601369588886235,cantaloupe melon,0.92122763,cantaloupe melon
 "beans, great northern, mature seeds, canned",great northern beans,1,136,great northern beans,66.66666666666667,great northern beans,0.8234029692334288,great northern beans,0.9436221,great northern beans
@@ -145,7 +145,7 @@ honey,honey,1,88,honey,100.0,honey,1.0,honey,0.99999976,honey
 "bacon, turkey, microwaved",ground turkey,1,143,brown rice rice cake,52.38095238095239,ground turkey,0.2944468590654499,plant based bacon strip,0.8505388,NO MATCH
 "cranberry sauce, canned, sweetened",cranberry,1,144,canned black beans (s&w),53.333333333333336,cranberry,0.594163539842244,cranberry,0.87097764,NO MATCH
 "apple juice, canned or bottled, unsweetened, with added ascorbic acid",apple juice,1,145,steamed red chard leaves and stalk (cal-organic),43.01075268817204,apple juice,0.49426488533994595,apple juice,0.92024845,NO MATCH
-"beans, snap, green, frozen, cooked, boiled, drained without salt",frozen whole green beans,1,146,frozen whole sweet green peas (flav r pac),47.36842105263158,frozen whole green beans,0.637691059597276,frozen whole green beans,0.91190076,NO MATCH
+"beans, snap, green, frozen, cooked, boiled, drained without salt",frozen whole green beans,1,146,frozen whole sweet green peas (flav r pac),47.36842105263158,frozen whole green beans,0.637691059597276,frozen whole green beans,0.9119008,NO MATCH
 "sugars, powdered",table sugar,1,147,cocoa powder,66.66666666666667,table sugar,0.4849009474244545,table sugar,0.88447356,cocoa powder
 "plums, raw",whole red plum,1,148,whole red plum,50.0,whole red plum,0.7764130833167737,whole red plum,0.89184636,NO MATCH
 "peanuts, all types, dry-roasted, without salt",peanuts,1,149,peanut butter (laura scudder's),58.18181818181818,peanuts,0.5349895177078343,peanuts,0.89962006,NO MATCH
@@ -177,14 +177,14 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "cabbage, cooked, boiled, drained, without salt",purple cabbage,1,175,canned black beans (s&w),52.17391304347826,purple cabbage,0.4381234038130916,purple cabbage,0.86086303,NO MATCH
 "cauliflower, frozen, cooked, boiled, drained, without salt",steamed cauliflower florets and stalk,1,176,steamed cauliflower florets and stalk,53.52112676056338,steamed cauliflower florets and stalk,0.3106617230171912,steamed cauliflower florets and stalk,0.87948847,NO MATCH
 "squash, summer, crookneck and straightneck, frozen, cooked, boiled, drained, without salt",steamed yellow neck squash,1,177,steamed crown broccoli florets and stalk,42.42424242424242,steamed spaghetti squash,0.20754084870207332,steamed yellow neck squash,0.89969355,NO MATCH
-"squash, summer, zucchini, includes skin, frozen, cooked, boiled, drained, without salt",steamed green zuchini,1,178,steamed red chard leaves and stalk (cal-organic),40.38461538461539,steamed spaghetti squash,0.1988534742691079,steamed spaghetti squash,0.8830372,NO MATCH
+"squash, summer, zucchini, includes skin, frozen, cooked, boiled, drained, without salt",steamed green zuchini,1,178,steamed red chard leaves and stalk (cal-organic),40.38461538461539,steamed spaghetti squash,0.1988534742691079,steamed spaghetti squash,0.88303727,NO MATCH
 "seeds, pumpkin and squash seed kernels, roasted, without salt",pumpkin seeds,1,179,steamed collard greens leaves and stalk,44.73684210526315,pumpkin seeds,0.6825070866262941,pumpkin seeds,0.902686,NO MATCH
-"nuts, almonds, dry roasted, without salt added",roasted almonds,1,180,almond butter (justin's),49.056603773584904,roasted almonds,0.6449380919156804,roasted almonds,0.9176877,NO MATCH
+"nuts, almonds, dry roasted, without salt added",roasted almonds,1,180,almond butter (justin's),49.056603773584904,roasted almonds,0.6449380919156804,roasted almonds,0.91768783,NO MATCH
 "nuts, brazilnuts, dried, unblanched",brazil nuts,1,181,peanut butter crackers,48.0,dried apricots,0.16919828411623017,brazil nuts,0.9211238,NO MATCH
 "nuts, coconut milk, raw (liquid expressed from grated meat and water)",coconut milk,1,182,multigrain bread (trade joes),40.50632911392405,coconut milk,0.44761203330741833,coconut milk,0.8919066,NO MATCH
 "nuts, pistachio nuts, dry roasted, without salt added",pistachio (fiddyment farm),1,183,pistachio (fiddyment farm),48.38709677419355,pistachio (fiddyment farm),0.2566612619082993,roasted almonds,0.8840808,NO MATCH
 "lentils, mature seeds, cooked, boiled, without salt",whole grain brown lentils,1,184,plant based bacon strip,47.27272727272728,whole grain brown lentils,0.4152730078254739,whole grain brown lentils,0.89079183,NO MATCH
-"collards, raw",steamed collard greens leaves and stalk,1,185,rolled oats,50.0,pomegranate w/ seeds,0.0,steamed collard greens leaves and stalk,0.8638106,NO MATCH
+"collards, raw",steamed collard greens leaves and stalk,1,185,rolled oats,50.0,pixie tangerine,0.0,steamed collard greens leaves and stalk,0.8638106,NO MATCH
 "peas, split, mature seeds, cooked, boiled, without salt",green split peas,1,186,pasta sauce w/ tomato and basil,50.79365079365079,green split peas,0.37115448433478754,green split peas,0.89824003,NO MATCH
 "beef, top sirloin, steak, separable lean only, trimmed to 1/8"" fat, all grades, cooked, broiled",beef round tip steak,1,187,frozen whole sweet green peas (flav r pac),43.47826086956522,beef round tip steak,0.28963191233158525,beef round tip steak,0.8641708,NO MATCH
 "yogurt, plain, low fat",yogurt,1,188,whole grain brown lentils,52.63157894736843,yogurt,0.5513313886159905,yogurt,0.91415775,NO MATCH
@@ -218,7 +218,7 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "turkey, all classes, wing, meat and skin, cooked, roasted",ground turkey,1,216,whole shingo pear w/o seed,46.666666666666664,ground turkey,0.2477412521596373,ground turkey,0.8680488,NO MATCH
 "turkey, wing, from whole bird, meat only, with added solution, roasted",ground turkey,1,217,chicken breast tender,44.44444444444444,ground turkey,0.23545013267831716,ground turkey,0.8679583,NO MATCH
 "beef, cured, breakfast strips, cooked",beef round tip steak,1,218,beef round tip steak,48.0,chicken strips,0.503746000459295,chicken strips,0.8661784,NO MATCH
-"nuts, macadamia nuts, dry roasted, with salt added",macadamia (sunfood superfood),1,219,macadamia (sunfood superfood),50.0,macadamia (sunfood superfood),0.29823968158421477,roasted almonds,0.88650364,NO MATCH
+"nuts, macadamia nuts, dry roasted, with salt added",macadamia (sunfood superfood),1,219,macadamia (sunfood superfood),50.0,macadamia (sunfood superfood),0.29823968158421477,roasted almonds,0.8865036,NO MATCH
 "grapefruit, sections, canned, water pack, solids and liquids",deep red grapefruit,1,220,raisin bran cereal,43.75,deep red grapefruit,0.24339790491297728,deep red grapefruit,0.87990785,NO MATCH
 "brussels sprouts, raw",steamed whole brussel sprouts,1,221,steamed whole brussel sprouts,68.29268292682926,bean sprouts,0.5012314685373047,steamed whole brussel sprouts,0.9035404,bean sprouts
 "cocoa, dry powder, unsweetened, processed with alkali",cocoa powder,1,222,unsweetened almond milk,46.875,cocoa powder,0.5716798094984279,cocoa powder,0.9262864,NO MATCH
@@ -231,7 +231,7 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "beef, ground, 90% lean meat / 10% fat, raw",beef round tip steak,1,229,ground non-meat (beyond meat),65.3061224489796,ground non-meat (beyond meat),0.5169392654074936,ground pork,0.86829346,NO MATCH
 "beef, ground, 80% lean meat / 20% fat, raw",beef round tip steak,1,230,ground non-meat (beyond meat),65.3061224489796,ground non-meat (beyond meat),0.5169392654074936,ground pork,0.8686574,NO MATCH
 "beef, ground, 75% lean meat / 25% fat, raw",beef round tip steak,1,231,ground non-meat (beyond meat),65.3061224489796,ground non-meat (beyond meat),0.5169392654074936,ground pork,0.86990744,NO MATCH
-"beets, raw","peeled, steamed beetroot",1,232,whole wheat bread,52.63157894736843,pomegranate w/ seeds,0.0,"peeled, steamed beetroot",0.89219636,NO MATCH
+"beets, raw","peeled, steamed beetroot",1,232,whole wheat bread,52.63157894736843,pixie tangerine,0.0,"peeled, steamed beetroot",0.89219636,NO MATCH
 "carrot juice, canned",carrot juice,1,233,carrot juice,85.71428571428572,carrot juice,0.9047965922137274,carrot juice,0.9577376,carrot juice
 "frankfurter, turkey",ground turkey,1,234,ground turkey,58.06451612903225,ground turkey,0.3607202218698371,ground turkey,0.8182525,ground turkey
 "nectarines, raw",whole yellow nectarine,1,235,whole yellow nectarine,62.06896551724138,whole yellow nectarine,0.7534987494582471,whole yellow nectarine,0.9142395,NO MATCH
@@ -245,7 +245,7 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "lettuce, cos or romaine, raw",romaine lettuce,1,243,multi grain cereal,48.78048780487805,romaine lettuce,0.7640705495080482,romaine lettuce,0.9378827,NO MATCH
 "seeds, pumpkin and squash seed kernels, dried",pumpkin seeds,1,244,pumpkin seeds,51.06382978723405,pumpkin seeds,0.7135877224540246,pumpkin seeds,0.9212154,NO MATCH
 "lima beans, large, mature seeds, cooked, boiled, without salt",lima beans,1,245,steamed crown broccoli florets and stalk,44.15584415584416,lima beans,0.5992658630229555,lima beans,0.92929137,NO MATCH
-"beans, snap, yellow, frozen, cooked, boiled, drained, without salt",frozen whole green beans,1,246,steamed yellow neck squash,45.714285714285715,frozen whole green beans,0.3988677639029458,frozen whole green beans,0.888395,NO MATCH
+"beans, snap, yellow, frozen, cooked, boiled, drained, without salt",frozen whole green beans,1,246,steamed yellow neck squash,45.714285714285715,frozen whole green beans,0.3988677639029458,frozen whole green beans,0.8883952,NO MATCH
 "collards, cooked, boiled, drained, without salt",steamed collard greens leaves and stalk,1,247,cooked oat bran,48.78048780487805,steamed collard greens leaves and stalk,0.35570658007567263,steamed collard greens leaves and stalk,0.88134784,NO MATCH
 "kale, cooked, boiled, drained, without salt",kale,1,248,cooked oat bran,52.63157894736843,kale,0.7074383285271768,kale,0.90503037,NO MATCH
 "pumpkin, cooked, boiled, drained, without salt",canned pumpkin,1,249,cooked oat bran,48.78048780487805,canned pumpkin,0.5792845362398498,canned pumpkin,0.88540286,NO MATCH
@@ -254,12 +254,12 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "beans, snap, green, cooked, boiled, drained, without salt",steamed green beans,1,252,frozen chopped spinach (green giant),50.74626865671642,frozen whole green beans,0.4703823719273395,steamed green beans,0.8863301,NO MATCH
 "cherries, sour, red, canned, water pack, solids and liquids",whole sweet cherry,1,253,steamed red chard leaves and stalk (cal-organic),42.85714285714286,sour cream,0.3313009681051129,whole sweet cherry,0.8636819,NO MATCH
 "artichokes, (globe or french), cooked, boiled, drained, without salt",canned artichoke hearts,1,254,frozen golden corn kernels (siganture select),48.275862068965516,canned artichoke hearts,0.3085119748379275,canned artichoke hearts,0.87429893,NO MATCH
-"spinach, cooked, boiled, drained, without salt",spinach leaves,1,255,spinach leaves,48.78048780487805,spinach leaves,0.48641968154357795,spinach leaves,0.8838104,NO MATCH
+"spinach, cooked, boiled, drained, without salt",spinach leaves,1,255,cooked oat bran,48.78048780487805,spinach leaves,0.48641968154357795,spinach leaves,0.8838104,NO MATCH
 "squash, winter, all varieties, cooked, baked, without salt",steamed butternut squash,1,256,tahini spread (365 whole foods market),49.18032786885246,steamed spaghetti squash,0.24591480930089246,steamed butternut squash,0.8694446,NO MATCH
 "wild rice, raw",wild blend rice,1,257,wild blend rice,64.28571428571428,wild blend rice,0.7438510783513977,wild blend rice,0.9392797,wild blend rice
 "kale, raw",kale,1,258,kale,66.66666666666667,kale,0.9212283137190578,kale,0.93047464,kale
 "mushrooms, shiitake, cooked, without salt",steamed whole shiitake mushrooms,1,259,steamed whole shiitake mushrooms,53.84615384615385,steamed whole shiitake mushrooms,0.793547955445751,steamed whole shiitake mushrooms,0.92933476,NO MATCH
-"seaweed, kelp, raw",roasted seaweed,1,260,steamed celery stalk,55.55555555555556,roasted seaweed,0.5291477734139748,roasted seaweed,0.90033257,steamed celery stalk
+"seaweed, kelp, raw",roasted seaweed,1,260,steamed celery stalk,55.55555555555556,roasted seaweed,0.5291477734139748,roasted seaweed,0.9003326,steamed celery stalk
 "corn, sweet, white, frozen, kernels cut off cob, boiled, drained, without salt",frozen golden corn kernels (siganture select),1,261,frozen whole sweet green peas (flav r pac),45.97701149425287,frozen golden corn kernels (siganture select),0.33606889419557906,frozen golden corn kernels (siganture select),0.9019073,NO MATCH
 "turkey, whole, neck, meat only, cooked, simmered",ground turkey,1,262,ground non-meat (beyond meat),45.833333333333336,steamed yellow neck squash,0.36074178952656805,ground turkey,0.8751781,NO MATCH
 "cowpeas (blackeyes), immature seeds, frozen, cooked, boiled, drained, without salt",black-eyed peas,1,263,frozen golden corn kernels (siganture select),42.42424242424242,pumpkin seeds,0.16899146149314775,black-eyed peas,0.85440534,NO MATCH
@@ -269,16 +269,16 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "bulgur, dry",red whole grain bulgur,1,267,whole blueberry,63.1578947368421,red whole grain bulgur,0.597811253888779,red whole grain bulgur,0.90445817,NO MATCH
 "beverages, wine, non-alcoholic",cabernet sauvignon wine,1,268,whole grain brown lentils,44.44444444444444,ground non-meat (beyond meat),0.3356145926549621,ground non-meat (beyond meat),0.8319149,NO MATCH
 "chard, swiss, cooked, boiled, drained, without salt",steamed red chard leaves and stalk (cal-organic),1,269,chicken breast,47.82608695652174,steamed red chard leaves and stalk (cal-organic),0.24553484083010832,steamed red chard leaves and stalk (cal-organic),0.8655603,NO MATCH
-"seaweed, agar, dried",roasted seaweed,1,270,steamed whole carrots,60.0,roasted seaweed,0.510626608560292,roasted seaweed,0.88941497,NO MATCH
+"seaweed, agar, dried",roasted seaweed,1,270,steamed whole carrots,60.0,roasted seaweed,0.510626608560292,roasted seaweed,0.8894151,NO MATCH
 "beef, round, top round, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, braised",beef round tip steak,1,271,steamed red chard leaves and stalk (cal-organic),44.66019417475729,beef round tip steak,0.4007511540260222,beef round tip steak,0.8759409,NO MATCH
 "cherries, sweet, canned, pitted, heavy syrup pack, solids and liquids",whole sweet cherry,1,272,frozen whole sweet green peas (flav r pac),48.19277108433735,whole sweet cherry,0.4705651298075282,whole sweet cherry,0.864967,NO MATCH
 "pumpkin, canned, without salt",canned pumpkin,1,273,pumpkin seeds,64.28571428571428,canned pumpkin,0.9060567189680092,canned pumpkin,0.9415921,pumpkin seeds
 "sour cream, light",sour cream,1,274,sour cream,76.92307692307692,sour cream,0.842620432209798,sour cream,0.95215565,sour cream
 "beans, pinto, mature seeds, raw",canned low sodium pinto bean,1,275,pomegranate w/ seeds,50.0,canned low sodium pinto bean,0.5362975517796646,canned low sodium pinto bean,0.8772855,NO MATCH
-"papayas, raw",tai nung papaya,1,276,tai nung papaya,46.15384615384615,pomegranate w/ seeds,0.0,tai nung papaya,0.8731214,NO MATCH
+"papayas, raw",tai nung papaya,1,276,tai nung papaya,46.15384615384615,pixie tangerine,0.0,tai nung papaya,0.8731212,NO MATCH
 "basil, fresh",basil,1,277,basil,62.5,basil,0.8316418732791618,basil,0.9402207,basil
 "nuts, pine nuts, dried",pine nut,1,278,pine nut,64.0,pine nut,0.7753123788330064,pine nut,0.9301615,pine nut
-"asparagus, canned, drained solids",frozen whole baby asparagus,1,279,raisin bran cereal,46.51162790697675,frozen whole baby asparagus,0.438312105981881,canned kidney beans,0.88941103,NO MATCH
+"asparagus, canned, drained solids",frozen whole baby asparagus,1,279,sprouted wheat bread,46.51162790697675,frozen whole baby asparagus,0.438312105981881,canned kidney beans,0.88941103,NO MATCH
 "beverages, abbott, eas soy protein powder",protein powder,1,280,protein powder,53.84615384615385,protein powder,0.5324424172194723,protein powder,0.86382604,protein powder
 "dates, deglet noor",dates,1,281,steamed whole sweet potato,52.94117647058824,dates,0.5564308333160755,dates,0.8909773,NO MATCH
 "okra, raw",frozen whole okra,1,282,cooked oat bran,57.14285714285714,frozen whole okra,0.781451510246249,frozen whole okra,0.9125194,NO MATCH
@@ -286,7 +286,7 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "cowpeas (blackeyes), immature seeds, cooked, boiled, drained, without salt",black-eyed peas,1,284,frozen golden corn kernels (siganture select),45.652173913043484,pumpkin seeds,0.17617121878154873,black-eyed peas,0.855096,NO MATCH
 "beef, top sirloin, steak, separable lean only, trimmed to 1/8"" fat, choice, cooked, broiled",beef round tip steak,1,285,pasta sauce w/ tomato and basil,41.860465116279066,beef round tip steak,0.28884208762729735,beef round tip steak,0.8697445,NO MATCH
 "beef, round, full cut, separable lean and fat, trimmed to 1/8"" fat, choice, raw",beef round tip steak,1,286,beef round tip steak,46.57534246575342,beef round tip steak,0.2869789911098945,beef round tip steak,0.87941635,NO MATCH
-"cheese, pasteurized process, american, fortified with vitamin d",american cheese,1,287,steamed crown broccoli florets and stalk,41.379310344827594,american cheese,0.5354554814889954,american cheese,0.90438443,NO MATCH
+"cheese, pasteurized process, american, fortified with vitamin d",american cheese,1,287,steamed crown broccoli florets and stalk,41.379310344827594,american cheese,0.5354554814889954,american cheese,0.90438455,NO MATCH
 "peanuts, all types, oil-roasted, with salt",peanuts,1,288,peanut butter (laura scudder's),58.18181818181818,peanuts,0.523136937431073,peanuts,0.90806615,NO MATCH
 "chicken, broilers or fryers, meat only, stewed",chicken breast,1,289,chicken breast,62.22222222222222,chicken breast,0.24547512724189932,chicken breast,0.86424524,NO MATCH
 "beef, ground, 75% lean meat / 25% fat, loaf, cooked, baked",beef round tip steak,1,290,ground non-meat (beyond meat),52.459016393442624,ground non-meat (beyond meat),0.33261237236400315,multigrain bread (trade joes),0.86032826,NO MATCH
@@ -296,7 +296,7 @@ soy sauce made from soy and wheat (shoyu),soy sauce,1,163,soy sauce,52.941176470
 "corn, sweet, yellow, frozen, kernels cut off cob, unprepared",frozen golden corn kernels (siganture select),1,294,frozen whole sweet green peas (flav r pac),45.78313253012048,yellow corn tortilla,0.35099346757025,frozen golden corn kernels (siganture select),0.895771,NO MATCH
 "peppers, sweet, red, frozen, chopped, unprepared",steamed whole red bell pepper w/o seed,1,295,frozen whole sweet green peas (flav r pac),50.0,steamed whole red bell pepper w/o seed,0.32118542502310793,steamed whole red bell pepper w/o seed,0.8775517,NO MATCH
 "wild rice, cooked",wild blend rice,1,296,wild blend rice,62.06896551724138,wild blend rice,0.7499252670360849,wild blend rice,0.93899876,wild blend rice
-"mangos, raw",yellow mango,1,297,granola,47.05882352941176,pomegranate w/ seeds,0.0,freeze dried mango flesh,0.8935009,NO MATCH
+"mangos, raw",yellow mango,1,297,granola,47.05882352941176,pixie tangerine,0.0,freeze dried mango flesh,0.8935009,NO MATCH
 "beverages, abbott, eas whey protein powder",protein powder,1,298,protein powder,52.83018867924528,protein powder,0.5142027812525991,protein powder,0.8725074,protein powder
 "yambean (jicama), raw",jicama,1,299,vanilla bean ice cream,55.00000000000001,jicama,0.6638689953041331,jicama,0.9019853,NO MATCH
 "couscous, cooked",toasted pearl couscous,1,300,chocolate chip cookies,55.55555555555556,toasted pearl couscous,0.46966766586016345,toasted pearl couscous,0.91487813,coconut milk
@@ -349,13 +349,13 @@ soy protein isolate,protein powder,1,343,protein powder,60.60606060606061,protei
 "asparagus, cooked, boiled, drained",frozen whole baby asparagus,1,347,cooked oat bran,52.63157894736843,frozen whole baby asparagus,0.4667753788658156,frozen whole baby asparagus,0.8788873,NO MATCH
 "artichokes, (globe or french), frozen, cooked, boiled, drained, without salt",canned artichoke hearts,1,348,frozen golden corn kernels (siganture select),45.652173913043484,canned artichoke hearts,0.3154146427832475,canned artichoke hearts,0.87914497,NO MATCH
 "asparagus, frozen, cooked, boiled, drained, without salt",frozen whole baby asparagus,1,349,frozen chopped spinach (green giant),50.0,frozen whole baby asparagus,0.5641541686526413,frozen whole baby asparagus,0.9071376,NO MATCH
-"squash, winter, spaghetti, cooked, boiled, drained, or baked, without salt",steamed spaghetti squash,1,350,tahini spread (365 whole foods market),45.945945945945944,steamed spaghetti squash,0.5256103382479317,steamed spaghetti squash,0.9070122,NO MATCH
+"squash, winter, spaghetti, cooked, boiled, drained, or baked, without salt",steamed spaghetti squash,1,350,tahini spread (365 whole foods market),45.945945945945944,steamed spaghetti squash,0.5256103382479317,steamed spaghetti squash,0.9070125,NO MATCH
 "beef, round, tip round, roast, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked, roasted",beef round tip steak,1,351,beef round tip steak,43.01075268817204,beef round tip steak,0.5880058781972233,beef round tip steak,0.8885784,NO MATCH
-"seaweed, spirulina, dried",roasted seaweed,1,352,steamed whole shiitake mushrooms,52.17391304347826,roasted seaweed,0.5106266085602921,roasted seaweed,0.89533436,NO MATCH
-"cheese, pasteurized process, cheddar or american, low sodium",american cheese,1,353,steamed red chard leaves and stalk (cal-organic),44.680851063829785,american cheese,0.48946983315072795,american cheese,0.89022774,NO MATCH
+"seaweed, spirulina, dried",roasted seaweed,1,352,steamed whole shiitake mushrooms,52.17391304347826,roasted seaweed,0.5106266085602921,roasted seaweed,0.8953345,NO MATCH
+"cheese, pasteurized process, cheddar or american, low sodium",american cheese,1,353,steamed red chard leaves and stalk (cal-organic),44.680851063829785,american cheese,0.48946983315072795,american cheese,0.8902278,NO MATCH
 "grapefruit, sections, canned, light syrup pack, solids and liquids",deep red grapefruit,1,354,frozen whole sweet green peas (flav r pac),40.0,maple syrup,0.2400640245125856,deep red grapefruit,0.87974,NO MATCH
 "milk, reduced fat, fluid, 2% milkfat, without added vitamin a and vitamin d",whole milk,1,355,steamed red chard leaves and stalk (cal-organic),39.13043478260869,whole milk,0.29303370089801173,lowfat chocolate milk,0.88121295,NO MATCH
-"egg, whole, cooked, fried",whole brown egg,1,356,cooked oat bran,48.0,whole brown egg,0.4633474901073695,whole brown egg,0.9142991,frozen whole okra
+"egg, whole, cooked, fried",whole brown egg,1,356,cooked oat bran,48.0,whole brown egg,0.4633474901073695,whole brown egg,0.9142989,frozen whole okra
 "turkey, whole, dark meat, cooked, roasted",ground turkey,1,357,hunt's tomato paste,50.0,ground turkey,0.3281571539792454,ground turkey,0.88260406,NO MATCH
 "arugula, raw",arugula,1,358,arugula,77.77777777777779,arugula,0.9308483988844365,arugula,0.948552,arugula
 "beans, kidney, all types, mature seeds, cooked, boiled, without salt",canned kidney beans,1,359,frozen golden corn kernels (siganture select),44.705882352941174,canned kidney beans,0.5436244267865427,canned kidney beans,0.9077711,NO MATCH
@@ -387,11 +387,11 @@ soy protein isolate,protein powder,1,343,protein powder,60.60606060606061,protei
 "cabbage, red, cooked, boiled, drained, without salt",purple cabbage,1,385,canned black beans (s&w),48.0,purple cabbage,0.3871426321958896,purple cabbage,0.8659463,NO MATCH
 "buckwheat groats, roasted, cooked",hot cereal whole grain creamy buckwheat,1,386,wheat crackers (nabisco),50.98039215686274,hot cereal whole grain creamy buckwheat,0.27824091066324586,hot cereal whole grain creamy buckwheat,0.86204886,NO MATCH
 "blackberries, frozen, unsweetened",whole blackberry,1,387,whole blackberry,52.63157894736843,whole blackberry,0.7143659108268379,frozen whole blueberry,0.8956841,NO MATCH
-"cheese, mozzarella, nonfat",low moisture part skim mozarella cheese,1,388,whole green house (large) tomato,50.0,cream cheese,0.2816732847730881,cheese crackers,0.8725965,NO MATCH
-"nuts, almonds, oil roasted, without salt added",roasted almonds,1,389,almond butter (justin's),47.05882352941176,roasted almonds,0.4267757132816966,roasted almonds,0.9204441,NO MATCH
+"cheese, mozzarella, nonfat",low moisture part skim mozarella cheese,1,388,whole green house (large) tomato,50.0,cream cheese,0.2816732847730881,cheese crackers,0.8725968,NO MATCH
+"nuts, almonds, oil roasted, without salt added",roasted almonds,1,389,almond butter (justin's),47.05882352941176,roasted almonds,0.4267757132816966,roasted almonds,0.9204439,NO MATCH
 "plantains, cooked",plantain banana (steamed 10 in),1,390,vanilla cookies,59.25925925925925,plantain banana (steamed 10 in),0.5997658202997639,plantain banana (steamed 10 in),0.9242452,chocolate chip cookies
-"soymilk (all flavors), nonfat, with added calcium, vitamins a and d",soy milk,1,391,canned low sodium pinto bean,41.17647058823529,pomegranate w/ seeds,0.0,soy milk,0.9048913,NO MATCH
-"egg, whole, cooked, scrambled",whole brown egg,1,392,whole grain oat cereal,48.484848484848484,whole brown egg,0.39133597456001357,whole brown egg,0.9060841,frozen whole okra
+"soymilk (all flavors), nonfat, with added calcium, vitamins a and d",soy milk,1,391,canned low sodium pinto bean,41.17647058823529,pixie tangerine,0.0,soy milk,0.9048913,NO MATCH
+"egg, whole, cooked, scrambled",whole brown egg,1,392,whole grain oat cereal,48.484848484848484,whole brown egg,0.39133597456001357,whole brown egg,0.90608394,frozen whole okra
 "protein supplement, milk based, muscle milk, powder",protein powder,1,393,protein powder,45.90163934426229,whole milk,0.5418887146195084,protein powder,0.91327393,NO MATCH
 "tomatoes, red, ripe, canned, packed in tomato juice, no salt added",muir's diced tomatoes,1,394,steamed red chard leaves and stalk (cal-organic),48.275862068965516,tomato ketchup,0.39550688758515185,tomato ketchup,0.868263,NO MATCH
 "turkey, back, from whole bird, meat and skin, with added solution, roasted",ground turkey,1,395,steamed red chard leaves and stalk (cal-organic),43.37349397590361,ground turkey,0.25089458754761756,ground turkey,0.88158137,NO MATCH
@@ -405,12 +405,12 @@ soy protein isolate,protein powder,1,343,protein powder,60.60606060606061,protei
 "turkey, retail parts, breast, meat and skin, with added solution, raw",ground turkey,1,403,steamed red chard leaves and stalk (cal-organic),45.16129032258065,chicken breast,0.30559256647806793,ground turkey,0.8782908,NO MATCH
 "beans, mature, red kidney, canned, solids and liquid, low sodium",canned kidney beans,1,404,steamed red chard leaves and stalk (cal-organic),43.956043956043956,canned kidney beans,0.5823578496419706,canned kidney beans,0.94158685,NO MATCH
 "nuts, cashew butter, plain, with salt added",cashew,1,405,peanut butter (laura scudder's),55.73770491803278,cashew,0.5462444258092749,cashew,0.89308405,NO MATCH
-"cheese, american, nonfat or fat free",american cheese,1,406,steamed russet potato flesh only,48.275862068965516,american cheese,0.6664182530026844,american cheese,0.89896375,NO MATCH
+"cheese, american, nonfat or fat free",american cheese,1,406,steamed russet potato flesh only,48.275862068965516,american cheese,0.6664182530026844,american cheese,0.8989638,NO MATCH
 "cherries, tart, dried, sweetened (includes foods for usda's food distribution program)",whole sweet cherry,1,407,frozen whole sweet green peas (flav r pac),37.254901960784316,cream of mushroom soup (pacific foods),0.2674091315689042,whole sweet cherry,0.86000556,NO MATCH
 "lentils, raw",whole grain brown lentils,1,408,nutella spread,50.0,whole grain brown lentils,0.6102978581355218,whole grain brown lentils,0.9044002,NO MATCH
 "quinoa, cooked",quinoa,1,409,quinoa,70.58823529411764,quinoa,0.9402817870363972,quinoa,0.9422975,quinoa
-"cheese, pasteurized process, american, low fat",american cheese,1,410,wheat farina cereal/cream of wheat,43.83561643835616,american cheese,0.570118833338565,american cheese,0.91284096,NO MATCH
-"babyfood, fruit, applesauce, strained",original apple sauce (tree top),1,411,original apple sauce (tree top),61.01694915254237,pomegranate w/ seeds,0.0,apple juice,0.85531753,NO MATCH
+"cheese, pasteurized process, american, low fat",american cheese,1,410,wheat farina cereal/cream of wheat,43.83561643835616,american cheese,0.570118833338565,american cheese,0.912841,NO MATCH
+"babyfood, fruit, applesauce, strained",original apple sauce (tree top),1,411,original apple sauce (tree top),61.01694915254237,pixie tangerine,0.0,apple juice,0.85531753,NO MATCH
 "beans, black turtle, mature seeds, canned",canned black beans (s&w),1,412,canned black beans (s&w),54.90196078431373,canned black beans (s&w),0.6332513257206505,canned black beans (s&w),0.90934336,NO MATCH
 "mushrooms, shiitake, dried",steamed whole shiitake mushrooms,1,413,steamed whole shiitake mushrooms,56.52173913043479,steamed whole shiitake mushrooms,0.7991256937721575,steamed whole shiitake mushrooms,0.9364076,NO MATCH
 "cheese, mozzarella, low sodium",low moisture part skim mozarella cheese,1,414,canned low sodium pinto bean,49.056603773584904,low sodium chicken broth,0.4569670967256238,low moisture part skim mozarella cheese,0.88155395,NO MATCH
@@ -432,7 +432,7 @@ soy protein isolate,protein powder,1,343,protein powder,60.60606060606061,protei
 "blackberries, canned, heavy syrup, solids and liquids",whole blackberry,1,430,canned black beans (s&w),42.10526315789473,whole blackberry,0.49863945424925077,canned black beans (s&w),0.87259775,NO MATCH
 "cherries, sweet, canned, light syrup pack, solids and liquids",whole sweet cherry,1,431,cream of mushroom soup (pacific foods),43.58974358974359,whole sweet cherry,0.5499458094554004,whole sweet cherry,0.87023425,NO MATCH
 "babyfood, cookies",vanilla cookies,1,432,vanilla cookies,55.172413793103445,vanilla cookies,0.5941433503050755,chocolate chip cookies,0.85997427,vanilla cookies
-"egg, whole, cooked, poached",whole brown egg,1,433,cooked oat bran,51.85185185185186,whole brown egg,0.39133597456001357,whole brown egg,0.90050966,frozen whole okra
+"egg, whole, cooked, poached",whole brown egg,1,433,cooked oat bran,51.85185185185186,whole brown egg,0.39133597456001357,whole brown egg,0.90050954,frozen whole okra
 "chicken breast, deli, rotisserie seasoned, sliced, prepackaged",chicken breast,1,434,chicken breast tender,53.333333333333336,chicken breast,0.4426834932800988,chicken breast,0.8855946,NO MATCH
 "chickpeas (garbanzo beans, bengal gram), mature seeds, canned, solids and liquids, low sodium",canned garbanzo beans,1,435,frozen golden corn kernels (siganture select),37.93103448275862,canned garbanzo beans,0.46418693692734053,canned low sodium pinto bean,0.91666996,NO MATCH
 "babyfood, cereal, rice, dry fortified",rice cereal (gerber),1,436,hot cereal whole grain creamy buckwheat,49.23076923076923,rice cereal (gerber),0.46042004869451925,rice cereal (gerber),0.8837416,NO MATCH
@@ -451,9 +451,9 @@ soy protein isolate,protein powder,1,343,protein powder,60.60606060606061,protei
 "pork, fresh, shoulder, (boston butt), blade (steaks), separable lean and fat,with added solution, raw",ground pork,1,449,frozen golden corn kernels (siganture select),39.66942148760331,ground pork,0.1504641657621391,ground pork,0.8653884,NO MATCH
 "carrots, raw",steamed whole carrots,1,450,carrot juice,63.63636363636363,carrot juice,0.7408399147333059,steamed whole carrots,0.89735776,carrot juice
 "potatoes, baked, flesh and skin, without salt",steamed whole russet potato,1,451,plant based fish fillet,61.224489795918366,steamed russet potato flesh only,0.4615490728221463,steamed russet potato flesh only,0.88264835,NO MATCH
-catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,0.8825963,dates
+catsup,tomato ketchup,1,452,cashew,50.0,pixie tangerine,0.0,tomato ketchup,0.8825963,dates
 "beans, white, mature seeds, cooked, boiled, without salt",cannellini beans,1,453,steamed crown broccoli florets and stalk,49.31506849315068,white bread,0.2501243565032178,refried beans,0.8793394,NO MATCH
-"snacks, potato chips, plain, salted",steamed russet potato flesh only,1,454,hunt's tomato paste,50.0,vegetable chips,0.37484818562509825,vegetable chips,0.8794198,NO MATCH
+"snacks, potato chips, plain, salted",steamed russet potato flesh only,1,454,hunt's tomato paste,50.0,vegetable chips,0.37484818562509825,vegetable chips,0.8794199,NO MATCH
 "rice flour, white, unenriched",rice cereal (gerber),1,455,enriched long white rice (mahatma),59.64912280701755,brown rice rice cake,0.3491988954293518,crisp rice receal,0.8728421,NO MATCH
 "pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder), separable lean only, raw",ground pork,1,456,frozen whole sweet green peas (flav r pac),39.62264150943396,ground pork,0.15900517250414353,ground pork,0.8680908,NO MATCH
 "tomato products, canned, puree, without salt added",hunt's tomato paste,1,457,sprouted wheat bread,47.05882352941176,tomato ketchup,0.26555372439321645,canned low sodium pinto bean,0.87350655,NO MATCH
@@ -469,7 +469,7 @@ catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,
 "cereals, oats, regular and quick, not fortified, dry",rolled oats,1,467,hot cereal whole grain creamy buckwheat,48.57142857142858,wheat bran cereal,0.19256907349149993,whole grain oat cereal,0.87878793,NO MATCH
 "oranges, raw, all commercial varieties",navel orange,1,468,commercial mac and cheese,52.0,commercial mac and cheese,0.40551301067373857,dried orange slices,0.8668521,NO MATCH
 "alcoholic beverage, wine, table, all",cabernet sauvignon wine,1,469,albacore white tuna,54.16666666666667,table sugar,0.45036320764641824,table sugar,0.8588466,NO MATCH
-"pasta, cooked, enriched, without added salt",spaghetti,1,470,steamed baby bok choy leaves and stalk,50.847457627118644,pasta sauce w/ tomato and basil,0.3385408690524737,whole wheat spaghetti,0.85368294,NO MATCH
+"pasta, cooked, enriched, without added salt",spaghetti,1,470,steamed baby bok choy leaves and stalk,50.847457627118644,pasta sauce w/ tomato and basil,0.3385408690524737,whole wheat spaghetti,0.85368305,NO MATCH
 "ham, sliced, pre-packaged, deli meat (96%fat free, water added)",ground pork,1,471,frozen whole sweet green peas (flav r pac),43.37349397590361,dried orange slices,0.23709313317445238,plant based bacon strip,0.8312733,NO MATCH
 "pork sausage, link/patty, cooked, pan-fried",ground pork,1,472,pasta sauce w/ tomato and basil,41.93548387096774,beyond sausage,0.4185374766302237,beyond sausage,0.8622328,NO MATCH
 "sausage, turkey, breakfast links, mild, raw",ground turkey,1,473,steamed red chard leaves and stalk (cal-organic),48.10126582278481,beyond sausage,0.4161269095717219,beyond sausage,0.86012304,NO MATCH
@@ -494,12 +494,12 @@ catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,
 "corn, sweet, yellow, cooked, boiled, drained, without salt",frozen golden corn kernels (siganture select),1,492,corn cereal (corn flakes),50.0,yellow corn tortilla,0.49391272254732566,cornmeal,0.8783869,NO MATCH
 "onions, frozen, chopped, cooked, boiled, drained, without salt",onion,1,493,frozen chopped spinach (green giant),55.072463768115945,onion,0.5214111887791196,onion,0.88717985,NO MATCH
 "corn, sweet, white, cooked, boiled, drained, without salt",frozen golden corn kernels (siganture select),1,494,frozen whole sweet green peas (flav r pac),48.57142857142858,corn cereal (corn flakes),0.365383237293096,cornmeal,0.8716364,NO MATCH
-"cheese, colby",sharp chedder cheese,1,495,cheese crackers,61.53846153846154,cream cheese,0.32012826214334766,american cheese,0.8839198,cheese crackers
+"cheese, colby",sharp chedder cheese,1,495,cheese crackers,61.53846153846154,cream cheese,0.32012826214334766,american cheese,0.8839196,cheese crackers
 "sausage, italian, pork, cooked",ground pork,1,496,vanilla cookies,46.15384615384615,beyond sausage,0.5749256257194676,beyond sausage,0.87182575,NO MATCH
-"apples, dried, sulfured, uncooked",freeze dried apple rings,1,497,apple juice,50.0,apple juice,0.38054682466170325,freeze dried apple rings,0.8704079,NO MATCH
+"apples, dried, sulfured, uncooked",freeze dried apple rings,1,497,apple juice,50.0,apple juice,0.38054682466170325,freeze dried apple rings,0.87040764,NO MATCH
 "peanut butter, smooth style, with salt (includes foods for usda's food distribution program)",creamy peanut butter (skippy),1,498,peanut butter (laura scudder's),45.28301886792453,peanut butter crackers,0.28819664805289114,peanut butter (laura scudder's),0.8798342,NO MATCH
 "seeds, sesame butter, tahini, from roasted and toasted kernels (most common type)",tahini spread (365 whole foods market),1,499,multigrain bread (trade joes),42.85714285714286,toasted pearl couscous,0.2266406324769764,tahini spread (365 whole foods market),0.8725077,NO MATCH
-"bananas, raw",yellow banana flesh only,1,500,banana chips,66.66666666666667,banana chips,0.6397847903054348,yellow banana flesh only,0.8863368,banana chips
+"bananas, raw",yellow banana flesh only,1,500,banana chips,66.66666666666667,banana chips,0.6397847903054348,yellow banana flesh only,0.88633686,banana chips
 "corn, sweet, yellow, canned, whole kernel, drained solids",frozen golden corn kernels (siganture select),1,501,frozen golden corn kernels (siganture select),48.78048780487805,yellow corn tortilla,0.43695479855737945,yellow corn tortilla,0.878575,NO MATCH
 "pork, fresh, spareribs, separable lean and fat, cooked, braised",ground pork,1,502,frozen whole sweet green peas (flav r pac),42.85714285714286,ground pork,0.21072908881771113,ground pork,0.8643952,NO MATCH
 "orange juice, frozen concentrate, unsweetened, undiluted",pulp free orange juice,1,503,organic frosted flakes cereals,44.99999999999999,pulp free orange juice,0.31612467466682764,pulp free orange juice,0.8814857,NO MATCH
@@ -517,7 +517,7 @@ catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,
 "alcoholic beverage, wine, table, red",cabernet sauvignon wine,1,515,albacore white tuna,50.0,table sugar,0.41228648636129034,table sugar,0.85565007,NO MATCH
 "rice, brown, long-grain, cooked",brown rice (mahatma),1,516,brown egg yolk,55.00000000000001,brown rice rice cake,0.5370258375072078,brown rice (mahatma),0.89525753,NO MATCH
 "pork, fresh, loin, whole, separable lean only, cooked, roasted",ground pork,1,517,whole shingo pear w/o seed,47.61904761904761,ground pork,0.2500092189150521,ground pork,0.87291753,NO MATCH
-"alcoholic beverage, beer, regular, all",budweiser,1,518,vanilla bean ice cream,49.056603773584904,pomegranate w/ seeds,0.0,budweiser,0.83352757,NO MATCH
+"alcoholic beverage, beer, regular, all",budweiser,1,518,vanilla bean ice cream,49.056603773584904,pixie tangerine,0.0,budweiser,0.83352757,NO MATCH
 "pickles, cucumber, sour, low sodium",pickles,1,519,chicken noodle soup,43.99999999999999,pickles,0.4610936496990915,pickles,0.89936274,NO MATCH
 "sausage, breakfast sausage, beef, pre-cooked, unprepared",beef round tip steak,1,520,steamed whole green bell pepper w/o seed,45.238095238095234,beyond sausage,0.7115157459998187,beyond sausage,0.8705403,NO MATCH
 "applesauce, canned, unsweetened, without added ascorbic acid (includes usda commodity)",original apple sauce (tree top),1,521,unsweetened almond milk,40.90909090909091,unsweetened almond milk,0.15831270785096313,apple juice,0.8543919,NO MATCH
@@ -529,11 +529,11 @@ catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,
 "soup, stock, chicken, home-prepared",low sodium chicken broth,1,527,low sodium chicken broth,50.90909090909091,chicken noodle soup,0.3928050866467264,chicken noodle soup,0.88050365,NO MATCH
 "pasta, dry, enriched",spaghetti,1,528,dried apricots,51.85185185185186,pasta sauce w/ tomato and basil,0.3658135158889807,whole wheat spaghetti,0.86388576,stir fry rice noodle
 "beverages, tea, instant, lemon, unsweetened",black tea,1,529,cabernet sauvignon wine,50.0,black tea,0.3126859142855952,black tea,0.8455864,NO MATCH
-"plantains, yellow, raw",plantain banana (steamed 10 in),1,530,plantain banana (steamed 10 in),52.38095238095239,plantain banana (steamed 10 in),0.4814588360962467,yellow banana flesh only,0.8970346,NO MATCH
+"plantains, yellow, raw",plantain banana (steamed 10 in),1,530,plantain banana (steamed 10 in),52.38095238095239,plantain banana (steamed 10 in),0.4814588360962467,yellow banana flesh only,0.89703447,NO MATCH
 "pork, fresh, shoulder, (boston butt), blade (steaks), separable lean only, cooked, braised",ground pork,1,531,steamed red chard leaves and stalk (cal-organic),41.44144144144144,ground pork,0.1583428216519796,ground pork,0.866472,NO MATCH
 "potatoes, hash brown, frozen, plain, prepared, pan fried in canola oil",steamed whole russet potato,1,532,frozen whole sweet green peas (flav r pac),41.75824175824175,whole brown egg,0.22151252856388223,steamed whole russet potato,0.85543674,NO MATCH
 "beef, cured, corned beef, brisket, cooked",beef round tip steak,1,533,bean and cheese burrito,50.98039215686274,corn cereal (corn flakes),0.3114085659741365,ground pork,0.8367434,NO MATCH
-"pie fillings, apple, canned",original apple sauce (tree top),1,534,freeze dried apple rings,50.0,apple juice,0.3538568027293595,freeze dried apple rings,0.8601489,NO MATCH
+"pie fillings, apple, canned",original apple sauce (tree top),1,534,freeze dried apple rings,50.0,apple juice,0.3538568027293595,freeze dried apple rings,0.86014897,NO MATCH
 "apple juice, frozen concentrate, unsweetened, undiluted, without added ascorbic acid",apple juice,1,535,frozen whole sweet green peas (flav r pac),45.09803921568627,apple juice,0.43361779639211984,apple juice,0.90911967,NO MATCH
 "pork, cured, ham, whole, separable lean only, roasted",ground pork,1,536,whole golden del apple w/o seed,45.90163934426229,ground pork,0.2562934923990981,ground pork,0.8656727,NO MATCH
 "pork, cured, ham, extra lean and regular, canned, roasted",ground pork,1,537,hot cereal whole grain creamy buckwheat,46.753246753246756,ground pork,0.2005326648429788,ground pork,0.8588991,NO MATCH
@@ -576,7 +576,7 @@ catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,
 "beef, cured, corned beef, canned",beef round tip steak,1,574,frozen whole green beans,55.00000000000001,corn cereal (corn flakes),0.3628333147932247,canned black beans (s&w),0.85368496,NO MATCH
 "beverages, tea, instant, lemon, diet",black tea,1,575,cabernet sauvignon wine,51.85185185185186,black tea,0.2930991755405654,black tea,0.8379219,NO MATCH
 "pasta, whole-wheat, cooked (includes foods for usda's food distribution program)",whole wheat spaghetti,1,576,macadamia (sunfood superfood),38.20224719101124,cream of mushroom soup (pacific foods),0.2879012690671134,whole wheat spaghetti,0.89255404,NO MATCH
-"peas, edible-podded, raw",steamed whole snow peas,1,577,steamed whole sweet potato,48.64864864864865,pomegranate w/ seeds,0.0,whole snow peas,0.87653714,NO MATCH
+"peas, edible-podded, raw",steamed whole snow peas,1,577,steamed whole sweet potato,48.64864864864865,pixie tangerine,0.0,whole snow peas,0.87653714,NO MATCH
 "nuts, almond paste",almond butter (justin's),1,578,hunt's tomato paste,66.66666666666667,roasted almonds,0.44655950142765827,almond butter (justin's),0.8823539,hunt's tomato paste
 "tomatoes, red, ripe, cooked",muir's diced tomatoes,1,579,chocolate chip cookies,58.53658536585367,tomato ketchup,0.32041742383491734,whole green house (large) tomato,0.86679757,chocolate chip cookies
 "soup, vegetable with beef broth, canned, prepared with equal volume water",chunky vegetable soup,1,580,mixed vegetable burger patty,42.85714285714286,chunky vegetable soup,0.3355362238818682,chunky vegetable soup,0.8909102,NO MATCH
@@ -597,7 +597,7 @@ catsup,tomato ketchup,1,452,cashew,50.0,pomegranate w/ seeds,0.0,tomato ketchup,
 "beef, brisket, whole, separable lean and fat, trimmed to 0"" fat, all grades, cooked, braised",beef round tip steak,1,595,steamed red chard leaves and stalk (cal-organic),44.44444444444444,beef round tip steak,0.10100518263797827,beef round tip steak,0.8423263,NO MATCH
 "pork, fresh, shoulder, whole, separable lean only, cooked, roasted",ground pork,1,596,whole golden del apple w/o seed,44.44444444444444,ground pork,0.24703543572717845,ground pork,0.8699602,NO MATCH
 "corn, sweet, yellow, canned, no salt added, solids and liquids",frozen golden corn kernels (siganture select),1,597,steamed yellow neck squash,46.37681159420289,yellow corn tortilla,0.4394602966218367,yellow corn tortilla,0.88256365,NO MATCH
-"peas, edible-podded, boiled, drained, without salt",steamed whole snow peas,1,598,steamed crown broccoli florets and stalk,48.484848484848484,pomegranate w/ seeds,0.0,steamed whole snow peas,0.87379473,NO MATCH
+"peas, edible-podded, boiled, drained, without salt",steamed whole snow peas,1,598,steamed crown broccoli florets and stalk,48.484848484848484,pixie tangerine,0.0,steamed whole snow peas,0.87379473,NO MATCH
 "collards, frozen, chopped, cooked, boiled, drained, without salt",steamed collard greens leaves and stalk,1,599,frozen chopped spinach (green giant),53.52112676056338,frozen chopped spinach (green giant),0.31927576709527367,steamed collard greens leaves and stalk,0.8895765,NO MATCH
 "apples, dried, sulfured, stewed, without added sugar",freeze dried apple rings,1,600,steamed curely mustard greens,47.45762711864406,apple juice,0.3329763784268503,apple juice,0.86294246,NO MATCH
 "ice creams, chocolate, rich",vanilla bean ice cream,1,601,lowfat chocolate milk,57.77777777777777,vanilla bean ice cream,0.5043831602559653,chocolate,0.8797108,lowfat chocolate milk
@@ -651,7 +651,7 @@ vegetarian fillets,plant based fish fillet,1,645,vegetable juice,56.25,plant bas
 "whey, acid, dried",protein powder,1,649,white bread,50.0,dried apricots,0.2339686152329179,protein powder,0.8722965,NO MATCH
 "pork, cured, shoulder, arm picnic, separable lean and fat, roasted",ground pork,1,650,frozen golden corn kernels (siganture select),42.85714285714286,ground pork,0.18588599875662826,ground pork,0.85309464,NO MATCH
 "pork, fresh, composite of trimmed retail cuts (leg, loin, shoulder, and spareribs), separable lean and fat, cooked",ground pork,1,651,frozen golden corn kernels (siganture select),36.92307692307693,ground pork,0.14412276787371264,ground pork,0.87125367,NO MATCH
-"apples, dehydrated (low moisture), sulfured, uncooked",freeze dried apple rings,1,652,low moisture part skim mozarella cheese,46.15384615384615,low moisture part skim mozarella cheese,0.3342823796135634,freeze dried apple rings,0.8627356,NO MATCH
+"apples, dehydrated (low moisture), sulfured, uncooked",freeze dried apple rings,1,652,low moisture part skim mozarella cheese,46.15384615384615,low moisture part skim mozarella cheese,0.3342823796135634,freeze dried apple rings,0.86273533,NO MATCH
 "tofu, fried",firm tofu (wildwood),1,653,ground turkey,47.61904761904761,soft silken tofu,0.42473252563794367,soft silken tofu,0.8860407,potato bread
 "pork, fresh, leg (ham), whole, separable lean only, cooked, roasted",ground pork,1,654,whole golden del apple w/o seed,45.070422535211264,ground pork,0.22100174524789745,ground pork,0.86049044,NO MATCH
 "beverages, coca-cola, powerade, lemon-lime flavored, ready-to-drink",gatorade,1,655,steamed collard greens leaves and stalk,46.15384615384615,coca cola,0.5128439232116527,coca cola,0.8652022,NO MATCH
@@ -664,7 +664,7 @@ vegetarian fillets,plant based fish fillet,1,645,vegetable juice,56.25,plant bas
 "beef, chuck, arm pot roast, separable lean only, trimmed to 1/8"" fat, select, raw",beef round tip steak,1,662,frozen golden corn kernels (siganture select),43.56435643564357,frozen golden corn kernels (siganture select),0.181655328893208,beef round tip steak,0.8352241,NO MATCH
 "cabbage, chinese (pak-choi), cooked, boiled, drained, without salt",steamed baby bok choy leaves and stalk,1,663,chocolate chip cookies,42.42424242424242,purple cabbage,0.2651624829576514,purple cabbage,0.8618434,NO MATCH
 "chicken patty, frozen, cooked",chicken strips,1,664,chicken breast tender,56.52173913043479,mixed vegetable burger patty,0.30758285850051276,mixed vegetable burger patty,0.86524314,chicken breast tender
-"apricots, canned, water pack, with skin, solids and liquids",whole apricot,1,665,almond butter (justin's),41.93548387096774,whole apricot,0.48214349153818525,dried apricots,0.90191,NO MATCH
+"apricots, canned, water pack, with skin, solids and liquids",whole apricot,1,665,plant based bacon strip,41.93548387096774,whole apricot,0.48214349153818525,dried apricots,0.90191,NO MATCH
 "beef, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/8"" fat, all grades, cooked",beef round tip steak,1,666,steamed red chard leaves and stalk (cal-organic),41.81818181818182,beef round tip steak,0.08648282844736944,beef round tip steak,0.8464208,NO MATCH
 "pork, cured, ham, whole, separable lean only, unheated",ground pork,1,667,hot cereal whole grain creamy buckwheat,51.42857142857142,ground pork,0.23472516195454468,ground pork,0.8648554,hot cereal whole grain creamy buckwheat
 "pork, cured, ham and water product, whole, boneless, separable lean only, unheated",ground pork,1,668,steamed whole red bell pepper w/o seed,42.22222222222223,ground pork,0.18520883167882785,ground pork,0.8537247,NO MATCH
@@ -692,34 +692,34 @@ vegetarian fillets,plant based fish fillet,1,645,vegetable juice,56.25,plant bas
 "reduced sodium: turkey breast, sliced, prepackaged",ground turkey,1,690,frozen whole sweet green peas (flav r pac),44.15584415584416,chicken breast,0.3325005599493648,low sodium chicken broth,0.89174306,NO MATCH
 "potatoes, canned, drained solids, no salt added",steamed russet potato flesh only,1,691,plantain banana (steamed 10 in),48.14814814814815,potato bread,0.34527807453857684,steamed whole russet potato,0.87023807,NO MATCH
 "cabbage, japanese style, fresh, pickled",purple cabbage,1,692,plant based fish fillet,49.122807017543856,pickles,0.4334254182496981,purple cabbage,0.86710757,NO MATCH
-"cheese, monterey",cream cheese,0,693,cheese crackers,62.06896551724138,cream cheese,0.32012826214334766,american cheese,0.8819577,cheese crackers
+"cheese, monterey",cream cheese,0,693,cheese crackers,62.06896551724138,cream cheese,0.32012826214334766,american cheese,0.8819581,cheese crackers
 "cream substitute, powdered",protein powder,0,694,protein powder,51.28205128205128,cream cheese,0.35755271898670765,cocoa powder,0.85501766,protein powder
 "milk, lowfat, fluid, 1% milkfat, with added vitamin a and vitamin d",lowfat chocolate milk,0,695,enriched long white rice (mahatma),38.961038961038966,lowfat chocolate milk,0.39458674352519546,lowfat chocolate milk,0.8963077,NO MATCH
 "milk, nonfat, fluid, with added vitamin a and vitamin d (fat free or skim)",lowfat chocolate milk,0,696,pistachio (fiddyment farm),38.961038961038966,whole milk,0.2786454051779681,lowfat chocolate milk,0.87278163,NO MATCH
 "spices, cinnamon, ground",ground pork,0,697,pixie tangerine,50.0,ground pork,0.3585755878593998,ground turkey,0.8710613,NO MATCH
-"spices, paprika",dried apricots,0,698,crisp rice receal,53.333333333333336,pomegranate w/ seeds,0.0,jalapeno,0.87079436,NO MATCH
+"spices, paprika",dried apricots,0,698,crisp rice receal,53.333333333333336,pixie tangerine,0.0,jalapeno,0.87079436,NO MATCH
 "spices, pepper, black",black tea,0,699,crisp rice receal,51.42857142857142,black tea,0.433023641025883,black tea,0.854171,NO MATCH
 "spices, turmeric, ground",ground turkey,0,700,pixie tangerine,50.0,ground pork,0.3585755878593998,ground turkey,0.8714459,NO MATCH
-"salt, table, iodized",table sugar,0,701,wild blend rice,50.0,table sugar,0.4679135072143086,table sugar,0.859059,NO MATCH
+"salt, table, iodized",table sugar,0,701,vegetable juice,50.0,table sugar,0.4679135072143086,table sugar,0.859059,NO MATCH
 "oil, soybean, salad or cooking",soy milk,0,702,vanilla cookies,50.0,cooked oat bran,0.07226085963267459,soy sauce,0.86125207,NO MATCH
 "oil, olive, salad or cooking",chives,0,703,vanilla cookies,52.94117647058824,cooked oat bran,0.06862929272033103,mayonnaise,0.838149,NO MATCH
 "oil, cottonseed, salad or cooking",cottage cheese,0,704,chocolate chip cookies,47.82608695652174,cooked oat bran,0.06961687896567394,cornmeal,0.8380454,NO MATCH
 "oil, sunflower, linoleic, (approx. 65%)",sunflower seeds,0,705,sunflower seeds,51.162790697674424,sunflower seeds,0.4325447872862021,sunflower seeds,0.8713424,NO MATCH
 "oil, safflower, salad or cooking, high oleic (primary safflower oil of commerce)",commercial mac and cheese,0,706,steamed red chard leaves and stalk (cal-organic),41.12149532710281,cooked oat bran,0.03000900612878514,mayonnaise,0.8264406,NO MATCH
 "oil, corn, industrial and retail, all purpose salad or cooking",all purpose flour,0,707,frozen golden corn kernels (siganture select),45.97701149425287,all purpose flour,0.36209935291352535,cornmeal,0.84983253,NO MATCH
-"oil, canola",granola,0,708,coca cola,63.1578947368421,pomegranate w/ seeds,0.0,golden flaxseed,0.83602333,coca cola
-"margarine, regular, 80% fat, composite, stick, with salt",whole green house (large) tomato,0,709,whole whole grains english muffin (oroweat),45.714285714285715,pomegranate w/ seeds,0.0,unsalted butter,0.85639477,NO MATCH
+"oil, canola",granola,0,708,coca cola,63.1578947368421,pixie tangerine,0.0,golden flaxseed,0.83602333,coca cola
+"margarine, regular, 80% fat, composite, stick, with salt",whole green house (large) tomato,0,709,whole whole grains english muffin (oroweat),45.714285714285715,pixie tangerine,0.0,unsalted butter,0.85639477,NO MATCH
 "margarine-like, vegetable oil spread, 60% fat, tub, with salt",vegetable chips,0,710,mixed vegetable burger patty,52.63157894736843,vegetable juice,0.30047693978426043,nutella spread,0.872608,NO MATCH
-"margarine, regular, 80% fat, composite, stick, with salt, with added vitamin d",steamed red chard leaves and stalk (cal-organic),0,711,steamed red chard leaves and stalk (cal-organic),41.23711340206185,pomegranate w/ seeds,0.0,tahini spread (365 whole foods market),0.8466749,NO MATCH
+"margarine, regular, 80% fat, composite, stick, with salt, with added vitamin d",steamed red chard leaves and stalk (cal-organic),0,711,steamed red chard leaves and stalk (cal-organic),41.23711340206185,pixie tangerine,0.0,tahini spread (365 whole foods market),0.8466749,NO MATCH
 "margarine-like, vegetable oil spread, 60% fat, tub, with salt, with added vitamin d",vegetable chips,0,712,mixed vegetable burger patty,44.44444444444444,vegetable juice,0.27713850868420964,tahini spread (365 whole foods market),0.8678739,NO MATCH
 "potatoes, mashed, dehydrated, flakes without milk, dry form",potato bread,0,713,steamed red chard leaves and stalk (cal-organic),43.90243902439024,whole milk,0.28096185639476867,steamed russet potato flesh only,0.8537637,NO MATCH
-"alcoholic beverage, beer, light",righteous rye bread,0,714,chicken breast tender,48.0,pomegranate w/ seeds,0.0,budweiser,0.8501446,NO MATCH
-"beverages, carbonated, ginger ale",rice cereal (gerber),0,715,orange jam (bonne maman),50.98039215686274,pomegranate w/ seeds,0.0,coca cola,0.86086994,NO MATCH
-"water, tap, drinking",freeze dried apple rings,0,716,freeze dried apple rings,48.78048780487805,pomegranate w/ seeds,0.0,gatorade,0.8218769,NO MATCH
+"alcoholic beverage, beer, light",righteous rye bread,0,714,chicken breast tender,48.0,pixie tangerine,0.0,budweiser,0.8501446,NO MATCH
+"beverages, carbonated, ginger ale",rice cereal (gerber),0,715,orange jam (bonne maman),50.98039215686274,pixie tangerine,0.0,coca cola,0.86086994,NO MATCH
+"water, tap, drinking",freeze dried apple rings,0,716,freeze dried apple rings,48.78048780487805,pixie tangerine,0.0,gatorade,0.8218769,NO MATCH
 "leavening agents, baking powder, double-acting, sodium aluminum sulfate",canned low sodium pinto bean,0,717,steamed whole green bell pepper w/o seed,43.01075268817204,protein powder,0.1500969203918811,buttermilk pancake/waffle flour,0.8486702,NO MATCH
 "syrups, corn, light",maple syrup,0,718,dried orange slices,50.0,corn cereal (corn flakes),0.43650267792848585,maple syrup,0.87843025,NO MATCH
 "noodles, egg, enriched, cooked",chicken noodle soup,0,719,chocolate chip cookies,57.77777777777777,chicken noodle soup,0.3449011768578941,chicken noodle soup,0.8559556,NO MATCH
-"chewing gum, sugarless",table sugar,0,720,table sugar,48.275862068965516,pomegranate w/ seeds,0.0,seedless watermelon,0.83153987,NO MATCH
+"chewing gum, sugarless",table sugar,0,720,table sugar,48.275862068965516,pixie tangerine,0.0,seedless watermelon,0.83153987,NO MATCH
 "cream substitute, liquid, with hydrogenated vegetable oil and soy protein",vegetable juice,0,721,steamed red chard leaves and stalk (cal-organic),43.13725490196079,protein powder,0.29181703814664367,cream of mushroom soup (pacific foods),0.8581258,NO MATCH
 "spices, basil, dried",basil,0,722,chicken breast tender,55.55555555555556,basil,0.7208850532849467,basil,0.9214808,NO MATCH
 "spices, coriander leaf, dried",spinach leaves,0,723,rice cereal (gerber),52.38095238095239,dried apricots,0.1901025137986304,cilantro,0.8650235,NO MATCH
@@ -727,13 +727,13 @@ vegetarian fillets,plant based fish fillet,1,645,vegetable juice,56.25,plant bas
 "spices, marjoram, dried",dried orange slices,0,725,chicken breast tender,46.15384615384615,dried apricots,0.22068156355160162,dried apricots,0.8582008,NO MATCH
 "spices, onion powder",onion,0,726,protein powder,68.75,onion,0.6538708221276801,onion,0.89366317,cocoa powder
 "spices, sage, ground",ground pork,0,727,pixie tangerine,56.25,ground pork,0.3585755878593998,ground pork,0.86800784,pixie tangerine
-"vinegar, distilled",tortilla chips,0,728,pine nut,45.45454545454546,pomegranate w/ seeds,0.0,apple juice,0.8413793,NO MATCH
+"vinegar, distilled",tortilla chips,0,728,pine nut,45.45454545454546,pixie tangerine,0.0,apple juice,0.8413793,NO MATCH
 "lemon juice, raw",lime juice,0,729,lime juice,64.0,apple juice,0.34549678320308375,lime juice,0.8797289,lime juice
-"cassava, raw",cashew,0,730,cashew,47.05882352941176,pomegranate w/ seeds,0.0,cashew,0.8416697,NO MATCH
+"cassava, raw",cashew,0,730,cashew,47.05882352941176,pixie tangerine,0.0,cashew,0.8416697,NO MATCH
 potato flour,potato bread,0,731,whole wheat flour,69.56521739130434,soy flour,0.5035086655121846,potato bread,0.917014,soy flour
-"alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof",whole wheat tortilla,0,732,hot cereal whole grain creamy buckwheat,44.18604651162791,pomegranate w/ seeds,0.0,lime juice,0.8235891,NO MATCH
+"alcoholic beverage, distilled, all (gin, rum, vodka, whiskey) 80 proof",whole wheat tortilla,0,732,hot cereal whole grain creamy buckwheat,44.18604651162791,pixie tangerine,0.0,lime juice,0.8235891,NO MATCH
 "cheese, mexican, queso asadero",american cheese,0,733,cheese crackers,52.38095238095239,cream cheese,0.2111969646777513,cream cheese,0.8683164,NO MATCH
-lard,steamed collard greens leaves and stalk,0,734,gatorade,50.0,pomegranate w/ seeds,0.0,pecan,0.83099437,cilantro
+lard,steamed collard greens leaves and stalk,0,734,cilantro,50.0,pixie tangerine,0.0,pecan,0.83099437,cilantro
 "oil, peanut, salad or cooking",peanuts,0,735,vanilla cookies,51.42857142857142,peanuts,0.5934248190354614,peanuts,0.87530124,plant based hot dog
 "oil, sesame, salad or cooking",american cheese,0,736,steamed whole carrots,51.42857142857142,cooked oat bran,0.06961687896567394,tahini spread (365 whole foods market),0.84096646,NO MATCH
 "fat, turkey",ground turkey,0,737,ground turkey,60.86956521739131,ground turkey,0.5548292952948717,ground turkey,0.8737275,ground turkey
@@ -743,52 +743,52 @@ lard,steamed collard greens leaves and stalk,0,734,gatorade,50.0,pomegranate w/ 
 "fat, chicken",chicken breast,0,741,chicken strips,58.33333333333333,chicken breast,0.4839035704876785,chicken breast,0.89529276,chicken breast
 "grape juice, canned or bottled, unsweetened, with added ascorbic acid",unsweetened pitted prunes,0,742,frozen whole sweet green peas (flav r pac),44.705882352941174,red seedless grape,0.2541251173786093,apple juice,0.8555094,NO MATCH
 "soybeans, mature seeds, sprouted, cooked, steamed",steamed green beans,0,743,steamed whole brussel sprouts,50.847457627118644,bean sprouts,0.3780316141176268,steamed whole brussel sprouts,0.89155155,NO MATCH
-"waterchestnuts, chinese, (matai), raw",commercial mac and cheese,0,744,enriched long white rice (mahatma),49.18032786885246,pomegranate w/ seeds,0.0,pine nut,0.8510519,enriched long white rice (mahatma)
-"sweeteners, tabletop, sucralose, splenda packets",frozen whole sweet green peas (flav r pac),0,745,unsweetened almond milk,49.23076923076923,pomegranate w/ seeds,0.0,table sugar,0.8887583,NO MATCH
+"waterchestnuts, chinese, (matai), raw",commercial mac and cheese,0,744,enriched long white rice (mahatma),49.18032786885246,pixie tangerine,0.0,pine nut,0.8510519,enriched long white rice (mahatma)
+"sweeteners, tabletop, sucralose, splenda packets",frozen whole sweet green peas (flav r pac),0,745,unsweetened almond milk,49.23076923076923,pixie tangerine,0.0,table sugar,0.8887583,NO MATCH
 "sweeteners, tabletop, saccharin (sodium saccharin)",canned low sodium pinto bean,0,746,unsweetened almond milk,47.76119402985075,low sodium chicken broth,0.14057423239548827,table sugar,0.90513414,NO MATCH
-"cheese, provolone",cream cheese,0,747,cheese crackers,60.0,cream cheese,0.32012826214334766,american cheese,0.88351965,cheese crackers
-"cheese, swiss",cream cheese,0,748,cheese crackers,53.84615384615385,cream cheese,0.35067179418729677,american cheese,0.8947019,cheese crackers
+"cheese, provolone",cream cheese,0,747,cheese crackers,60.0,cream cheese,0.32012826214334766,american cheese,0.88351953,cheese crackers
+"cheese, swiss",cream cheese,0,748,cheese crackers,53.84615384615385,cream cheese,0.35067179418729677,american cheese,0.8947018,cheese crackers
 "spices, chili powder",cocoa powder,0,749,protein powder,62.5,protein powder,0.30331551285363356,cocoa powder,0.8507433,cocoa powder
 "mustard, prepared, yellow",steamed curely mustard greens,0,750,steamed yellow neck squash,53.06122448979591,steamed curely mustard greens,0.31586572255929407,steamed curely mustard greens,0.86823195,NO MATCH
 "chicken, broilers or fryers, skin only, raw",chicken breast,0,751,chicken breast tender,58.82352941176471,chicken breast,0.2682402437028719,chicken breast,0.8654106,NO MATCH
 "beef, retail cuts, separable fat, cooked",cooked oat bran,0,752,whole bartlett pear w/o seed,48.275862068965516,beef round tip steak,0.12298760680997864,beef round tip steak,0.85160536,NO MATCH
 "beverages, lemonade fruit juice drink light, fortified with vitamin e and c",vegetable juice,0,753,steamed crown broccoli florets and stalk,39.583333333333336,apple juice,0.1855773544927415,apple juice,0.84969604,NO MATCH
-"vinegar, cider",garlic,0,754,vanilla cookies,51.85185185185186,pomegranate w/ seeds,0.0,apple juice,0.87067,NO MATCH
+"vinegar, cider",garlic,0,754,vanilla cookies,51.85185185185186,pixie tangerine,0.0,apple juice,0.87067,NO MATCH
 "oil, coconut",coconut milk,0,755,coconut milk,60.86956521739131,coconut milk,0.6203102911262294,coconut milk,0.8848851,coconut milk
-"shortening, vegetable, household, composite",vegetable chips,0,756,chunky vegetable soup,52.459016393442624,vegetable juice,0.3198176740607603,vegetable juice,0.85045385,chunky vegetable soup
+"shortening, vegetable, household, composite",vegetable chips,0,756,chunky vegetable soup,52.459016393442624,vegetable juice,0.3198176740607603,vegetable juice,0.85045344,chunky vegetable soup
 "chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted",chicken breast,0,757,chicken breast tender,44.99999999999999,ground non-meat (beyond meat),0.3430204411948159,chicken breast,0.87300205,NO MATCH
-"tamarinds, raw",orange jam (bonne maman),0,758,thin crackers,50.0,pomegranate w/ seeds,0.0,tahini spread (365 whole foods market),0.85233843,NO MATCH
+"tamarinds, raw",orange jam (bonne maman),0,758,thin crackers,50.0,pixie tangerine,0.0,tahini spread (365 whole foods market),0.85233843,NO MATCH
 "juice, apple and grape blend, with added ascorbic acid",apple juice,0,759,frozen whole sweet green peas (flav r pac),45.945945945945944,apple juice,0.48067831618998996,apple juice,0.9164383,NO MATCH
 "leavening agents, yeast, baker's, active dry",chives,0,760,plant based bacon strip,47.45762711864406,dried apricots,0.13679115858517604,multigrain bread (trade joes),0.85378295,NO MATCH
 "vanilla extract, imitation, no alcohol",vanilla cookies,0,761,vanilla bean ice cream,50.90909090909091,vanilla cookies,0.2930778246821107,vanilla cookies,0.8482725,NO MATCH
 "beverages, lemonade-flavor drink, powder",cocoa powder,0,762,protein powder,47.05882352941176,protein powder,0.2594107801908744,gatorade,0.83543664,NO MATCH
-"water, tap, municipal",steamed red chard leaves and stalk (cal-organic),0,763,tortilla chips,50.0,pomegranate w/ seeds,0.0,gatorade,0.8005971,NO MATCH
+"water, tap, municipal",steamed red chard leaves and stalk (cal-organic),0,763,tortilla chips,50.0,pixie tangerine,0.0,gatorade,0.8005971,NO MATCH
 "fish, salmon, pink, raw",roasted almonds,0,764,unsweetened almond milk,47.61904761904761,plant based fish fillet,0.15570229176024725,plant based fish fillet,0.8501526,NO MATCH
-molasses,steamed whole brussel sprouts,0,765,mayonnaise,58.82352941176471,pomegranate w/ seeds,0.0,table sugar,0.85036504,mayonnaise
-"ginger root, raw",pixie tangerine,0,766,whole grain oat cereal,58.06451612903225,pomegranate w/ seeds,0.0,honeydew melon,0.8303852,NO MATCH
+molasses,steamed whole brussel sprouts,0,765,mayonnaise,58.82352941176471,pixie tangerine,0.0,table sugar,0.85036504,mayonnaise
+"ginger root, raw",pixie tangerine,0,766,whole grain oat cereal,58.06451612903225,pixie tangerine,0.0,honeydew melon,0.8303852,NO MATCH
 "fish, haddock, raw",plant based fish fillet,0,767,animal shaped crackers,44.44444444444444,plant based fish fillet,0.17405696905632975,plant based fish fillet,0.86042035,NO MATCH
-"noodles, egg, dry, enriched",stir fry rice noodle,0,768,deep red grapefruit,44.99999999999999,chicken noodle soup,0.37128761742129696,whole wheat spaghetti,0.8447459,NO MATCH
-"salad dressing, ranch dressing, regular",raisin bran cereal,0,769,vanilla bean ice cream,49.056603773584904,pomegranate w/ seeds,0.0,mayonnaise,0.8516261,NO MATCH
-"radishes, raw",gatorade,0,770,cashew,58.82352941176471,pomegranate w/ seeds,0.0,"peeled, steamed beetroot",0.8537072,cashew
+"noodles, egg, dry, enriched",stir fry rice noodle,0,768,deep red grapefruit,44.99999999999999,chicken noodle soup,0.37128761742129696,whole wheat spaghetti,0.8447458,NO MATCH
+"salad dressing, ranch dressing, regular",raisin bran cereal,0,769,vanilla bean ice cream,49.056603773584904,pixie tangerine,0.0,mayonnaise,0.8516261,NO MATCH
+"radishes, raw",gatorade,0,770,cashew,58.82352941176471,pixie tangerine,0.0,"peeled, steamed beetroot",0.8537072,cashew
 "fat, beef tallow",whole yellow nectarine,0,771,wheat bran cereal,50.0,beef round tip steak,0.15682832900236668,almond butter (justin's),0.8467676,NO MATCH
 "beverages, yellow green colored citrus soft drink with caffeine",whole yellow nectarine,0,772,steamed cauliflower florets and stalk,43.18181818181818,soft silken tofu,0.22894687016137236,gatorade,0.8383726,NO MATCH
-"beverages, carbonated, root beer","peeled, steamed beetroot",0,773,pomegranate w/ seeds,47.82608695652174,pomegranate w/ seeds,0.0,coca cola,0.8615688,NO MATCH
+"beverages, carbonated, root beer","peeled, steamed beetroot",0,773,pomegranate w/ seeds,47.82608695652174,pixie tangerine,0.0,coca cola,0.8615688,NO MATCH
 "cranberry juice, unsweetened",cranberry,0,774,carrot juice,52.63157894736843,cranberry,0.7048321111804052,cranberry,0.8904746,carrot juice
 "cheese, parmesan, grated",cream cheese,0,775,cheese crackers,57.14285714285714,cream cheese,0.23956598521017902,cream cheese,0.8649791,cheese crackers
 "beverages, carbonated, low calorie, cola or pepper-type, with aspartame, without caffeine",steamed whole red bell pepper w/o seed,0,776,steamed whole green bell pepper w/o seed,42.00000000000001,coca cola,0.2303614153878123,coca cola,0.8416116,NO MATCH
 "beverages, carbonated, low calorie, cola or pepper-type, with aspartame, contains caffeine",steamed whole red bell pepper w/o seed,0,777,steamed red chard leaves and stalk (cal-organic),41.73913043478261,coca cola,0.21407468316365788,coca cola,0.84605217,NO MATCH
 "milk, nonfat, fluid, without added vitamin a and vitamin d (fat free or skim)",whole milk,0,778,pistachio (fiddyment farm),38.961038961038966,whole milk,0.2786454051779681,lowfat chocolate milk,0.8754067,NO MATCH
 "grape juice, canned or bottled, unsweetened, without added ascorbic acid",unsweetened pitted prunes,0,779,frozen whole sweet green peas (flav r pac),44.705882352941174,red seedless grape,0.2541251173786093,apple juice,0.8508514,NO MATCH
-vitamin d as ingredient,steamed green beans,0,780,steamed green beans,52.63157894736843,pomegranate w/ seeds,0.0,lime juice,0.8114324,NO MATCH
-"cheese, blue",cream cheese,0,781,cheese crackers,64.0,cream cheese,0.33799419273499987,american cheese,0.8760957,cheese crackers
+vitamin d as ingredient,steamed green beans,0,780,steamed green beans,52.63157894736843,pixie tangerine,0.0,lime juice,0.8114324,NO MATCH
+"cheese, blue",cream cheese,0,781,cheese crackers,64.0,cream cheese,0.33799419273499987,american cheese,0.876096,cheese crackers
 "alcoholic beverage, wine, dessert, sweet",whole sweet cherry,0,782,chicken breast tender,44.827586206896555,whole sweet cherry,0.257481394014821,table sugar,0.85121745,NO MATCH
 "rye flour, medium",soy flour,0,783,soy flour,56.00000000000001,righteous rye bread,0.3691183060074123,righteous rye bread,0.8987852,soy flour
-"nopales, raw",kale,0,784,whole snow peas,55.55555555555556,pomegranate w/ seeds,0.0,yellow banana flesh only,0.8377987,whole strawberry
+"nopales, raw",kale,0,784,whole snow peas,55.55555555555556,pixie tangerine,0.0,yellow banana flesh only,0.8377989,whole strawberry
 "beverages, chocolate-flavor beverage mix for milk, powder, with added nutrients",lowfat chocolate milk,0,785,steamed red chard leaves and stalk (cal-organic),42.307692307692314,lowfat chocolate milk,0.3457679839223733,cocoa powder,0.868883,NO MATCH
 "milk, buttermilk, fluid, whole",whole milk,0,786,buttermilk pancake/waffle flour,53.84615384615385,whole milk,0.4582653938717059,whole milk,0.91696584,NO MATCH
 "avocados, raw, all commercial varieties",commercial mac and cheese,0,787,commercial mac and cheese,50.98039215686274,commercial mac and cheese,0.36007184797844977,whole yellow peach (prima farms),0.82879263,NO MATCH
-"crustaceans, crab, alaska king, imitation, made from surimi",saltine crackers,0,788,pasta sauce w/ tomato and basil,42.25352112676056,pomegranate w/ seeds,0.0,shrimp,0.8545154,NO MATCH
-"leavening agents, baking soda",navel orange,0,789,plant based hot dog,55.00000000000001,pomegranate w/ seeds,0.0,buttermilk pancake/waffle flour,0.8276615,NO MATCH
+"crustaceans, crab, alaska king, imitation, made from surimi",saltine crackers,0,788,pasta sauce w/ tomato and basil,42.25352112676056,pixie tangerine,0.0,shrimp,0.8545154,NO MATCH
+"leavening agents, baking soda",navel orange,0,789,steamed green beans,55.00000000000001,pixie tangerine,0.0,buttermilk pancake/waffle flour,0.8276615,NO MATCH
 "spices, nutmeg, ground",ground pork,0,790,pine nut,51.85185185185186,ground pork,0.3585755878593998,ground pork,0.87382287,NO MATCH
 "grapefruit juice, white, canned or bottled, unsweetened",deep red grapefruit,0,791,frozen golden corn kernels (siganture select),39.56043956043956,deep red grapefruit,0.23019684556979658,deep red grapefruit,0.86609095,NO MATCH
 "tangerine juice, raw",pixie tangerine,0,792,lime juice,55.172413793103445,pixie tangerine,0.5132746021666686,apple juice,0.86100096,lime juice
@@ -809,27 +809,27 @@ vitamin d as ingredient,steamed green beans,0,780,steamed green beans,52.6315789
 "babyfood, juice, pear",apple juice,0,807,carrot juice,51.61290322580645,whole bartlett pear w/o seed,0.3627620545280883,apple juice,0.8622793,beyond chicken tenders
 "beverages, slimfast, meal replacement,  high protein shake, ready-to-drink, 3-2-1 plan",protein powder,0,808,frozen whole sweet green peas (flav r pac),40.77669902912622,protein powder,0.2324292751926737,protein powder,0.82324255,NO MATCH
 "fish, flatfish (flounder and sole species), raw",plant based fish fillet,0,809,steamed cauliflower florets and stalk,42.85714285714286,plant based fish fillet,0.10660213357548354,plant based fish fillet,0.84666157,NO MATCH
-"sweeteners, tabletop, aspartame, equal, packets",steamed whole sweet potato,0,810,unsweetened almond milk,50.79365079365079,pomegranate w/ seeds,0.0,table sugar,0.8740086,NO MATCH
+"sweeteners, tabletop, aspartame, equal, packets",steamed whole sweet potato,0,810,unsweetened almond milk,50.79365079365079,pixie tangerine,0.0,table sugar,0.8740086,NO MATCH
 "tomatoes, green, raw",whole green house (large) tomato,0,811,steamed green beans,61.111111111111114,green onion,0.29301773622096144,whole green house (large) tomato,0.8981881,steamed green beans
 "beef, variety meats and by-products, tripe, raw",dried coconut strips,0,812,beef round tip steak,50.90909090909091,ground non-meat (beyond meat),0.20131786318820594,ground non-meat (beyond meat),0.8534196,NO MATCH
-"tomatillos, raw",yellow corn tortilla,0,813,potato bread,53.84615384615385,pomegranate w/ seeds,0.0,tortilla chips,0.8438762,NO MATCH
+"tomatillos, raw",yellow corn tortilla,0,813,potato bread,53.84615384615385,pixie tangerine,0.0,tortilla chips,0.8438762,NO MATCH
 "hominy, canned, white",white bread,0,814,brown egg white,58.06451612903225,white bread,0.3214817133937977,canned kidney beans,0.86802006,brown egg white
 "seeds, sesame seeds, whole, dried",steamed whole red bell pepper w/o seed,0,815,roasted seaweed,57.14285714285714,pumpkin seeds,0.4310464855058899,sunflower seeds,0.844437,steamed whole carrots
 "lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4"" fat, choice, cooked",cooked oat bran,0,816,steamed red chard leaves and stalk (cal-organic),41.44144144144144,cooked oat bran,0.041690759366825696,steamed red chard leaves and stalk (cal-organic),0.8190385,NO MATCH
 "soup, beef broth or bouillon canned, ready-to-serve",canned black beans (s&w),0,817,frozen golden corn kernels (siganture select),43.90243902439024,low sodium chicken broth,0.25068592354225666,low sodium chicken broth,0.8626233,NO MATCH
 "whipped topping, frozen, low fat",frozen chopped spinach (green giant),0,818,frozen whole okra,47.36842105263158,frozen whole blueberry,0.20009754243873665,frozen chopped spinach (green giant),0.8623897,NO MATCH
 "yogurt, plain, skim milk",yogurt,0,819,coconut milk,47.05882352941176,yogurt,0.4893881637840829,yogurt,0.9058678,NO MATCH
-"chicken, broilers or fryers, thigh, meat and skin, raw",chicken breast,0,820,chicken breast tender,51.61290322580645,chicken breast,0.21782277414346596,chicken breast tender,0.86474466,NO MATCH
+"chicken, broilers or fryers, thigh, meat and skin, raw",chicken breast,0,820,chicken breast tender,51.61290322580645,chicken breast,0.21782277414346596,chicken breast tender,0.86474454,NO MATCH
 "tomato juice, canned, with salt added",muir's diced tomatoes,0,821,pasta sauce w/ tomato and basil,47.05882352941176,tomato ketchup,0.35030092965430093,canned low sodium pinto bean,0.877735,NO MATCH
 "peppers, serrano, raw",steamed whole red bell pepper w/o seed,0,822,"peeled, steamed beetroot",48.64864864864865,steamed whole green bell pepper w/o seed,0.2412580048688914,jalapeno,0.8723309,NO MATCH
 "cheese, ricotta, part skim milk",cottage cheese,0,823,cheese crackers,52.63157894736843,whole milk,0.39393674827533237,low moisture part skim mozarella cheese,0.8787975,NO MATCH
-"alcoholic beverage, malt beer, hard lemonade",steamed red chard leaves and stalk (cal-organic),0,824,chicken breast tender,47.61904761904761,pomegranate w/ seeds,0.0,lime juice,0.8384092,NO MATCH
+"alcoholic beverage, malt beer, hard lemonade",steamed red chard leaves and stalk (cal-organic),0,824,chicken breast tender,47.61904761904761,pixie tangerine,0.0,lime juice,0.8384092,NO MATCH
 "mollusks, clam, mixed species, canned, drained solids",canned black beans (s&w),0,825,jolly rancher candy,41.379310344827594,canned pumpkin,0.12956792401903394,canned kidney beans,0.84885526,NO MATCH
 "beef, variety meats and by-products, liver, cooked, pan-fried",refried beans,0,826,creamy peanut butter (skippy),45.070422535211264,ground non-meat (beyond meat),0.1781705406554259,ground non-meat (beyond meat),0.86204505,NO MATCH
 "chicken, broilers or fryers, wing, meat and skin, cooked, roasted",chicken breast,0,827,chicken breast tender,48.57142857142858,chicken breast,0.20571023666224061,chicken breast,0.8742045,NO MATCH
 "beverages, tea, herb, other than chamomile, brewed",great northern beans,0,828,vegetable chips,47.82608695652174,brewed coffee,0.30955151916390333,brewed coffee,0.8622932,NO MATCH
 "nuts, hazelnuts or filberts",hazelnut flour,0,829,hazelnut flour,68.57142857142857,hazelnut flour,0.47929672897297565,walnuts,0.8774709,hazelnut flour
-"leavening agents, yeast, baker's, compressed",chicken breast tender,0,830,steamed whole green bell pepper w/o seed,50.70422535211267,pomegranate w/ seeds,0.0,white bread,0.85551655,NO MATCH
+"leavening agents, yeast, baker's, compressed",chicken breast tender,0,830,steamed whole green bell pepper w/o seed,50.70422535211267,pixie tangerine,0.0,white bread,0.85551655,NO MATCH
 "chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted",chicken breast,0,831,chicken breast tender,45.333333333333336,chicken breast,0.20748615120819633,chicken breast,0.8778468,NO MATCH
 "gravy, chicken, canned or bottled, ready-to-serve",chicken breast,0,832,chicken breast tender,51.72413793103448,chicken breast,0.19709501696362366,chicken breast,0.8665869,NO MATCH
 "salad dressing, italian dressing, fat-free",raisin bran cereal,0,833,steamed russet potato flesh only,43.75,pulp free orange juice,0.1528579929283668,pasta sauce w/ tomato and basil,0.8356742,NO MATCH
@@ -843,24 +843,24 @@ vitamin d as ingredient,steamed green beans,0,780,steamed green beans,52.6315789
 "waterchestnuts, chinese, canned, solids and liquids",pine nut,0,841,dried philippines mango (mariani),41.7910447761194,canned pumpkin,0.14505046989158535,canned black beans (s&w),0.8513935,NO MATCH
 "fish, perch, mixed species, raw",pecan,0,842,whole shingo pear w/o seed,48.88888888888889,plant based fish fillet,0.1405281703260445,plant based fish fillet,0.84857535,NO MATCH
 "olives, ripe, canned (small-extra large)",whole green house (large) tomato,0,843,multigrain bread (trade joes),44.827586206896555,whole green house (large) tomato,0.22088037866191582,canned kidney beans,0.8529817,NO MATCH
-"beverages, carbonated, tonic water",onion,0,844,beef round tip steak,52.0,pomegranate w/ seeds,0.0,coca cola,0.85093033,NO MATCH
+"beverages, carbonated, tonic water",onion,0,844,beef round tip steak,52.0,pixie tangerine,0.0,coca cola,0.85093033,NO MATCH
 "chicken, liver, all classes, raw",chicken breast,0,845,chicken breast,59.45945945945945,chicken breast,0.2503382606026339,chicken breast,0.8737971,NO MATCH
 "animal fat, bacon grease",animal shaped crackers,0,846,animal shaped crackers,60.46511627906976,animal shaped crackers,0.34240485413963795,plant based bacon strip,0.8808513,animal shaped crackers
 "cheese, feta",cream cheese,0,847,cheese crackers,64.0,cream cheese,0.3070441064875205,cream cheese,0.8711838,cheese crackers
 "yogurt, frozen, flavors other than chocolate, lowfat",lowfat chocolate milk,0,848,frozen broccoli florets,54.23728813559322,lowfat chocolate milk,0.5888109771443896,lowfat chocolate milk,0.89300525,NO MATCH
-"persimmons, japanese, raw",orange jam (bonne maman),0,849,raisin bran cereal,50.0,pomegranate w/ seeds,0.0,whole shingo pear w/o seed,0.8547197,NO MATCH
+"persimmons, japanese, raw",orange jam (bonne maman),0,849,raisin bran cereal,50.0,pixie tangerine,0.0,whole shingo pear w/o seed,0.8547197,NO MATCH
 "cheese, fresh, queso fresco",cream cheese,0,850,cheese crackers,51.28205128205128,cream cheese,0.2264466263728408,cream cheese,0.8648392,NO MATCH
 "fish, salmon, chinook, smoked",roasted almonds,0,851,tahini spread (365 whole foods market),43.99999999999999,plant based fish fillet,0.12509855457509883,plant based fish fillet,0.8378709,NO MATCH
 "cabbage, savoy, raw",purple cabbage,0,852,cabernet sauvignon wine,55.00000000000001,purple cabbage,0.390173958656676,purple cabbage,0.89456165,cabernet sauvignon wine
-"soup, beef broth or bouillon, powder, dry",protein powder,0,853,protein powder,53.06122448979591,low sodium chicken broth,0.277471428151444,minestrone soup,0.8642226,NO MATCH
-"lemon peel, raw","peeled, steamed beetroot",0,854,red seedless grape,50.0,"peeled, steamed beetroot",0.4087923863649416,"peeled, steamed beetroot",0.8530189,NO MATCH
+"soup, beef broth or bouillon, powder, dry",protein powder,0,853,protein powder,53.06122448979591,low sodium chicken broth,0.277471428151444,minestrone soup,0.86422265,NO MATCH
+"lemon peel, raw","peeled, steamed beetroot",0,854,corn cereal (corn flakes),50.0,"peeled, steamed beetroot",0.4087923863649416,"peeled, steamed beetroot",0.8530189,NO MATCH
 "cheese, ricotta, whole milk",cottage cheese,0,855,cheese crackers,60.60606060606061,whole milk,0.4702286212316112,whole milk,0.8841543,whole milk
 "beverages, orange breakfast drink, ready-to-drink, with added nutrients",dried orange slices,0,856,wheat farina cereal/cream of wheat,41.379310344827594,dried orange slices,0.1966271116443312,pulp free orange juice,0.8383745,NO MATCH
 "oil, industrial, coconut, confection fat, typical basis for ice cream coatings",dried coconut strips,0,857,wheat farina cereal/cream of wheat,40.0,vanilla bean ice cream,0.31705364767552496,coconut milk,0.8349406,NO MATCH
 "beverages, carbonated, low calorie, other than cola or pepper,  without caffeine",steamed whole red bell pepper w/o seed,0,858,steamed red chard leaves and stalk (cal-organic),45.652173913043484,coca cola,0.2716915792110228,coca cola,0.83662623,NO MATCH
 "beverages, energy drink, red bull",red whole grain bulgur,0,859,red whole grain bulgur,47.82608695652174,whole red plum,0.22395240797589563,gatorade,0.85402393,NO MATCH
 "spices, pepper, red or cayenne",steamed whole red bell pepper w/o seed,0,860,crisp rice receal,48.78048780487805,steamed whole red bell pepper w/o seed,0.34752206180565176,steamed whole red bell pepper w/o seed,0.862063,NO MATCH
-"horseradish, prepared",steamed whole red bell pepper w/o seed,0,861,steamed whole snow peas,51.42857142857142,pomegranate w/ seeds,0.0,"peeled, steamed beetroot",0.8418431,whole grain pearl barley
+"horseradish, prepared",steamed whole red bell pepper w/o seed,0,861,steamed whole snow peas,51.42857142857142,pixie tangerine,0.0,"peeled, steamed beetroot",0.8418431,whole grain pearl barley
 "frozen yogurts, chocolate, nonfat milk, sweetened without sugar",lowfat chocolate milk,0,862,frozen golden corn kernels (siganture select),50.54945054945055,lowfat chocolate milk,0.39458409063114946,lowfat chocolate milk,0.88852704,NO MATCH
 "prune juice, canned",unsweetened pitted prunes,0,863,apple juice,61.53846153846154,unsweetened pitted prunes,0.47423111605449775,unsweetened pitted prunes,0.8798481,apple juice
 "beverages, aloe vera juice drink, fortified with vitamin c",vegetable juice,0,864,steamed red chard leaves and stalk (cal-organic),42.69662921348315,apple juice,0.177589289607481,apple juice,0.84572816,NO MATCH
@@ -871,46 +871,46 @@ vitamin d as ingredient,steamed green beans,0,780,steamed green beans,52.6315789
 "beverages, pepsico quaker, gatorade g2, low calorie",gatorade,0,869,steamed red chard leaves and stalk (cal-organic),45.97701149425287,gatorade,0.46710416402838817,gatorade,0.8843918,NO MATCH
 "beverages, cocoa mix, powder",cocoa powder,0,870,cocoa powder,64.86486486486487,cocoa powder,0.7933378477201923,cocoa powder,0.9390754,cocoa powder
 "alcoholic beverage, liqueur, coffee with cream, 34 proof",brewed coffee,0,871,vanilla bean ice cream,50.74626865671642,brewed coffee,0.27871465851810856,brewed coffee,0.8595522,NO MATCH
-"fluid replacement, electrolyte solution (include pedialyte)",frozen golden corn kernels (siganture select),0,872,frozen golden corn kernels (siganture select),40.816326530612244,pomegranate w/ seeds,0.0,gatorade,0.81152934,NO MATCH
+"fluid replacement, electrolyte solution (include pedialyte)",frozen golden corn kernels (siganture select),0,872,frozen golden corn kernels (siganture select),40.816326530612244,pixie tangerine,0.0,gatorade,0.81152934,NO MATCH
 "cheese, mexican blend",american cheese,0,873,cheese crackers,58.82352941176471,wild blend rice,0.39692652647222976,bean and cheese burrito,0.88011044,NO MATCH
 "lamb, loin, separable lean only, trimmed to 1/4"" fat, choice, cooked, broiled",cooked oat bran,0,874,low sodium chicken broth,42.666666666666664,cooked oat bran,0.055200683676659194,"peeled, steamed beetroot",0.82393783,NO MATCH
 "lamb, loin, separable lean and fat, trimmed to 1/4"" fat, choice, cooked, broiled",cooked oat bran,0,875,frozen whole sweet green peas (flav r pac),40.90909090909091,cooked oat bran,0.050680230280241816,cooked oat bran,0.8263123,NO MATCH
 "spices, cumin seed",pumpkin seeds,0,876,pumpkin seeds,71.42857142857143,pumpkin seeds,0.2476438776623379,steamed whole red bell pepper w/o seed,0.8519302,pumpkin seeds
 "spices, oregano, dried",dried orange slices,0,877,crisp rice receal,52.94117647058824,dried apricots,0.22068156355160162,dried corn grits/polenta,0.87107503,NO MATCH
-"oil, industrial, canola, high oleic",granola,0,878,low moisture part skim mozarella cheese,42.42424242424242,pomegranate w/ seeds,0.0,mayonnaise,0.8184084,NO MATCH
+"oil, industrial, canola, high oleic",granola,0,878,low moisture part skim mozarella cheese,42.42424242424242,pixie tangerine,0.0,mayonnaise,0.8184084,NO MATCH
 "oil, industrial, soy, low linolenic",soy milk,0,879,stir fry rice noodle,42.307692307692314,soy milk,0.3295551582112077,soy flour,0.8521153,NO MATCH
 "oil, industrial, soy, ultra low linolenic",whole grain brown lentils,0,880,stir fry rice noodle,41.379310344827594,soy milk,0.2821037944514878,soy flour,0.85359484,NO MATCH
 "oil, industrial, soy, fully hydrogenated",soy milk,0,881,low moisture part skim mozarella cheese,42.85714285714286,soy milk,0.3146006069338328,soy flour,0.8579772,NO MATCH
 "cream, whipped, cream topping, pressurized",frozen chopped spinach (green giant),0,882,cream cheese,46.808510638297875,cream cheese,0.46604835467457223,cream cheese,0.8697249,NO MATCH
-"snacks, beef jerky, chopped and formed",frozen chopped spinach (green giant),0,883,snack bar (blueberry),47.82608695652174,frozen chopped spinach (green giant),0.1749107523781615,snack bar (blueberry),0.8464189,NO MATCH
+"snacks, beef jerky, chopped and formed",frozen chopped spinach (green giant),0,883,snack bar (blueberry),47.82608695652174,frozen chopped spinach (green giant),0.1749107523781615,snack bar (blueberry),0.846419,NO MATCH
 "milk, buttermilk, fluid, cultured, reduced fat",buttermilk pancake/waffle flour,0,884,peanut butter (laura scudder's),47.887323943661976,whole milk,0.30756671841938543,lowfat chocolate milk,0.8692169,NO MATCH
 "strawberry-flavor beverage mix, powder",whole strawberry,0,885,stir fry rice noodle,45.614035087719294,whole strawberry,0.561231546199339,whole strawberry,0.87223667,NO MATCH
-"beverages, unilever, slimfast, meal replacement, regular, ready-to-drink,  3-2-1 plan",vanilla bean ice cream,0,886,frozen whole sweet green peas (flav r pac),41.584158415841586,pomegranate w/ seeds,0.0,snack bar (blueberry),0.816657,NO MATCH
+"beverages, unilever, slimfast, meal replacement, regular, ready-to-drink,  3-2-1 plan",vanilla bean ice cream,0,886,frozen whole sweet green peas (flav r pac),41.584158415841586,pixie tangerine,0.0,snack bar (blueberry),0.8166569,NO MATCH
 "fish, ocean perch, atlantic, raw",plant based fish fillet,0,887,enriched long white rice (mahatma),47.45762711864406,plant based fish fillet,0.12527065028852039,albacore white tuna,0.8478461,NO MATCH
 "fish, whiting, mixed species, raw",white bread,0,888,enriched long white rice (mahatma),50.90909090909091,white bread,0.30549954071099894,albacore white tuna,0.8574318,NO MATCH
-"watercress, raw",seedless watermelon,0,889,wheat bran cereal,51.61290322580645,pomegranate w/ seeds,0.0,seedless watermelon,0.8561641,NO MATCH
+"watercress, raw",seedless watermelon,0,889,wheat bran cereal,51.61290322580645,pixie tangerine,0.0,seedless watermelon,0.8561641,NO MATCH
 orange pineapple juice blend,apple juice,0,890,original apple sauce (tree top),60.37735849056604,pulp free orange juice,0.36820597033806246,pulp free orange juice,0.8687522,apple juice
-"veal, loin, separable lean and fat, raw",whole grain oat cereal,0,891,wheat farina cereal/cream of wheat,50.79365079365079,pomegranate w/ seeds,0.0,ground pork,0.83504915,NO MATCH
+"veal, loin, separable lean and fat, raw",whole grain oat cereal,0,891,wheat farina cereal/cream of wheat,50.79365079365079,pixie tangerine,0.0,ground pork,0.83504915,NO MATCH
 "beverages, ovaltine, chocolate malt powder",chocolate,0,892,lowfat chocolate milk,53.333333333333336,chocolate,0.4122132526814539,chocolate,0.8692103,NO MATCH
 "margarine-like, vegetable oil spread, 20% fat, with salt",vegetable chips,0,893,mixed vegetable burger patty,55.55555555555556,vegetable juice,0.3311738223911352,nutella spread,0.8829963,NO MATCH
 "milk, buttermilk, fluid, cultured, lowfat",lowfat chocolate milk,0,894,buttermilk pancake/waffle flour,50.0,lowfat chocolate milk,0.4486413798443508,lowfat chocolate milk,0.88712424,NO MATCH
 "pimento, canned",canned low sodium pinto bean,0,895,pecan,62.5,canned pumpkin,0.20602584139160152,canned pumpkin,0.87267345,pixie tangerine
 "beverages, orange-flavor drink, breakfast type, powder",dried orange slices,0,896,chicken breast tender,42.25352112676056,dried orange slices,0.23378585909290228,rainbow morning o's cereals,0.84212595,NO MATCH
 "cheese, gruyere",cream cheese,0,897,cheese crackers,71.42857142857143,cream cheese,0.3070441064875205,cottage cheese,0.86981285,cheese crackers
-"bamboo shoots, raw","peeled, steamed beetroot",0,898,cooked oat bran,55.172413793103445,pomegranate w/ seeds,0.0,steamed baby bok choy leaves and stalk,0.85253763,NO MATCH
+"bamboo shoots, raw","peeled, steamed beetroot",0,898,cooked oat bran,55.172413793103445,pixie tangerine,0.0,steamed baby bok choy leaves and stalk,0.85253763,NO MATCH
 "noodles, flat, crunchy, chinese restaurant",chicken noodle soup,0,899,wheat farina cereal/cream of wheat,46.37681159420289,chicken noodle soup,0.2574509704562052,stir fry rice noodle,0.83123654,NO MATCH
 "beverages, rice milk, unsweetened",unsweetened almond milk,0,900,steamed iceberg lettuce,46.15384615384615,unsweetened almond milk,0.5391823695989781,unsweetened almond milk,0.88851845,NO MATCH
-"turnips, raw",rainbow morning o's cereals,0,901,sour cream,50.0,pomegranate w/ seeds,0.0,romaine lettuce,0.8431903,NO MATCH
-"mollusks, clam, mixed species, raw",mixed vegetable burger patty,0,902,vanilla bean ice cream,44.89795918367348,pomegranate w/ seeds,0.0,shrimp,0.836149,NO MATCH
+"turnips, raw",rainbow morning o's cereals,0,901,sour cream,50.0,pixie tangerine,0.0,romaine lettuce,0.8431903,NO MATCH
+"mollusks, clam, mixed species, raw",mixed vegetable burger patty,0,902,vanilla bean ice cream,44.89795918367348,pixie tangerine,0.0,shrimp,0.836149,NO MATCH
 "fish, salmon, chum, canned, drained solids with bone",roasted almonds,0,903,canned low sodium pinto bean,41.93548387096774,canned pumpkin,0.12161618286888135,canned kidney beans,0.86245984,NO MATCH
 "tapioca, pearl, dry",whole grain pearl barley,0,904,whole grain pearl barley,62.857142857142854,whole grain pearl barley,0.38035177833604267,toasted pearl couscous,0.85832995,whole grain pearl barley
-"turnip greens, cooked, boiled, drained, without salt",green onion,0,905,frozen whole green beans,48.0,green onion,0.2647107437097725,steamed collard greens leaves and stalk,0.860888,NO MATCH
+"turnip greens, cooked, boiled, drained, without salt",green onion,0,905,frozen golden corn kernels (siganture select),48.0,green onion,0.2647107437097725,steamed collard greens leaves and stalk,0.860888,NO MATCH
 "margarine-like, vegetable oil spread, fat free, liquid, with salt",vegetable juice,0,906,mixed vegetable burger patty,47.61904761904761,vegetable juice,0.29188686006450915,nutella spread,0.8770102,NO MATCH
 "pigeonpeas, immature seeds, cooked, boiled, drained, without salt",steamed whole red bell pepper w/o seed,0,907,pasta sauce w/ tomato and basil,45.070422535211264,pumpkin seeds,0.19550446168205135,steamed whole red bell pepper w/o seed,0.8489084,NO MATCH
 "crustaceans, crab, blue, cooked, moist heat",wheat crackers (nabisco),0,908,hot cereal whole grain creamy buckwheat,51.42857142857142,cooked oat bran,0.048352642990861186,shrimp,0.8592149,NO MATCH
-"mollusks, squid, mixed species, raw",steamed yellow neck squash,0,909,multi grain cereal,43.47826086956522,pomegranate w/ seeds,0.0,steamed whole white mushrooms,0.8337292,NO MATCH
+"mollusks, squid, mixed species, raw",steamed yellow neck squash,0,909,muir's diced tomatoes,43.47826086956522,pixie tangerine,0.0,steamed whole white mushrooms,0.8337292,NO MATCH
 "cream, half and half, fat free",half and half,0,910,half and half,54.54545454545454,half and half,0.8695838776661801,half and half,0.8617149,half and half
-"egg substitute, liquid or frozen, fat free",frozen whole green beans,0,911,low moisture part skim mozarella cheese,42.25352112676056,whole brown egg,0.3223698059116457,whole brown egg,0.8456682,NO MATCH
+"egg substitute, liquid or frozen, fat free",frozen whole green beans,0,911,low moisture part skim mozarella cheese,42.25352112676056,whole brown egg,0.3223698059116457,whole brown egg,0.84566814,NO MATCH
 "milk, buttermilk, dried",soy milk,0,912,almond butter (justin's),48.78048780487805,whole milk,0.5001387362311827,whole milk,0.87742096,NO MATCH
 "spices, parsley, dried",parsley,0,913,parsley,58.33333333333333,parsley,0.7320522080539,parsley,0.9124339,NO MATCH
 "oil, pam cooking spray, original",original apple sauce (tree top),0,914,rainbow morning o's cereals,46.42857142857143,original apple sauce (tree top),0.2044725501404402,original apple sauce (tree top),0.8414502,NO MATCH
@@ -919,7 +919,7 @@ orange pineapple juice blend,apple juice,0,890,original apple sauce (tree top),6
 "parmesan cheese topping, fat free",cream cheese,0,917,american cheese,51.06382978723405,cream cheese,0.218190488609253,cream cheese,0.8599405,american cheese
 "chicken, broilers or fryers, thigh, meat and skin, cooked, roasted",chicken breast,0,918,chicken breast tender,47.887323943661976,chicken breast,0.20823875980356304,chicken breast,0.86146975,NO MATCH
 "schiff,tiger's milk bar",whole milk,0,919,soft silken tofu,46.15384615384615,whole milk,0.3309038037523103,chocolate,0.8092087,NO MATCH
-"guavas, common, raw",commercial mac and cheese,0,920,plant based bacon strip,46.15384615384615,pomegranate w/ seeds,0.0,dried philippines mango (mariani),0.84860224,NO MATCH
+"guavas, common, raw",commercial mac and cheese,0,920,plant based bacon strip,46.15384615384615,pixie tangerine,0.0,dried philippines mango (mariani),0.84860224,NO MATCH
 "lamb, ground, raw",ground pork,0,921,ground pork,61.53846153846154,ground pork,0.4678794700443773,ground pork,0.87191594,ground pork
 "braunschweiger (a liver sausage), pork",beyond sausage,0,922,original apple sauce (tree top),44.827586206896555,beyond sausage,0.48368979669395784,beyond sausage,0.8722414,NO MATCH
 "turnip greens, canned, no salt added",steamed green beans,0,923,green split peas,53.65853658536586,steamed collard greens leaves and stalk,0.2785500674227025,canned low sodium pinto bean,0.86372334,NO MATCH
@@ -928,72 +928,72 @@ orange pineapple juice blend,apple juice,0,890,original apple sauce (tree top),6
 "margarine-like spread with yogurt, approximately 40% fat, tub, with salt",yogurt,0,926,tahini spread (365 whole foods market),44.99999999999999,yogurt,0.3568691368383145,nutella spread,0.8818481,NO MATCH
 "veal, loin, separable lean only, cooked, roasted",roasted seaweed,0,927,tahini spread (365 whole foods market),48.38709677419355,roasted almonds,0.20599966246558304,ground pork,0.8358337,NO MATCH
 "fish, cod, atlantic, dried and salted",plant based fish fillet,0,928,hot cereal whole grain creamy buckwheat,44.067796610169495,dried apricots,0.19850980780045188,plant based fish fillet,0.8431289,NO MATCH
-miso,soy milk,0,929,whole milk,50.0,pomegranate w/ seeds,0.0,soy sauce,0.7994327,NO MATCH
+miso,soy milk,0,929,whole milk,50.0,pixie tangerine,0.0,soy sauce,0.7994327,NO MATCH
 "alcoholic beverage, rice (sake)",brown rice rice cake,0,930,brown rice rice cake,54.16666666666667,brown rice rice cake,0.351615157099221,soy sauce,0.8479658,NO MATCH
-"pepper, banana, raw",banana chips,0,931,yellow banana flesh only,50.0,banana chips,0.4993104503044843,yellow banana flesh only,0.87858987,NO MATCH
+"pepper, banana, raw",banana chips,0,931,yellow banana flesh only,50.0,banana chips,0.4993104503044843,yellow banana flesh only,0.8785899,NO MATCH
 "veal, leg (top round), separable lean only, cooked, pan-fried, not breaded",refried beans,0,932,steamed red chard leaves and stalk (cal-organic),44.9438202247191,white bread,0.3059604352626072,steamed russet potato flesh only,0.8346489,NO MATCH
 "cheese, brie",cream cheese,0,933,cheese crackers,72.0,cream cheese,0.3070441064875205,american cheese,0.87902653,cheese crackers
 "chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised",chicken breast,0,934,chicken breast tender,42.85714285714286,ground non-meat (beyond meat),0.3215901348218957,chicken breast,0.8822493,NO MATCH
 "fish, snapper, mixed species, raw",steamed whole red bell pepper w/o seed,0,935,whole shingo pear w/o seed,46.808510638297875,plant based fish fillet,0.13745090942075316,plant based fish fillet,0.84983265,NO MATCH
-"papaya nectar, canned",tai nung papaya,0,936,whole yellow nectarine,54.54545454545454,tai nung papaya,0.39566708890400154,tai nung papaya,0.8530066,NO MATCH
+"papaya nectar, canned",tai nung papaya,0,936,whole yellow nectarine,54.54545454545454,tai nung papaya,0.39566708890400154,tai nung papaya,0.85300666,NO MATCH
 "carbonated beverage, cream soda",sour cream,0,937,vanilla bean ice cream,54.90196078431373,cream cheese,0.34609812851280475,coca cola,0.86989164,NO MATCH
 "fish, cod, atlantic, canned, solids and liquid",plant based fish fillet,0,938,canned black beans (s&w),42.307692307692314,canned pumpkin,0.14090389085044877,plant based fish fillet,0.8457189,NO MATCH
 "beverages, the coca-cola company, minute maid, lemonade",coca cola,0,939,orange jam (bonne maman),46.37681159420289,coca cola,0.5006905155846748,coca cola,0.8789513,NO MATCH
 "fish, croaker, atlantic, raw",plant based fish fillet,0,940,wheat crackers (nabisco),52.17391304347826,plant based fish fillet,0.14734017471607272,albacore white tuna,0.85271364,NO MATCH
 "fish, shark, mixed species, raw",sharp chedder cheese,0,941,crisp rice receal,47.61904761904761,plant based fish fillet,0.13745090942075316,plant based fish fillet,0.8505339,NO MATCH
 "chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised",chicken breast,0,942,chicken breast tender,44.99999999999999,ground non-meat (beyond meat),0.32235213183250927,chicken breast,0.86900157,NO MATCH
-"spices, poultry seasoning",onion,0,943,split pea soup,48.64864864864865,pomegranate w/ seeds,0.0,chicken breast,0.85656714,NO MATCH
+"spices, poultry seasoning",onion,0,943,split pea soup,48.64864864864865,pixie tangerine,0.0,chicken breast,0.85656714,NO MATCH
 "guava sauce, cooked",soy sauce,0,944,vanilla cookies,53.333333333333336,soy sauce,0.4451465073882334,soy sauce,0.85826313,vanilla cookies
 "lemon juice from concentrate, canned or bottled",carrot juice,0,945,brown rice rice cake,48.14814814814815,apple juice,0.22350286982436818,lime juice,0.86177623,NO MATCH
 "beverages, tea, green, brewed, decaffeinated",brewed coffee,0,946,steamed green beans,51.85185185185186,brewed coffee,0.36313143354637734,brewed coffee,0.86747223,NO MATCH
-"figs, raw",plant based fish fillet,0,947,white bread,44.44444444444444,pomegranate w/ seeds,0.0,dried apricots,0.84163165,NO MATCH
+"figs, raw",plant based fish fillet,0,947,refried beans,44.44444444444444,pixie tangerine,0.0,dried apricots,0.84163165,NO MATCH
 "chicken, broilers or fryers, wing, meat and skin, cooked, stewed",chicken breast,0,948,chicken breast tender,47.76119402985075,chicken breast,0.19560332562686036,chicken breast,0.8749528,NO MATCH
 "turnip greens, frozen, cooked, boiled, drained, without salt",frozen whole green beans,0,949,frozen chopped spinach (green giant),47.22222222222222,steamed collard greens leaves and stalk,0.25201466493711394,frozen chopped spinach (green giant),0.8625518,NO MATCH
 "beverage, instant breakfast powder, chocolate, not reconstituted",chocolate,0,950,plant based bacon strip,41.02564102564102,chocolate,0.3926361270493287,cocoa powder,0.8664417,NO MATCH
 "pork, fresh, backfat, raw",ground pork,0,951,organic frosted flakes cereals,48.0,ground pork,0.25491588646033475,ground pork,0.8864511,NO MATCH
 "beans, pink, mature seeds, raw",steamed green beans,0,952,pomegranate w/ seeds,51.162790697674424,bean sprouts,0.24574054205769177,bean sprouts,0.875263,NO MATCH
 "fish, cod, atlantic, cooked, dry heat",plant based fish fillet,0,953,canned artichoke hearts,52.0,dried apricots,0.17502965073013654,plant based fish fillet,0.8445716,canned artichoke hearts
-"mollusks, scallop, mixed species, raw",mixed vegetable burger patty,0,954,vanilla bean ice cream,42.307692307692314,pomegranate w/ seeds,0.0,shrimp,0.83245,NO MATCH
-"cheese, goat, semisoft type",cream cheese,0,955,cheese crackers,46.15384615384615,cream cheese,0.21418642626464646,american cheese,0.8624543,NO MATCH
+"mollusks, scallop, mixed species, raw",mixed vegetable burger patty,0,954,vanilla bean ice cream,42.307692307692314,pixie tangerine,0.0,shrimp,0.83245,NO MATCH
+"cheese, goat, semisoft type",cream cheese,0,955,cheese crackers,46.15384615384615,cream cheese,0.21418642626464646,american cheese,0.8624542,NO MATCH
 "pear nectar, canned, without added ascorbic acid",whole yellow nectarine,0,956,plantain banana (steamed 10 in),46.42857142857143,whole bartlett pear w/o seed,0.25786594852600275,whole bartlett pear w/o seed,0.85239977,NO MATCH
-"alcoholic beverage, creme de menthe, 72 proof",wheat farina cereal/cream of wheat,0,957,chicken breast tender,42.622950819672134,pomegranate w/ seeds,0.0,orange jam (bonne maman),0.8307347,NO MATCH
-"beverages, carbonated, club soda",canned garbanzo beans,0,958,orange jam (bonne maman),48.0,pomegranate w/ seeds,0.0,coca cola,0.8747001,NO MATCH
+"alcoholic beverage, creme de menthe, 72 proof",wheat farina cereal/cream of wheat,0,957,chicken breast tender,42.622950819672134,pixie tangerine,0.0,orange jam (bonne maman),0.8307347,NO MATCH
+"beverages, carbonated, club soda",canned garbanzo beans,0,958,orange jam (bonne maman),48.0,pixie tangerine,0.0,coca cola,0.8747001,NO MATCH
 "cheese, cottage, nonfat, uncreamed, dry, large or small curd",cottage cheese,0,959,steamed red chard leaves and stalk (cal-organic),45.16129032258065,cottage cheese,0.44414573700838034,cottage cheese,0.8983082,NO MATCH
 "cheese, cream, fat free",cream cheese,0,960,cheese crackers,62.857142857142854,cream cheese,0.7266421949227191,cream cheese,0.908115,cheese crackers
 "fish, trout, rainbow, farmed, raw",rainbow morning o's cereals,0,961,sprouted wheat bread,48.88888888888889,rainbow morning o's cereals,0.32804909049787123,plant based fish fillet,0.84733295,NO MATCH
-"millet, puffed",plant based fish fillet,0,962,romaine lettuce,46.15384615384615,pomegranate w/ seeds,0.0,multi grain cereal,0.852654,NO MATCH
+"millet, puffed",plant based fish fillet,0,962,minestrone soup,46.15384615384615,pixie tangerine,0.0,multi grain cereal,0.852654,NO MATCH
 "crustaceans, lobster, northern, cooked, moist heat",great northern beans,0,963,great northern beans,50.79365079365079,great northern beans,0.2708973862918072,shrimp,0.85607684,NO MATCH
 "reduced sodium: ham, sliced, pre-packaged, deli meat (96%fat free, water added)",dried orange slices,0,964,frozen whole sweet green peas (flav r pac),41.23711340206185,dried orange slices,0.2165779844021147,canned low sodium pinto bean,0.87827355,NO MATCH
 "beverages, carbonated, low calorie, other than cola or pepper, with aspartame, contains caffeine",steamed whole red bell pepper w/o seed,0,965,steamed red chard leaves and stalk (cal-organic),43.63636363636364,coca cola,0.22548801106895672,coca cola,0.8450692,NO MATCH
 "oil, flaxseed, cold pressed",golden flaxseed,0,966,golden flaxseed,57.89473684210527,golden flaxseed,0.3706890576098931,golden flaxseed,0.8768012,golden flaxseed
 "frozen yogurts, chocolate",chocolate,0,967,frozen whole okra,58.82352941176471,yogurt,0.6167522957051572,yogurt,0.90197366,frozen broccoli florets
-"radicchio, raw",muir's diced tomatoes,0,968,whole grain oat cereal,48.275862068965516,pomegranate w/ seeds,0.0,arugula,0.8418669,NO MATCH
-"olives, pickled, canned or bottled, green",pickles,0,969,original apple sauce (tree top),47.27272727272728,pickles,0.48452700250995506,pickles,0.8683273,NO MATCH
+"radicchio, raw",muir's diced tomatoes,0,968,whole grain oat cereal,48.275862068965516,pixie tangerine,0.0,arugula,0.8418669,NO MATCH
+"olives, pickled, canned or bottled, green",pickles,0,969,whole golden del apple w/o seed,47.27272727272728,pickles,0.48452700250995506,pickles,0.8683273,NO MATCH
 "cranberries, raw",cranberry,0,970,cranberry,81.81818181818181,cranberry,0.9138052768055829,cranberry,0.9124695,cranberry
 "pears, dried, sulfured, uncooked",dried apricots,0,971,stir fry rice noodle,50.0,whole bartlett pear w/o seed,0.29371308998705303,whole shingo pear w/o seed,0.8709338,NO MATCH
 "spices, curry powder",cocoa powder,0,972,cocoa powder,60.0,protein powder,0.28383554597590177,protein powder,0.85698354,cocoa powder
 "lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4"" fat, choice, cooked, roasted",steamed whole red bell pepper w/o seed,0,973,steamed red chard leaves and stalk (cal-organic),39.28571428571429,roasted almonds,0.13107106521733675,steamed red chard leaves and stalk (cal-organic),0.83081794,NO MATCH
 "lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4"" fat, choice, cooked, roasted",steamed whole red bell pepper w/o seed,0,974,wheat farina cereal/cream of wheat,40.816326530612244,roasted almonds,0.13982689308976046,steamed red chard leaves and stalk (cal-organic),0.8288659,NO MATCH
 "fish, scup, raw",plant based fish fillet,0,975,whole english cucumber,48.275862068965516,plant based fish fillet,0.17405696905632975,plant based fish fillet,0.8676166,NO MATCH
-"beverages, nestle, boost plus, nutritional drink, ready-to-drink",dried coconut strips,0,976,cabernet sauvignon wine,40.50632911392405,pomegranate w/ seeds,0.0,gatorade,0.8363669,NO MATCH
-"beverages, abbott, ensure, nutritional shake, ready-to-drink",dried coconut strips,0,977,peanut butter (laura scudder's),41.9753086419753,pomegranate w/ seeds,0.0,gatorade,0.8437057,NO MATCH
+"beverages, nestle, boost plus, nutritional drink, ready-to-drink",dried coconut strips,0,976,cabernet sauvignon wine,40.50632911392405,pixie tangerine,0.0,gatorade,0.8363669,NO MATCH
+"beverages, abbott, ensure, nutritional shake, ready-to-drink",dried coconut strips,0,977,peanut butter (laura scudder's),41.9753086419753,pixie tangerine,0.0,gatorade,0.8437057,NO MATCH
 "chicken, broiler, rotisserie, bbq, wing, meat and skin",chicken breast,0,978,chicken breast tender,48.484848484848484,chicken breast,0.18952575443112363,chicken breast,0.8852676,NO MATCH
 "leeks, (bulb and lower leaf-portion), raw",yellow corn tortilla,0,979,whole yellow peach (prima farms),51.85185185185186,low sodium chicken broth,0.14044494160199716,"peeled, steamed beetroot",0.84687763,NO MATCH
 "beans, pink, mature seeds, cooked, boiled, without salt",cooked oat bran,0,980,steamed crown broccoli florets and stalk,47.887323943661976,bean sprouts,0.2229242116948428,refried beans,0.8743124,NO MATCH
 "cheese, muenster, low fat",cream cheese,0,981,cheese crackers,48.64864864864865,low moisture part skim mozarella cheese,0.289289895490376,cream cheese,0.8777396,NO MATCH
 "soybeans, mature cooked, boiled, without salt",cooked oat bran,0,982,steamed crown broccoli florets and stalk,53.125,cooked oat bran,0.07417335294986288,canned low sodium pinto bean,0.85378826,NO MATCH
-"snacks, plantain chips, salted",plantain banana (steamed 10 in),0,983,banana chips,50.0,vegetable chips,0.39252525436475494,banana chips,0.8984399,NO MATCH
-"turnips, frozen, cooked, boiled, drained, without salt",frozen whole green beans,0,984,pulp free orange juice,46.42857142857143,freeze dried mango flesh,0.28277334228408857,steamed whole red bell pepper w/o seed,0.8428836,NO MATCH
+"snacks, plantain chips, salted",plantain banana (steamed 10 in),0,983,plantain banana (steamed 10 in),50.0,vegetable chips,0.39252525436475494,banana chips,0.8984399,NO MATCH
+"turnips, frozen, cooked, boiled, drained, without salt",frozen whole green beans,0,984,freeze dried mango flesh,46.42857142857143,freeze dried mango flesh,0.28277334228408857,steamed whole red bell pepper w/o seed,0.8428836,NO MATCH
 "beef, variety meats and by-products, tongue, cooked, simmered",cooked oat bran,0,985,whole bartlett pear w/o seed,45.45454545454546,ground non-meat (beyond meat),0.18351995491212286,beef round tip steak,0.8460867,NO MATCH
 "soybeans, mature seeds, roasted, salted",roasted seaweed,0,986,steamed whole sweet potato,54.16666666666667,pumpkin seeds,0.2353743682134595,refried beans,0.85922927,NO MATCH
 "game meat, deer, loin, separable lean only, 1"" steak, cooked, broiled",steamed green beans,0,987,steamed red chard leaves and stalk (cal-organic),50.0,ground non-meat (beyond meat),0.17742404634038425,beef round tip steak,0.8486929,NO MATCH
 "salad dressing, thousand island dressing, fat-free",whole green house (large) tomato,0,988,steamed red chard leaves and stalk (cal-organic),45.78313253012048,pulp free orange juice,0.11843957855928622,mayonnaise,0.84279937,NO MATCH
 "game meat, deer, shoulder clod, separable lean only, cooked, braised",cooked oat bran,0,989,steamed red chard leaves and stalk (cal-organic),45.833333333333336,ground non-meat (beyond meat),0.16405858720242772,ground pork,0.8382326,NO MATCH
 "noodles, chinese, chow mein",chicken noodle soup,0,990,chocolate chip cookies,53.333333333333336,chicken noodle soup,0.28818263603558675,chicken noodle soup,0.87013054,NO MATCH
-"cheese, muenster",cream cheese,0,991,cheese crackers,62.06896551724138,cream cheese,0.32012826214334766,american cheese,0.87554735,cheese crackers
+"cheese, muenster",cream cheese,0,991,cheese crackers,62.06896551724138,cream cheese,0.32012826214334766,american cheese,0.8755473,cheese crackers
 "mollusks, clam, mixed species, canned, liquid",pecan,0,992,jolly rancher candy,45.28301886792453,canned pumpkin,0.13369298950227354,canned pumpkin,0.84716743,NO MATCH
 "oil, industrial, soy (partially hydrogenated), multiuse for non-dairy butter flavor",multi grain cereal,0,993,buttermilk pancake/waffle flour,36.53846153846154,soy milk,0.21611647127207728,unsalted butter,0.8568231,NO MATCH
-"mollusks, mussel, blue, raw",steamed whole brussel sprouts,0,994,righteous rye bread,42.85714285714286,pomegranate w/ seeds,0.0,shrimp,0.8379314,NO MATCH
+"mollusks, mussel, blue, raw",steamed whole brussel sprouts,0,994,righteous rye bread,42.85714285714286,pixie tangerine,0.0,shrimp,0.8379314,NO MATCH
 "chicken, gizzard, all classes, cooked, simmered",chicken breast,0,995,chicken breast tender,51.85185185185186,chicken breast,0.20787088078963056,chicken breast,0.8699173,NO MATCH
 "milk, dry, nonfat, regular, without added vitamin a and vitamin d",whole milk,0,996,dried corn grits/polenta,42.42424242424242,whole milk,0.3227762968334776,whole milk,0.8757402,NO MATCH
 "fish, cod, pacific, cooked, dry heat (may contain additives to retain moisture)",cream of mushroom soup (pacific foods),0,997,frozen golden corn kernels (siganture select),38.095238095238095,cream of mushroom soup (pacific foods),0.17195882893555986,plant based fish fillet,0.8540239,NO MATCH
@@ -1003,8 +1003,8 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "game meat, deer, ground, raw",ground pork,0,1001,steamed green beans,46.51162790697675,ground non-meat (beyond meat),0.42417459521720124,ground pork,0.873393,NO MATCH
 "chicken, broilers or fryers, back, meat and skin, cooked, roasted",chicken breast,0,1002,chicken breast tender,52.3076923076923,chicken breast,0.23658124165723038,chicken breast,0.87706625,NO MATCH
 "nopales, cooked, without salt",cooked oat bran,0,1003,toasted pearl couscous,50.0,cooked oat bran,0.08539276572502127,steamed whole green bell pepper w/o seed,0.85145885,cooked oat bran
-"margarine, regular, 80% fat, composite, stick, without salt",whole green house (large) tomato,0,1004,whole whole grains english muffin (oroweat),45.714285714285715,pomegranate w/ seeds,0.0,unsalted butter,0.85800964,NO MATCH
-"margarine, regular, 80% fat, composite, stick, without salt, with added vitamin d",whole green house (large) tomato,0,1005,steamed red chard leaves and stalk (cal-organic),41.23711340206185,pomegranate w/ seeds,0.0,tahini spread (365 whole foods market),0.85045195,NO MATCH
+"margarine, regular, 80% fat, composite, stick, without salt",whole green house (large) tomato,0,1004,whole whole grains english muffin (oroweat),45.714285714285715,pixie tangerine,0.0,unsalted butter,0.85800964,NO MATCH
+"margarine, regular, 80% fat, composite, stick, without salt, with added vitamin d",whole green house (large) tomato,0,1005,steamed red chard leaves and stalk (cal-organic),41.23711340206185,pixie tangerine,0.0,tahini spread (365 whole foods market),0.85045195,NO MATCH
 "peaches, dried, sulfured, uncooked",dried coconut chips,0,1006,macadamia (sunfood superfood),46.15384615384615,whole yellow peach (prima farms),0.2638906567943041,dried apricots,0.8631282,NO MATCH
 "margarine-like, margarine-butter blend, soybean oil and butter",peanut butter crackers,0,1007,multigrain bread (trade joes),41.463414634146346,unsalted butter,0.3249374427821287,almond butter (justin's),0.8526917,NO MATCH
 "mung beans, mature seeds, cooked, boiled, without salt",cooked oat bran,0,1008,steamed crown broccoli florets and stalk,47.887323943661976,bean sprouts,0.21555939641709254,canned low sodium pinto bean,0.8620987,NO MATCH
@@ -1015,11 +1015,11 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "crustaceans, crab, blue, canned",canned black beans (s&w),0,1013,canned garbanzo beans,52.38095238095239,canned pumpkin,0.145665685982246,shrimp,0.8557259,NO MATCH
 "chicken, feet, boiled",chicken breast,0,1014,chicken noodle soup,66.66666666666667,chicken breast,0.28989936381472453,chicken strips,0.8822148,chicken breast
 "frozen yogurts, flavors other than chocolate",chocolate,0,1015,frozen whole sweet green peas (flav r pac),53.968253968253975,yogurt,0.5274165807773139,yogurt,0.87370914,NO MATCH
-"veal, sirloin, separable lean and fat, cooked, roasted",roasted seaweed,0,1016,tahini spread (365 whole foods market),46.37681159420289,roasted almonds,0.1892564666499304,roasted seaweed,0.83458436,NO MATCH
-"shortening industrial, soybean (hydrogenated) and cottonseed",steamed green beans,0,1017,honey nut oat cereal,43.47826086956522,pomegranate w/ seeds,0.0,corn starch,0.83331513,NO MATCH
+"veal, sirloin, separable lean and fat, cooked, roasted",roasted seaweed,0,1016,tahini spread (365 whole foods market),46.37681159420289,roasted almonds,0.1892564666499304,roasted seaweed,0.8345842,NO MATCH
+"shortening industrial, soybean (hydrogenated) and cottonseed",steamed green beans,0,1017,honey nut oat cereal,43.47826086956522,pixie tangerine,0.0,corn starch,0.83331513,NO MATCH
 "oil, industrial, soy (partially hydrogenated)  and cottonseed, principal use as a tortilla shortening",tortilla chips,0,1018,frozen golden corn kernels (siganture select),37.096774193548384,flour tortilla,0.2472929573005803,flour tortilla,0.86637855,NO MATCH
 "sweeteners, tabletop, fructose, dry, powder",steamed whole sweet potato,0,1019,unsweetened pitted prunes,48.275862068965516,protein powder,0.22278531410728572,table sugar,0.90583163,NO MATCH
-"rhubarb, raw",canned garbanzo beans,0,1020,sour cream,47.61904761904761,pomegranate w/ seeds,0.0,arugula,0.85781384,NO MATCH
+"rhubarb, raw",canned garbanzo beans,0,1020,sour cream,47.61904761904761,pixie tangerine,0.0,arugula,0.85781384,NO MATCH
 "bamboo shoots, canned, drained solids",canned black beans (s&w),0,1021,cream of mushroom soup (pacific foods),46.666666666666664,canned pumpkin,0.14326031124367708,canned kidney beans,0.87423176,NO MATCH
 "cheese, mexican, queso chihuahua",american cheese,0,1022,cheese crackers,45.45454545454546,cream cheese,0.2111969646777513,bean and cheese burrito,0.8730267,NO MATCH
 "chayote, fruit, cooked, boiled, drained, without salt",deep red grapefruit,0,1023,wheat farina cereal/cream of wheat,49.23076923076923,cooked oat bran,0.0633958560893979,steamed whole red bell pepper w/o seed,0.84988433,NO MATCH
@@ -1036,8 +1036,8 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "milk, dry, whole, with added vitamin d",whole milk,0,1034,roasted almonds,44.44444444444444,whole milk,0.5270349980764303,whole milk,0.900953,NO MATCH
 "spices, pumpkin pie spice",pumpkin seeds,0,1035,pumpkin seeds,57.14285714285714,canned pumpkin,0.38158457422501074,canned pumpkin,0.8551664,pumpkin seeds
 "fish, salmon, sockeye, canned, drained solids",roasted almonds,0,1036,wheat crackers (nabisco),42.85714285714286,canned pumpkin,0.13738257758473288,canned kidney beans,0.8606902,NO MATCH
-"beverages, abbott, ensure plus, ready-to-drink",purple cabbage,0,1037,peanut butter (laura scudder's),47.05882352941176,pomegranate w/ seeds,0.0,gatorade,0.8424436,NO MATCH
-"egg, whole, dried",whole brown egg,0,1038,brown egg yolk,47.61904761904761,whole brown egg,0.5621458269413134,whole brown egg,0.91367054,whole red plum
+"beverages, abbott, ensure plus, ready-to-drink",purple cabbage,0,1037,peanut butter (laura scudder's),47.05882352941176,pixie tangerine,0.0,gatorade,0.8424436,NO MATCH
+"egg, whole, dried",whole brown egg,0,1038,brown egg yolk,47.61904761904761,whole brown egg,0.5621458269413134,whole brown egg,0.9136707,whole red plum
 "grapefruit juice, white, frozen concentrate, unsweetened, undiluted",deep red grapefruit,0,1039,frozen golden corn kernels (siganture select),40.38461538461539,deep red grapefruit,0.23688299014436973,deep red grapefruit,0.86794376,NO MATCH
 "margarine-like vegetable-oil spread, stick/tub/bottle, 60% fat, with added vitamin d",vegetable juice,0,1040,mixed vegetable burger patty,40.816326530612244,vegetable juice,0.24344623782881267,nutella spread,0.87046695,NO MATCH
 "sour cream, fat free",sour cream,0,1041,sour cream,68.96551724137932,sour cream,0.7882691163310156,sour cream,0.9359411,sour cream
@@ -1049,25 +1049,25 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "spices, celery seed",steamed celery stalk,0,1047,steamed celery stalk,59.45945945945945,steamed celery stalk,0.44812999972312184,steamed celery stalk,0.8998663,steamed celery stalk
 "duck, domesticated, meat and skin, cooked, roasted",roasted seaweed,0,1048,chocolate chip cookies,46.666666666666664,ground non-meat (beyond meat),0.20567672824723274,ground turkey,0.83067006,NO MATCH
 "chicken, broilers or fryers, neck, meat and skin, cooked simmered",chicken breast,0,1049,chicken breast tender,49.27536231884058,steamed yellow neck squash,0.28910138948117536,chicken breast,0.8727839,NO MATCH
-"cheese, gouda",cream cheese,0,1050,cheese crackers,61.53846153846154,cream cheese,0.3070441064875205,american cheese,0.88400435,cheese crackers
+"cheese, gouda",cream cheese,0,1050,cheese crackers,61.53846153846154,cream cheese,0.3070441064875205,american cheese,0.8840045,cheese crackers
 "crustaceans, crayfish, mixed species, wild, raw",wild blend rice,0,1051,buttermilk pancake/waffle flour,42.25352112676056,wild blend rice,0.27601013905485045,shrimp,0.8767541,NO MATCH
 "lamb, foreshank, separable lean and fat, trimmed to 1/4"" fat, choice, cooked, braised",cooked oat bran,0,1052,steamed red chard leaves and stalk (cal-organic),43.13725490196079,cooked oat bran,0.04708974009535833,split pea soup,0.8240832,NO MATCH
 "milk, dry, nonfat, instant, with added vitamin a and vitamin d",soy milk,0,1053,plantain banana (steamed 10 in),44.11764705882353,whole milk,0.3161808369284275,lowfat chocolate milk,0.8723051,NO MATCH
 "crustaceans, lobster, northern, raw",great northern beans,0,1054,great northern beans,58.82352941176471,great northern beans,0.3408458254509531,shrimp,0.86654955,great northern beans
 "lamb, leg, whole (shank and sirloin), separable lean and fat, trimmed to 1/4"" fat, choice, cooked, roasted",steamed whole red bell pepper w/o seed,0,1055,wheat farina cereal/cream of wheat,39.603960396039604,roasted almonds,0.1267642900685188,steamed red chard leaves and stalk (cal-organic),0.8331114,NO MATCH
 "lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4"" fat, choice, cooked, roasted",steamed whole red bell pepper w/o seed,0,1056,wheat farina cereal/cream of wheat,41.23711340206185,roasted almonds,0.1346330031776211,steamed red chard leaves and stalk (cal-organic),0.8300339,NO MATCH
-"cheese, romano",cream cheese,0,1057,cheese crackers,66.66666666666667,cream cheese,0.3070441064875205,american cheese,0.8583449,cheese crackers
+"cheese, romano",cream cheese,0,1057,cheese crackers,66.66666666666667,cream cheese,0.3070441064875205,american cheese,0.85834485,cheese crackers
 "oil, industrial, soy ( partially hydrogenated), all purpose",all purpose flour,0,1058,low moisture part skim mozarella cheese,46.34146341463414,all purpose flour,0.3519812734465632,soy flour,0.86232895,NO MATCH
 "leavening agents, cream of tartar",wheat farina cereal/cream of wheat,0,1059,vanilla bean ice cream,51.06382978723405,cream cheese,0.28485197948137575,cream of mushroom soup (pacific foods),0.83531034,NO MATCH
 "taro, cooked, without salt",cooked oat bran,0,1060,rolled oats,54.54545454545454,cooked oat bran,0.08799743735059878,canned low sodium pinto bean,0.84198385,cooked oat bran
 "yam, cooked, boiled, drained, or baked, without salt",cooked oat bran,0,1061,steamed collard greens leaves and stalk,50.79365079365079,cooked oat bran,0.061167083805365764,steamed whole sweet potato,0.83736986,NO MATCH
-"rutabagas, raw",table sugar,0,1062,table sugar,50.0,pomegranate w/ seeds,0.0,"peeled, steamed beetroot",0.8535122,NO MATCH
-"celeriac, raw",steamed celery stalk,0,1063,cheese crackers,53.84615384615385,pomegranate w/ seeds,0.0,steamed celery stalk,0.8831717,NO MATCH
+"rutabagas, raw",table sugar,0,1062,table sugar,50.0,pixie tangerine,0.0,"peeled, steamed beetroot",0.8535122,NO MATCH
+"celeriac, raw",steamed celery stalk,0,1063,cheese crackers,53.84615384615385,pixie tangerine,0.0,steamed celery stalk,0.8831717,NO MATCH
 "fish, pompano, florida, raw",plant based fish fillet,0,1064,crisp rice receal,43.90243902439024,plant based fish fillet,0.13453030103021718,plant based fish fillet,0.85277396,NO MATCH
 "candies, confectioner's coating, yogurt",yogurt,0,1065,dried coconut strips,46.15384615384615,yogurt,0.39292094163702573,yogurt,0.8737519,NO MATCH
 "margarine-like, vegetable oil spread, 60% fat, stick/tub/bottle, with salt",vegetable juice,0,1066,mixed vegetable burger patty,44.9438202247191,vegetable juice,0.2538723952652474,nutella spread,0.86983013,NO MATCH
 "chicken, broilers or fryers, separable fat, raw",chicken breast,0,1067,chicken breast tender,50.0,chicken breast,0.26309900477936476,chicken breast tender,0.8639152,NO MATCH
-"babyfood, teething biscuits",wheat crackers (nabisco),0,1068,bean and cheese burrito,52.38095238095239,pomegranate w/ seeds,0.0,frozen whole baby asparagus,0.8357476,NO MATCH
+"babyfood, teething biscuits",wheat crackers (nabisco),0,1068,bean and cheese burrito,52.38095238095239,pixie tangerine,0.0,frozen whole baby asparagus,0.8357476,NO MATCH
 "fish, sardine, atlantic, canned in oil, drained solids with bone",canned low sodium pinto bean,0,1069,wheat farina cereal/cream of wheat,41.55844155844156,canned pumpkin,0.1174442459675996,plant based fish fillet,0.8544869,NO MATCH
 "nuts, coconut cream, canned, sweetened",coconut milk,0,1070,corn cereal (corn flakes),50.98039215686274,coconut milk,0.40907172513440127,coconut milk,0.8832055,NO MATCH
 "seeds, sesame seed kernels, dried (decorticated)",frozen golden corn kernels (siganture select),0,1071,steamed iceberg lettuce,47.61904761904761,pumpkin seeds,0.16747051391514003,frozen golden corn kernels (siganture select),0.8536385,NO MATCH
@@ -1076,13 +1076,13 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "peach nectar, canned, with sucralose, without added ascorbic acid",whole yellow nectarine,0,1074,steamed red chard leaves and stalk (cal-organic),47.05882352941176,whole yellow peach (prima farms),0.20497378779498346,whole yellow nectarine,0.85332596,NO MATCH
 "turnips, cooked, boiled, drained, without salt",cooked oat bran,0,1075,cooked oat bran,50.0,cooked oat bran,0.07692401290517797,steamed whole red bell pepper w/o seed,0.8502332,NO MATCH
 "chicken, broilers or fryers, dark meat, meat only, cooked, roasted",chicken breast,0,1076,chicken breast tender,48.57142857142858,ground non-meat (beyond meat),0.37694136848747295,chicken breast,0.8726751,NO MATCH
-"nuts, chestnuts, european, roasted",peanuts,0,1077,whole bartlett pear w/o seed,50.98039215686274,pine nut,0.25582385525024703,roasted almonds,0.88924336,NO MATCH
+"nuts, chestnuts, european, roasted",peanuts,0,1077,whole bartlett pear w/o seed,50.98039215686274,pine nut,0.25582385525024703,roasted almonds,0.88924325,NO MATCH
 "sauce, horseradish",soy sauce,0,1078,sprouted wheat bread,45.714285714285715,soy sauce,0.46244271241291174,pasta sauce w/ tomato and basil,0.87180763,NO MATCH
 "fish, herring, atlantic, raw",plant based fish fillet,0,1079,hot cereal whole grain creamy buckwheat,46.42857142857143,plant based fish fillet,0.14734017471607272,albacore white tuna,0.86432934,NO MATCH
 "cheese, monterey, low fat",cream cheese,0,1080,corn cereal (corn flakes),48.88888888888889,low moisture part skim mozarella cheese,0.289289895490376,american cheese,0.8725303,NO MATCH
 "spices, caraway seed",carrot juice,0,1081,whole shingo pear w/o seed,57.89473684210527,pumpkin seeds,0.2476438776623379,pomegranate w/ seeds,0.85412884,pomegranate w/ seeds
 "game meat, bison, separable lean only, cooked, roasted",steamed green beans,0,1082,steamed whole green bell pepper w/o seed,46.753246753246756,ground non-meat (beyond meat),0.2052837674794993,ground pork,0.84403867,NO MATCH
-"frog legs, raw",frozen whole green beans,0,1083,frozen whole okra,60.86956521739131,pomegranate w/ seeds,0.0,steamed russet potato flesh only,0.8183787,frozen whole okra
+"frog legs, raw",frozen whole green beans,0,1083,frozen whole okra,60.86956521739131,pixie tangerine,0.0,steamed russet potato flesh only,0.8183787,frozen whole okra
 "beverages, coffee substitute, cereal grain beverage, prepared with water",whole grain oat cereal,0,1084,hot cereal whole grain creamy buckwheat,48.421052631578945,whole grain oat cereal,0.38353413908557005,brewed coffee,0.8515432,NO MATCH
 "fish, mackerel, jack, canned, drained solids",canned black beans (s&w),0,1085,wheat crackers (nabisco),47.27272727272728,canned pumpkin,0.13426207524801595,plant based fish fillet,0.86213964,NO MATCH
 "alcoholic beverage, wine, light",whole grain oat cereal,0,1086,albacore white tuna,50.0,cabernet sauvignon wine,0.3012118140859934,cabernet sauvignon wine,0.82830137,NO MATCH
@@ -1096,25 +1096,25 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "balsam-pear (bitter gourd), pods, cooked, boiled, drained, without salt",unsalted butter,0,1094,peanut butter (laura scudder's),46.15384615384615,whole bartlett pear w/o seed,0.19473988451540947,whole shingo pear w/o seed,0.8694541,NO MATCH
 "fish, mullet, striped, raw",plant based fish fillet,0,1095,multi grain cereal,50.0,plant based fish fillet,0.13453030103021718,albacore white tuna,0.85370255,NO MATCH
 "capers, canned",canned black beans (s&w),0,1096,pecan,71.42857142857143,canned pumpkin,0.20602584139160152,pickles,0.8347755,pecan
-"margarine, regular, 80% fat, composite, tub, with salt",whole green house (large) tomato,0,1097,whole whole grains english muffin (oroweat),47.05882352941176,pomegranate w/ seeds,0.0,unsalted butter,0.8668431,NO MATCH
-"margarine, regular, 80% fat, composite, tub, with salt, with added vitamin d",steamed red chard leaves and stalk (cal-organic),0,1098,steamed red chard leaves and stalk (cal-organic),40.0,pomegranate w/ seeds,0.0,unsalted butter,0.84569824,NO MATCH
-"veal, sirloin, separable lean and fat, raw",raisin bran cereal,0,1099,wheat farina cereal/cream of wheat,51.515151515151516,pomegranate w/ seeds,0.0,ground non-meat (beyond meat),0.83694685,NO MATCH
+"margarine, regular, 80% fat, composite, tub, with salt",whole green house (large) tomato,0,1097,whole whole grains english muffin (oroweat),47.05882352941176,pixie tangerine,0.0,unsalted butter,0.8668431,NO MATCH
+"margarine, regular, 80% fat, composite, tub, with salt, with added vitamin d",steamed red chard leaves and stalk (cal-organic),0,1098,steamed red chard leaves and stalk (cal-organic),40.0,pixie tangerine,0.0,unsalted butter,0.84569824,NO MATCH
+"veal, sirloin, separable lean and fat, raw",raisin bran cereal,0,1099,wheat farina cereal/cream of wheat,51.515151515151516,pixie tangerine,0.0,ground non-meat (beyond meat),0.83694685,NO MATCH
 "pork, fresh, variety meats and by-products, stomach, raw",hunt's tomato paste,0,1100,pasta sauce w/ tomato and basil,40.57971014492754,ground pork,0.1952628546396412,ground pork,0.87363887,NO MATCH
 "candies, soft fruit and nut squares",steamed butternut squash,0,1101,steamed butternut squash,50.98039215686274,soft silken tofu,0.2634732954264722,animal shaped crackers,0.8493958,NO MATCH
-"fish, herring, atlantic, pickled",pickles,0,1102,whole grain brown lentils,43.47826086956522,pickles,0.4928374415823709,pickles,0.88143903,NO MATCH
-"pate, chicken liver, canned",chicken breast,0,1103,chicken breast,55.55555555555556,chicken breast,0.22868381385695094,chicken breast,0.86185926,NO MATCH
+"fish, herring, atlantic, pickled",pickles,0,1102,raisin bran cereal,43.47826086956522,pickles,0.4928374415823709,pickles,0.88143903,NO MATCH
+"pate, chicken liver, canned",chicken breast,0,1103,beyond chicken tenders,55.55555555555556,chicken breast,0.22868381385695094,chicken breast,0.86185926,NO MATCH
 "chicken, broiler, rotisserie, bbq, breast, meat and skin",chicken breast,0,1104,chicken breast tender,50.0,chicken breast,0.5293451370900492,chicken breast,0.9041394,NO MATCH
 "beef, variety meats and by-products, liver, cooked, braised",cooked oat bran,0,1105,whole bartlett pear w/o seed,46.15384615384615,ground non-meat (beyond meat),0.19729156711229168,ground non-meat (beyond meat),0.85751814,NO MATCH
 "blackberry juice, canned",whole blackberry,0,1106,whole blackberry,66.66666666666667,whole blackberry,0.7671938402890474,whole blackberry,0.8953744,carrot juice
 "rutabagas, cooked, boiled, drained, without salt",cooked oat bran,0,1107,steamed baby bok choy leaves and stalk,47.61904761904761,cooked oat bran,0.07223920721099597,steamed whole red bell pepper w/o seed,0.85111094,NO MATCH
-"alcoholic beverage, distilled, rum, 80 proof",whole wheat tortilla,0,1108,chicken breast tender,42.85714285714286,pomegranate w/ seeds,0.0,lime juice,0.83359224,NO MATCH
+"alcoholic beverage, distilled, rum, 80 proof",whole wheat tortilla,0,1108,chicken breast tender,42.85714285714286,pixie tangerine,0.0,lime juice,0.83359224,NO MATCH
 "fish, carp, raw",sharp chedder cheese,0,1109,animal shaped crackers,48.484848484848484,plant based fish fillet,0.17405696905632975,plant based fish fillet,0.85833234,NO MATCH
-"taro, raw",corn starch,0,1110,potato bread,60.0,pomegranate w/ seeds,0.0,dried orange slices,0.83115417,NO MATCH
+"taro, raw",corn starch,0,1110,potato bread,60.0,pixie tangerine,0.0,dried orange slices,0.83115417,NO MATCH
 "oil, soybean, salad or cooking, (partially hydrogenated) and cottonseed",whole bartlett pear w/o seed,0,1111,frozen golden corn kernels (siganture select),43.29896907216495,cooked oat bran,0.04774560171049115,ground non-meat (beyond meat),0.84833616,NO MATCH
 "fish, roe, mixed species, raw",mixed vegetable burger patty,0,1112,crisp rice receal,50.0,plant based fish fillet,0.13745090942075316,plant based fish fillet,0.84597707,NO MATCH
 "gravy, turkey, canned, ready-to-serve",ground turkey,0,1113,multigrain bread (trade joes),48.14814814814815,ground turkey,0.25493179666987176,ground turkey,0.8705774,NO MATCH
 "mollusks, oyster, eastern, canned",steamed butternut squash,0,1114,jolly rancher candy,53.333333333333336,canned pumpkin,0.14151449435306046,canned pumpkin,0.8529744,NO MATCH
-"cheese, parmesan, hard",sharp chedder cheese,0,1115,cheese crackers,58.82352941176471,cream cheese,0.2534251820241735,american cheese,0.8654514,cheese crackers
+"cheese, parmesan, hard",sharp chedder cheese,0,1115,cheese crackers,58.82352941176471,cream cheese,0.2534251820241735,american cheese,0.86545134,cheese crackers
 "oil, soybean, salad or cooking, (partially hydrogenated)",canned artichoke hearts,0,1116,frozen chopped spinach (green giant),42.666666666666664,cooked oat bran,0.05347068242312495,soy sauce,0.8655912,NO MATCH
 "babyfood, fruit, apple and raspberry, strained",whole raspberry,0,1117,original apple sauce (tree top),48.38709677419355,whole raspberry,0.507513158558475,whole raspberry,0.86452615,NO MATCH
 "beverages, coffee, instant, mocha, sweetened",brewed coffee,0,1118,frozen golden corn kernels (siganture select),45.56962025316456,brewed coffee,0.30159220336163595,brewed coffee,0.8669166,NO MATCH
@@ -1122,10 +1122,10 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "lamb, cubed for stew or kabob (leg and shoulder), separable lean only, trimmed to 1/4"" fat, cooked, braised",cooked oat bran,0,1120,steamed red chard leaves and stalk (cal-organic),41.81818181818182,cooked oat bran,0.0397303424612583,"peeled, steamed beetroot",0.83056676,NO MATCH
 "beverage, instant breakfast powder, chocolate, sugar-free, not reconstituted",chocolate,0,1121,steamed crown broccoli florets and stalk,39.21568627450981,chocolate,0.34503988412632103,cocoa powder,0.8665827,NO MATCH
 "alcoholic beverage, wine, table, white",white bread,0,1122,vegetable chips,48.97959183673469,table sugar,0.4110334842421014,table sugar,0.86284256,NO MATCH
-"water, bottled, generic",whole bartlett pear w/o seed,0,1123,wild blend rice,55.55555555555556,pomegranate w/ seeds,0.0,gatorade,0.8376319,wild blend rice
+"water, bottled, generic",whole bartlett pear w/o seed,0,1123,wild blend rice,55.55555555555556,pixie tangerine,0.0,gatorade,0.8376319,wild blend rice
 "escarole, cooked, boiled, drained, no salt added",rolled oats,0,1124,steamed crown broccoli florets and stalk,45.714285714285715,cooked oat bran,0.056063426680334885,steamed whole red bell pepper w/o seed,0.84468806,NO MATCH
 "waxgourd, (chinese preserving melon), cooked, boiled, drained, without salt",seedless watermelon,0,1125,wheat farina cereal/cream of wheat,40.963855421686745,honeydew melon,0.2826894633789472,cantaloupe melon,0.8634879,NO MATCH
-"pork, fresh, separable fat, cooked",cooked oat bran,0,1126,pulp free orange juice,45.28301886792453,ground pork,0.2678049576302358,ground pork,0.88111085,NO MATCH
+"pork, fresh, separable fat, cooked",cooked oat bran,0,1126,corn cereal (corn flakes),45.28301886792453,ground pork,0.2678049576302358,ground pork,0.88111085,NO MATCH
 "water, non-carbonated, bottles, natural fruit flavors, sweetened with low calorie sweetener",unsweetened pitted prunes,0,1127,steamed red chard leaves and stalk (cal-organic),40.67796610169492,ground non-meat (beyond meat),0.19360136635026154,apple juice,0.8523413,NO MATCH
 "beet greens, cooked, boiled, drained, without salt",steamed green beans,0,1128,frozen whole sweet green peas (flav r pac),50.0,green onion,0.26683220121500306,"peeled, steamed beetroot",0.8750824,NO MATCH
 "currants, zante, dried",dried orange slices,0,1129,cranberry,51.85185185185186,dried apricots,0.19172616671517856,dried apricots,0.8585789,NO MATCH
@@ -1137,7 +1137,7 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "broadbeans (fava beans), mature seeds, cooked, boiled, without salt",bean sprouts,0,1135,frozen golden corn kernels (siganture select),47.19101123595506,bean sprouts,0.176756837412497,refried beans,0.8743966,NO MATCH
 "beef, variety meats and by-products, brain, cooked, simmered",cooked oat bran,0,1136,whole bartlett pear w/o seed,46.15384615384615,ground non-meat (beyond meat),0.18351995491212286,ground non-meat (beyond meat),0.8560284,NO MATCH
 "chicken, broiler, rotisserie, bbq, drumstick, meat and skin",chicken breast,0,1137,chicken breast tender,45.070422535211264,chicken breast,0.19091189572463793,chicken breast,0.8799745,NO MATCH
-"beverages, water with added vitamins and minerals, bottles, sweetened, assorted fruit flavors",frozen whole sweet green peas (flav r pac),0,1138,wheat farina cereal/cream of wheat,37.254901960784316,pomegranate w/ seeds,0.0,apple juice,0.8436927,NO MATCH
+"beverages, water with added vitamins and minerals, bottles, sweetened, assorted fruit flavors",frozen whole sweet green peas (flav r pac),0,1138,wheat farina cereal/cream of wheat,37.254901960784316,pixie tangerine,0.0,apple juice,0.8436927,NO MATCH
 "fish, halibut, atlantic and pacific, raw",plant based fish fillet,0,1139,honey nut oat cereal,41.509433962264154,cream of mushroom soup (pacific foods),0.2543722223745471,albacore white tuna,0.83706576,NO MATCH
 "parsnips, cooked, boiled, drained, without salt",cooked oat bran,0,1140,cooked oat bran,48.78048780487805,cooked oat bran,0.07010888944147753,steamed whole red bell pepper w/o seed,0.8537553,NO MATCH
 "beverages, carbonated, reduced sugar, cola, contains caffeine and sweeteners",table sugar,0,1141,steamed crown broccoli florets and stalk,42.85714285714286,coca cola,0.24140958639980833,coca cola,0.8690596,NO MATCH
@@ -1156,16 +1156,16 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "game meat, moose, cooked, roasted",roasted almonds,0,1154,whole bartlett pear w/o seed,48.0,ground non-meat (beyond meat),0.2238595167089603,ground non-meat (beyond meat),0.8332004,NO MATCH
 "radishes, oriental, cooked, boiled, drained, without salt",dried corn grits/polenta,0,1155,raisin bran cereal,51.85185185185186,cooked oat bran,0.056063426680334885,steamed whole red bell pepper w/o seed,0.85243124,NO MATCH
 "fish, caviar, black and red, granular",black tea,0,1156,canned black beans (s&w),50.0,black tea,0.288411626237106,plant based fish fillet,0.82893217,NO MATCH
-"burdock root, raw",sourdough bread,0,1157,cooked oat bran,55.172413793103445,pomegranate w/ seeds,0.0,unsweetened pitted prunes,0.84232616,NO MATCH
+"burdock root, raw",sourdough bread,0,1157,cooked oat bran,55.172413793103445,pixie tangerine,0.0,unsweetened pitted prunes,0.84232616,NO MATCH
 "game meat, raccoon, cooked, roasted",cooked oat bran,0,1158,wheat bran cereal,46.808510638297875,ground non-meat (beyond meat),0.2238595167089603,ground pork,0.831757,NO MATCH
-"mollusks, snail, raw",snack bar (blueberry),0,1159,cooked oat bran,46.666666666666664,pomegranate w/ seeds,0.0,shrimp,0.84315276,NO MATCH
+"mollusks, snail, raw",snack bar (blueberry),0,1159,cooked oat bran,46.666666666666664,pixie tangerine,0.0,shrimp,0.84315276,NO MATCH
 "cheese, camembert",american cheese,0,1160,cheese crackers,73.33333333333334,cream cheese,0.3070441064875205,cream cheese,0.8711271,cheese crackers
 "yogurt, greek, plain, nonfat (includes foods for usda's food distribution program)",yogurt,0,1161,frozen whole sweet green peas (flav r pac),36.53846153846154,cream of mushroom soup (pacific foods),0.27093348530025785,yogurt,0.8737834,NO MATCH
 "milk dessert bar, frozen, made from lowfat milk",lowfat chocolate milk,0,1162,unsweetened almond milk,45.614035087719294,whole milk,0.5806910362019236,lowfat chocolate milk,0.8874363,NO MATCH
-"mollusks, scallop, (bay and sea), cooked, steamed",steamed collard greens leaves and stalk,0,1163,vanilla bean ice cream,46.42857142857143,steamed whole sweet potato,0.26681975938113295,roasted seaweed,0.85385644,NO MATCH
+"mollusks, scallop, (bay and sea), cooked, steamed",steamed collard greens leaves and stalk,0,1163,plant based bacon strip,46.42857142857143,steamed whole sweet potato,0.26681975938113295,roasted seaweed,0.85385656,NO MATCH
 "soymilk, original and vanilla, light, with added calcium, vitamins a and d",vanilla bean ice cream,0,1164,whole original english muffin (thomas),43.90243902439024,vanilla cookies,0.2737886036890226,soy milk,0.91542786,NO MATCH
 "cheese, mexican, blend, reduced fat",american cheese,0,1165,crisp rice receal,50.0,wild blend rice,0.33534302300071855,bean and cheese burrito,0.8750278,NO MATCH
-"beverages, energy drink, vault, citrus flavor",frozen whole sweet green peas (flav r pac),0,1166,frozen whole sweet green peas (flav r pac),43.24324324324324,pomegranate w/ seeds,0.0,gatorade,0.8582187,NO MATCH
+"beverages, energy drink, vault, citrus flavor",frozen whole sweet green peas (flav r pac),0,1166,frozen whole sweet green peas (flav r pac),43.24324324324324,pixie tangerine,0.0,gatorade,0.8582187,NO MATCH
 "cream substitute, powdered, light",protein powder,0,1167,creamy peanut butter (skippy),48.275862068965516,cream cheese,0.3224252847258819,cocoa powder,0.84561014,NO MATCH
 "cream substitute, liquid, light",sour cream,0,1168,steamed butternut squash,49.056603773584904,cream cheese,0.3564481219232169,cream of mushroom soup (pacific foods),0.8461965,NO MATCH
 "beverages, orange juice, light, no pulp",pulp free orange juice,0,1169,pulp free orange juice,55.55555555555556,pulp free orange juice,0.7636222727504886,pulp free orange juice,0.93334633,NO MATCH
@@ -1174,16 +1174,16 @@ ham salad spread,nutella spread,0,999,nutella spread,60.0,nutella spread,0.34157
 "hearts of palm, raw",canned artichoke hearts,0,1172,wheat bran cereal,58.06451612903225,canned artichoke hearts,0.432578059458463,canned artichoke hearts,0.82819027,NO MATCH
 "syrups, corn, high-fructose",maple syrup,0,1173,dried corn grits/polenta,53.333333333333336,corn cereal (corn flakes),0.32416847762231804,maple syrup,0.87354904,NO MATCH
 "cheese, swiss, low sodium",low sodium chicken broth,0,1174,canned low sodium pinto bean,50.0,low sodium chicken broth,0.46121945665753467,low sodium chicken broth,0.8732185,NO MATCH
-"beverages, energy drink, rockstar",steamed curely mustard greens,0,1175,steamed celery stalk,48.0,pomegranate w/ seeds,0.0,coca cola,0.85193664,NO MATCH
+"beverages, energy drink, rockstar",steamed curely mustard greens,0,1175,steamed celery stalk,48.0,pixie tangerine,0.0,coca cola,0.85193664,NO MATCH
 "chicken, broilers or fryers, meat and skin and giblets and neck, roasted",chicken breast,0,1176,chicken breast tender,50.0,steamed yellow neck squash,0.2721868323997652,chicken breast,0.86937916,NO MATCH
 "cream substitute, flavored, powdered",cocoa powder,0,1177,peanut butter (laura scudder's),49.18032786885246,cream cheese,0.3182978770049989,cream of mushroom soup (pacific foods),0.86110944,NO MATCH
 "cheese, provolone, reduced fat",cream cheese,0,1178,crisp rice receal,50.0,cream cheese,0.25539665110326,low moisture part skim mozarella cheese,0.85374427,NO MATCH
 "beverages, energy drink, red bull, sugar free, with added caffeine, niacin, pantothenic acid, vitamins b6 and b12",steamed red chard leaves and stalk (cal-organic),0,1179,steamed red chard leaves and stalk (cal-organic),36.641221374045806,table sugar,0.1692938799663583,gatorade,0.8363102,NO MATCH
-"beverages, energy drink, monster, fortified with vitamins c, b2, b3, b6, b12",steamed green beans,0,1180,steamed cauliflower florets and stalk,36.7816091954023,pomegranate w/ seeds,0.0,gatorade,0.8479843,NO MATCH
+"beverages, energy drink, monster, fortified with vitamins c, b2, b3, b6, b12",steamed green beans,0,1180,steamed cauliflower florets and stalk,36.7816091954023,pixie tangerine,0.0,gatorade,0.8479843,NO MATCH
 "beet greens, raw",steamed green beans,0,1181,steamed green beans,62.5,green onion,0.33207006117370896,"peeled, steamed beetroot",0.8783913,steamed green beans
 "dandelion greens, raw",green onion,0,1182,frozen whole green beans,55.55555555555556,green onion,0.3037319057876409,steamed curely mustard greens,0.8542028,cannellini beans
-natto,hunt's tomato paste,0,1183,gatorade,46.15384615384615,pomegranate w/ seeds,0.0,kiwi,0.79045475,NO MATCH
-"fennel, bulb, raw",red whole grain bulgur,0,1184,frozen whole blueberry,51.61290322580645,pomegranate w/ seeds,0.0,parsley,0.8464541,NO MATCH
+natto,hunt's tomato paste,0,1183,cilantro,46.15384615384615,pixie tangerine,0.0,kiwi,0.79045475,NO MATCH
+"fennel, bulb, raw",red whole grain bulgur,0,1184,frozen whole blueberry,51.61290322580645,pixie tangerine,0.0,parsley,0.8464541,NO MATCH
 "game meat, bear, cooked, simmered",steamed green beans,0,1185,peanut butter crackers,51.06382978723405,ground non-meat (beyond meat),0.20938138245185056,ground non-meat (beyond meat),0.8324755,NO MATCH
 "chicken, broilers or fryers, skin only, cooked, roasted",chicken breast,0,1186,chicken breast tender,53.333333333333336,chicken breast,0.25092169395518377,chicken breast,0.87260735,NO MATCH
 "pomegranate juice, bottled",pomegranate w/ seeds,0,1187,pomegranate w/ seeds,66.66666666666667,pomegranate w/ seeds,0.555126055557269,pomegranate w/ seeds,0.89041835,pomegranate w/ seeds
@@ -1192,12 +1192,12 @@ natto,hunt's tomato paste,0,1183,gatorade,46.15384615384615,pomegranate w/ seeds
 "beverages, coffee, instant, with whitener, reduced calorie",brewed coffee,0,1190,brown rice rice cake,44.776119402985074,brewed coffee,0.2734556542328212,brewed coffee,0.840934,NO MATCH
 "veal, composite of trimmed retail cuts, separable lean only, cooked",steamed collard greens leaves and stalk,0,1191,low moisture part skim mozarella cheese,45.238095238095234,cooked oat bran,0.05381496549191011,ground pork,0.8338431,NO MATCH
 "fish, pike, northern, raw",great northern beans,0,1192,great northern beans,58.53658536585367,great northern beans,0.3526151234268366,plant based fish fillet,0.85041916,great northern beans
-"lotus root, cooked, boiled, drained, without salt",cooked oat bran,0,1193,cooked oat bran,45.45454545454546,cooked oat bran,0.058485057970733785,steamed celery stalk,0.8496087,NO MATCH
+"lotus root, cooked, boiled, drained, without salt",cooked oat bran,0,1193,steamed crown broccoli florets and stalk,45.45454545454546,cooked oat bran,0.058485057970733785,steamed celery stalk,0.8496087,NO MATCH
 "pokeberry shoots, (poke), cooked, boiled, drained, without salt",cooked oat bran,0,1194,steamed baby bok choy leaves and stalk,43.24324324324324,cooked oat bran,0.04920415690148792,steamed celery stalk,0.85068375,NO MATCH
-"cress, garden, raw",cream cheese,0,1195,frozen whole green beans,54.54545454545454,pomegranate w/ seeds,0.0,cranberry,0.832467,NO MATCH
-"lamb, rib, separable lean and fat, trimmed to 1/4"" fat, choice, cooked, broiled",cooked oat bran,0,1196,steamed red chard leaves and stalk (cal-organic),42.10526315789473,cooked oat bran,0.04946699468461122,chicken breast tender,0.82684296,NO MATCH
-"lamb, rib, separable lean only, trimmed to 1/4"" fat, choice, cooked, broiled",cooked oat bran,0,1197,steamed red chard leaves and stalk (cal-organic),43.956043956043956,cooked oat bran,0.053643314801093696,chicken breast tender,0.8282108,NO MATCH
-"beverages, energy drink, amp",steamed iceberg lettuce,0,1198,freeze dried apple rings,45.833333333333336,pomegranate w/ seeds,0.0,coca cola,0.8493425,NO MATCH
+"cress, garden, raw",cream cheese,0,1195,crisp rice receal,54.54545454545454,pixie tangerine,0.0,cranberry,0.832467,NO MATCH
+"lamb, rib, separable lean and fat, trimmed to 1/4"" fat, choice, cooked, broiled",cooked oat bran,0,1196,steamed red chard leaves and stalk (cal-organic),42.10526315789473,cooked oat bran,0.04946699468461122,chicken breast tender,0.8268431,NO MATCH
+"lamb, rib, separable lean only, trimmed to 1/4"" fat, choice, cooked, broiled",cooked oat bran,0,1197,steamed red chard leaves and stalk (cal-organic),43.956043956043956,cooked oat bran,0.053643314801093696,chicken breast tender,0.8282111,NO MATCH
+"beverages, energy drink, amp",steamed iceberg lettuce,0,1198,freeze dried apple rings,45.833333333333336,pixie tangerine,0.0,coca cola,0.8493425,NO MATCH
 "babyfood, fruit, bananas with tapioca, strained",banana chips,0,1199,plantain banana (steamed 10 in),49.18032786885246,banana chips,0.30492289123220273,plantain banana (steamed 10 in),0.85323256,NO MATCH
 "babyfood, fruit, bananas with tapioca, junior",banana chips,0,1200,plantain banana (steamed 10 in),40.67796610169492,banana chips,0.30492289123220273,macadamia (sunfood superfood),0.847031,NO MATCH
 "soymilk, chocolate and other flavors, light, with added calcium, vitamins a and d",lowfat chocolate milk,0,1201,steamed red chard leaves and stalk (cal-organic),43.01075268817204,chocolate,0.3857165594724956,soy milk,0.896994,NO MATCH
@@ -1207,24 +1207,24 @@ natto,hunt's tomato paste,0,1183,gatorade,46.15384615384615,pomegranate w/ seeds
 "milk, fluid, nonfat, calcium fortified (fat free or skim)",lowfat chocolate milk,0,1205,steamed cauliflower florets and stalk,43.0379746835443,whole milk,0.3002679413879894,lowfat chocolate milk,0.8658083,NO MATCH
 "babyfood, water, bottled, gerber, without added fluoride",rice cereal (gerber),0,1206,frozen whole sweet green peas (flav r pac),42.666666666666664,rice cereal (gerber),0.3507362209355677,rice cereal (gerber),0.84365726,NO MATCH
 "millet, cooked",plant based fish fillet,0,1207,vanilla cookies,64.0,cooked oat bran,0.09270007580711301,cooked oat bran,0.84989464,vanilla cookies
-"litchis, raw",tomato ketchup,0,1208,thin crackers,52.17391304347826,pomegranate w/ seeds,0.0,frozen whole sweet green peas (flav r pac),0.8347114,NO MATCH
+"litchis, raw",tomato ketchup,0,1208,thin crackers,52.17391304347826,pixie tangerine,0.0,frozen whole sweet green peas (flav r pac),0.8347114,NO MATCH
 "babyfood, dessert, custard pudding, vanilla, strained",vanilla bean ice cream,0,1209,cabernet sauvignon wine,42.85714285714286,vanilla cookies,0.2426256994486513,yogurt,0.84964234,NO MATCH
 "babyfood, dessert, custard pudding, vanilla, junior",vanilla cookies,0,1210,cabernet sauvignon wine,40.0,vanilla cookies,0.2426256994486513,yogurt,0.8489496,NO MATCH
 "beverages, powerade, zero, mixed berry",mixed vegetable burger patty,0,1211,rice cereal (gerber),46.15384615384615,mixed vegetable burger patty,0.273605594791278,gatorade,0.8489363,NO MATCH
 "candies, carob, unsweetened",unsweetened almond milk,0,1212,canned garbanzo beans,51.28205128205128,jolly rancher candy,0.31126092406244416,chocolate,0.8653663,NO MATCH
 "beverages, tea, hibiscus, brewed",brewed coffee,0,1213,vegetable juice,48.78048780487805,brewed coffee,0.36089053207887484,brewed coffee,0.87171835,NO MATCH
-"kohlrabi, raw",wheat crackers (nabisco),0,1214,cooked oat bran,48.0,pomegranate w/ seeds,0.0,honey,0.80563796,NO MATCH
+"kohlrabi, raw",wheat crackers (nabisco),0,1214,cooked oat bran,48.0,pixie tangerine,0.0,honey,0.80563796,NO MATCH
 "pumpkin flowers, cooked, boiled, drained, without salt",canned pumpkin,0,1215,steamed cauliflower florets and stalk,44.776119402985074,canned pumpkin,0.4422736160731921,canned pumpkin,0.8717085,NO MATCH
 "fish, herring, atlantic, kippered",plant based fish fillet,0,1216,raisin bran cereal,46.808510638297875,plant based fish fillet,0.12604637539141264,albacore white tuna,0.8391894,NO MATCH
 "veal, leg (top round), separable lean and fat, cooked, roasted",beef round tip steak,0,1217,steamed red chard leaves and stalk (cal-organic),45.97701149425287,beef round tip steak,0.20657938769117495,roasted seaweed,0.8368237,NO MATCH
-"lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4"" fat, choice, raw",whole yellow peach (prima farms),0,1218,steamed red chard leaves and stalk (cal-organic),42.71844660194175,pomegranate w/ seeds,0.0,whole english cucumber,0.828079,NO MATCH
+"lamb, shoulder, whole (arm and blade), separable lean and fat, trimmed to 1/4"" fat, choice, raw",whole yellow peach (prima farms),0,1218,steamed red chard leaves and stalk (cal-organic),42.71844660194175,pixie tangerine,0.0,whole english cucumber,0.828079,NO MATCH
 "veal, composite of trimmed retail cuts, separable lean and fat, cooked",cooked oat bran,0,1219,wheat farina cereal/cream of wheat,44.705882352941174,cooked oat bran,0.05229349408494053,ground pork,0.83190453,NO MATCH
-"kumquats, raw",steamed butternut squash,0,1220,cooked oat bran,50.0,pomegranate w/ seeds,0.0,multigrain crackers,0.8324962,NO MATCH
+"kumquats, raw",steamed butternut squash,0,1220,cooked oat bran,50.0,pixie tangerine,0.0,multigrain crackers,0.8324962,NO MATCH
 "potatoes, mashed, dehydrated, prepared from flakes without milk, whole milk and butter added",steamed whole sweet potato,0,1221,steamed red chard leaves and stalk (cal-organic),45.36082474226804,whole milk,0.49973423916284493,steamed whole russet potato,0.86202097,NO MATCH
 "figs, dried, stewed",brewed coffee,0,1222,righteous rye bread,45.16129032258065,dried apricots,0.22546860801585053,dried apricots,0.8640925,NO MATCH
-"beverages, acai berry drink, fortified",cranberry,0,1223,steamed cauliflower florets and stalk,41.7910447761194,pomegranate w/ seeds,0.0,apple juice,0.83321583,NO MATCH
+"beverages, acai berry drink, fortified",cranberry,0,1223,steamed cauliflower florets and stalk,41.7910447761194,pixie tangerine,0.0,apple juice,0.83321583,NO MATCH
 "snacks, peas, roasted, wasabi-flavored",roasted seaweed,0,1224,roasted almonds,47.82608695652174,whole snow peas,0.3117032400842309,green split peas,0.86120474,NO MATCH
-"chayote, fruit, raw",deep red grapefruit,0,1225,whole wheat flour,50.0,pomegranate w/ seeds,0.0,whole shingo pear w/o seed,0.84977174,NO MATCH
+"chayote, fruit, raw",deep red grapefruit,0,1225,whole wheat flour,50.0,pixie tangerine,0.0,whole shingo pear w/o seed,0.84977174,NO MATCH
 "beverages, water, bottled, yumberry, pomegranate with anti-oxidants, zero calories",pomegranate w/ seeds,0,1226,steamed red chard leaves and stalk (cal-organic),41.81818181818182,pomegranate w/ seeds,0.2972273132364441,pomegranate w/ seeds,0.846799,NO MATCH
 "sweetener, syrup, agave",maple syrup,0,1227,unsweetened pitted prunes,58.53658536585367,maple syrup,0.31810211811561256,table sugar,0.8586071,unsweetened pitted prunes
 "pears, dried, sulfured, stewed, without added sugar",table sugar,0,1228,peanut butter (laura scudder's),50.847457627118644,table sugar,0.2713107404006157,whole shingo pear w/o seed,0.8669167,NO MATCH
@@ -1257,15 +1257,15 @@ natto,hunt's tomato paste,0,1183,gatorade,46.15384615384615,pomegranate w/ seeds
 "yogurt, greek, fruit, whole milk",yogurt,0,1255,deep red grapefruit,47.61904761904761,yogurt,0.4949142602381888,yogurt,0.8927152,NO MATCH
 "beverages, tea, green, brewed, regular",steamed green beans,0,1256,steamed green beans,53.06122448979591,brewed coffee,0.38263207420995554,brewed coffee,0.8623264,NO MATCH
 "grapefruit juice, pink or red, with added calcium",deep red grapefruit,0,1257,whole grain oat cereal,45.28301886792453,deep red grapefruit,0.43000898515310454,deep red grapefruit,0.8882526,NO MATCH
-"beverages, amber, hard cider",rice cereal (gerber),0,1258,peanut butter (laura scudder's),51.85185185185186,pomegranate w/ seeds,0.0,apple juice,0.8627816,NO MATCH
+"beverages, amber, hard cider",rice cereal (gerber),0,1258,peanut butter (laura scudder's),51.85185185185186,pixie tangerine,0.0,apple juice,0.8627816,NO MATCH
 "grape juice, canned or bottled, unsweetened, with added ascorbic acid and calcium",unsweetened pitted prunes,0,1259,steamed red chard leaves and stalk (cal-organic),41.584158415841586,red seedless grape,0.23580784471965582,apple juice,0.85578054,NO MATCH
-"alcoholic beverages, beer, higher alcohol",whole sweet cherry,0,1260,chocolate chip cookies,45.614035087719294,pomegranate w/ seeds,0.0,budweiser,0.8328913,NO MATCH
-"egg, quail, whole, fresh, raw",whole brown egg,0,1261,animal shaped crackers,46.15384615384615,whole brown egg,0.36322373312951545,whole brown egg,0.87189585,NO MATCH
+"alcoholic beverages, beer, higher alcohol",whole sweet cherry,0,1260,chocolate chip cookies,45.614035087719294,pixie tangerine,0.0,budweiser,0.8328913,NO MATCH
+"egg, quail, whole, fresh, raw",whole brown egg,0,1261,animal shaped crackers,46.15384615384615,whole brown egg,0.36322373312951545,whole brown egg,0.8718959,NO MATCH
 "yogurt, greek, strawberry, nonfat",whole strawberry,0,1262,whole strawberry,50.0,whole strawberry,0.5393995864892063,yogurt,0.89062667,whole strawberry
 "beverages, tea, green, ready to drink, unsweetened",unsweetened pitted prunes,0,1263,hot cereal whole grain creamy buckwheat,48.64864864864865,black tea,0.3114246138671158,unsweetened almond milk,0.841979,NO MATCH
-"alcoholic beverage, beer, light, higher alcohol",whole wheat spaghetti,0,1264,chocolate chip cookies,41.269841269841265,pomegranate w/ seeds,0.0,budweiser,0.8414145,NO MATCH
+"alcoholic beverage, beer, light, higher alcohol",whole wheat spaghetti,0,1264,chocolate chip cookies,41.269841269841265,pixie tangerine,0.0,budweiser,0.8414145,NO MATCH
 "fish, salmon, sockeye, raw",roasted almonds,0,1265,raisin bran cereal,48.78048780487805,plant based fish fillet,0.14699630528064594,plant based fish fillet,0.8454519,NO MATCH
-wasabi,wheat crackers (nabisco),0,1266,basil,54.54545454545454,pomegranate w/ seeds,0.0,peanuts,0.82273084,basil
+wasabi,wheat crackers (nabisco),0,1266,basil,54.54545454545454,pixie tangerine,0.0,peanuts,0.82273084,basil
 "beans, yellow, mature seeds, cooked, boiled, without salt",yellow mango,0,1267,steamed yellow neck squash,50.0,yellow mango,0.3000497789405189,refried beans,0.8765182,NO MATCH
 "yogurt, greek, vanilla, nonfat",yogurt,0,1268,corn cereal (corn flakes),48.97959183673469,yogurt,0.4611345066651205,yogurt,0.8980598,NO MATCH
 "beverages, coffee, ready to drink, milk based, sweetened",brewed coffee,0,1269,steamed collard greens leaves and stalk,45.56962025316456,whole milk,0.34022222191440765,brewed coffee,0.8641896,NO MATCH
@@ -1280,26 +1280,26 @@ wasabi,wheat crackers (nabisco),0,1266,basil,54.54545454545454,pomegranate w/ se
 "succotash, (corn and limas), frozen, cooked, boiled, drained, without salt",frozen broccoli florets,0,1278,steamed collard greens leaves and stalk,46.34146341463414,corn cereal (corn flakes),0.27776341067583815,dried corn grits/polenta,0.8753562,NO MATCH
 "cheese, mexican, queso cotija",american cheese,0,1279,cheese crackers,48.78048780487805,cream cheese,0.2111969646777513,bean and cheese burrito,0.88489085,NO MATCH
 "margarine-like, vegetable oil-butter spread, reduced calorie, tub, with salt",vegetable juice,0,1280,mixed vegetable burger patty,48.93617021276596,vegetable juice,0.25292698137624725,nutella spread,0.871219,NO MATCH
-"mollusks, octopus, common, raw",commercial mac and cheese,0,1281,yellow corn tortilla,43.47826086956522,pomegranate w/ seeds,0.0,shrimp,0.83517945,NO MATCH
+"mollusks, octopus, common, raw",commercial mac and cheese,0,1281,yellow corn tortilla,43.47826086956522,pixie tangerine,0.0,shrimp,0.83517945,NO MATCH
 "beverages, apple juice drink, light, fortified with vitamin c",apple juice,0,1282,steamed crown broccoli florets and stalk,42.352941176470594,apple juice,0.5421510022482201,apple juice,0.90520406,NO MATCH
 "beverages, kellogg's special k20 protein powder",protein powder,0,1283,protein powder,49.122807017543856,protein powder,0.5621715228942658,protein powder,0.86981434,NO MATCH
-"mollusks, abalone, mixed species, raw",mixed vegetable burger patty,0,1284,vanilla bean ice cream,50.0,pomegranate w/ seeds,0.0,shrimp,0.84153116,NO MATCH
+"mollusks, abalone, mixed species, raw",mixed vegetable burger patty,0,1284,vanilla bean ice cream,50.0,pixie tangerine,0.0,shrimp,0.84153116,NO MATCH
 "beverages, powerade zero ion4, calorie-free, assorted flavors",frozen whole sweet green peas (flav r pac),0,1285,steamed crown broccoli florets and stalk,44.44444444444444,pulp free orange juice,0.1305766149744219,gatorade,0.8316372,NO MATCH
 "peaches, dried, sulfured, stewed, without added sugar",table sugar,0,1286,peanut butter (laura scudder's),50.0,table sugar,0.26649074288814445,whole yellow peach (prima farms),0.8630221,NO MATCH
-"beverages, energy drink, full throttle",cottage cheese,0,1287,steamed iceberg lettuce,45.28301886792453,pomegranate w/ seeds,0.0,gatorade,0.8543675,NO MATCH
+"beverages, energy drink, full throttle",cottage cheese,0,1287,steamed iceberg lettuce,45.28301886792453,pixie tangerine,0.0,gatorade,0.8543675,NO MATCH
 "potatoes, mashed, home-prepared, whole milk added",steamed whole sweet potato,0,1288,potato bread,48.88888888888889,whole milk,0.31919506310960943,steamed whole russet potato,0.88168705,NO MATCH
 "dove, cooked (includes squab)",steamed yellow neck squash,0,1289,dried coconut strips,44.99999999999999,cooked oat bran,0.05783044560068558,ground turkey,0.8296067,NO MATCH
-"beverages,  energy drink, citrus",rice cereal (gerber),0,1290,steamed iceberg lettuce,43.13725490196079,pomegranate w/ seeds,0.0,gatorade,0.86139435,NO MATCH
+"beverages,  energy drink, citrus",rice cereal (gerber),0,1290,steamed iceberg lettuce,43.13725490196079,pixie tangerine,0.0,gatorade,0.86139435,NO MATCH
 "cereals ready-to-eat, barbara's puffins, original",whole original english muffin (thomas),0,1291,creamy peanut butter (skippy),43.47826086956522,original apple sauce (tree top),0.19365239385809288,organic frosted flakes cereals,0.8608634,NO MATCH
 "babyfood, grape juice, no sugar, canned",table sugar,0,1292,brown rice rice cake,48.0,red seedless grape,0.31907802919896133,canned artichoke hearts,0.8472372,NO MATCH
-"child formula, abbott nutrition, pediasure, ready-to-feed",multi grain cereal,0,1293,multigrain bread (trade joes),41.55844155844156,pomegranate w/ seeds,0.0,frozen whole baby asparagus,0.8095758,NO MATCH
+"child formula, abbott nutrition, pediasure, ready-to-feed",multi grain cereal,0,1293,multigrain bread (trade joes),41.55844155844156,pixie tangerine,0.0,frozen whole baby asparagus,0.8095758,NO MATCH
 "passion-fruit, (granadilla), purple, raw",purple cabbage,0,1294,original apple sauce (tree top),46.666666666666664,purple cabbage,0.3745689249423217,purple cabbage,0.8672271,NO MATCH
 "noodles, egg, spinach, enriched, cooked",chicken noodle soup,0,1295,chocolate chip cookies,52.83018867924528,spinach leaves,0.34015944490249905,frozen chopped spinach (green giant),0.8564649,NO MATCH
 "sweet potato leaves, cooked, steamed, without salt",steamed whole sweet potato,0,1296,steamed baby bok choy leaves and stalk,49.27536231884058,steamed whole sweet potato,0.45966449977032997,steamed whole sweet potato,0.91871744,NO MATCH
 "chicken, broilers or fryers, back, meat and skin, cooked, stewed",chicken breast,0,1297,chicken breast tender,51.61290322580645,chicken breast,0.22155761281791841,chicken breast,0.879843,NO MATCH
 "beverages, ocean spray, cran-energy, cranberry energy juice drink",cranberry,0,1298,frozen golden corn kernels (siganture select),42.71844660194175,cranberry,0.32850365373230583,cranberry,0.8746232,NO MATCH
 "cheese, fontina",cream cheese,0,1299,cheese crackers,57.14285714285714,cream cheese,0.3070441064875205,cream cheese,0.86647344,green onion
-"mollusks, octopus, common, cooked, moist heat",low moisture part skim mozarella cheese,0,1300,ground non-meat (beyond meat),41.379310344827594,cooked oat bran,0.04848008599776546,roasted seaweed,0.84771675,NO MATCH
+"mollusks, octopus, common, cooked, moist heat",low moisture part skim mozarella cheese,0,1300,ground non-meat (beyond meat),41.379310344827594,cooked oat bran,0.04848008599776546,roasted seaweed,0.8477168,NO MATCH
 carob flour,soy flour,0,1301,soy flour,70.0,soy flour,0.4136570841057908,hazelnut flour,0.8609174,soy flour
 "radishes, hawaiian style, pickled",pickles,0,1302,whole grain brown lentils,46.808510638297875,pickles,0.4313249593313548,pickles,0.88245994,NO MATCH
 "soup, beef broth, less/reduced sodium, ready to serve",low sodium chicken broth,0,1303,low moisture part skim mozarella cheese,45.333333333333336,low sodium chicken broth,0.43671209374046244,low sodium chicken broth,0.9099519,NO MATCH
