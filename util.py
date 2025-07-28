@@ -81,7 +81,7 @@ def compute_accuracy_with_tresholding(df, method, threshold, is_llm=0):
         correct_match = (
             ((df["label"] == 0) & (df[f"score_{method}"] < threshold))
             |
-            ((df["label"] == 1) & (df[f"match_{method}"] == df["target_desc"]))
+            ((df["label"] == 1) & (df[f"score_{method}"] >= threshold) & (df[f"match_{method}"] == df["target_desc"]))
         )
     else:
         # not using a similarity score to predict if description is not in database
