@@ -10,7 +10,7 @@ This repository contains two experiments that evaluate string-matching methods f
 - **Experiment NHANES** (`nhanes/nhanes.py`)
 
   - Some input descriptions may have **no suitable match**.
-  - Goal: Return the best match if one exists; otherwise, flag the input as `NO_MATCH` if similarity score falls below a predefined threshold.
+  - Goal: Return the best match if one exists; otherwise, flag the input as `NO MATCH` if similarity score falls below a predefined threshold.
 
 ---
 
@@ -36,4 +36,4 @@ In this dataset, each ingredient description (ingred_desc) derived from the diet
 | Fuzzy          | `fuzzy_match.py` | Selects the best match based on fuzzy string similarity using the RapidFuzz library. For each input, the algorithm chooses the closest target string according to `fuzz.ratio`. Text is cleaned (lowercased, punctuation removed, whitespace collapsed) before matching. |
 | TF‑IDF         | `tfidf_match.py` | Selects the best match by computing cosine similarity between TF‑IDF vectors of cleaned input and target descriptions. Text is cleaned before vectorization (lowercased, punctuation removed, and whitespace collapsed).                                                                                                                              |
 | Embedding      | `embed_match.py` | Selects the best match by computing cosine similarity between dense embeddings generated using `SentenceTransformer("thenlper/gte-large")`. Input and target texts are used **without** cleaning or preprocessing applied.                                                                 |
-| ChatGPT‑o3     | —                | Selects the best match by prompting GPT‑4o directly with the input and list of possible targets. Prompt file: `llm/prompts/o3_asa24_prompt.txt`. Inputs: `data/llm/asa24_input.csv` and `data/llm/asa24_unique_target.csv`. The model returned a JSON file of predicted matches, which was then evaluated within the respective experiment script.                                                                 |
+| ChatGPT‑o3     | —                | Selects the best match by prompting GPT‑o3 directly with the input and list of possible targets. Prompt file: `llm/prompts/o3_asa24_prompt.txt`. Inputs: `data/llm/asa24_input.csv` and `data/llm/asa24_unique_target.csv`. The model returned a JSON file of predicted matches, which was then evaluated within the respective experiment script.                                                                 |
