@@ -1,0 +1,106 @@
+---
+title: "Results"
+output: pdf_document
+date: "2025-08-06"
+---
+
+```{r}
+library(ggplot2)
+library(dplyr)
+library(scales)
+
+plot_accuracy <- function(filename, title_text, subtitle_text) {
+  # relative file path
+  file_path <- file.path("..", "results", "accuracy_tables", filename)
+  
+  # load respective table
+  accuracy_data <- read.csv(file_path)
+  accuracy_data <- accuracy_data %>%
+    mutate(method = factor(method, levels = unique(method)))
+  
+  # plot
+  ggplot(accuracy_data, aes(x = method, y = accuracy * 100)) +
+    geom_bar(stat = "identity", width = 0.7, fill = "#DDDDDD", color = "black") +
+    geom_text(aes(label = sprintf("%.1f%%", accuracy * 100)),
+              vjust = -0.5, size = 5) +
+    scale_y_continuous(
+      labels = percent_format(scale = 1),
+      breaks = seq(0, 100, by = 10),
+      limits = c(0, 100),
+      expand = c(0, 0)
+    ) +
+    labs(
+      title = title_text,
+      subtitle = subtitle_text,
+      x = "Method",
+      y = "Accuracy"
+    ) +
+    theme_classic(base_size = 14, base_family = "Helvetica") +
+    theme(
+      axis.text.x = element_text(angle = 0, hjust = 0.5),
+      plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+      plot.subtitle = element_text(size = 13, hjust = 0.5),
+      legend.position = "none"
+    )
+}
+```
+
+## ASA Experiment 1
+
+```{r}
+plot_accuracy(
+  filename = "asa24_experiment_1_accuracy.csv",
+  title_text = "asa to foodb mapped targets only",
+  subtitle_text = "asa24 experiment 1"
+)
+```
+
+## ASA Experiment 2
+
+```{r}
+plot_accuracy(
+  filename = "asa24_experiment_2_accuracy.csv",
+  title_text = "ASA24 Mapping to FooDB",
+  subtitle_text = "asa24 experiment 2"
+)
+```
+
+## NHANES Experiment 1
+
+```{r}
+plot_accuracy(
+  filename = "nhanes_experiment_1_accuracy.csv",
+  title_text = "nhanes...",
+  subtitle_text = "nhanes experiment 1"
+)
+```
+
+## NHANES Experiment 2
+
+```{r}
+plot_accuracy(
+  filename = "nhanes_experiment_2_accuracy.csv",
+  title_text = "nhanes...",
+  subtitle_text = "nhanes experiment 2"
+)
+```
+
+## NHANES Experiment 3
+
+```{r}
+plot_accuracy(
+  filename = "nhanes_experiment_3_accuracy.csv",
+  title_text = "nhanes match existed and check entire db",
+  subtitle_text = "nhanes experiment 3"
+)
+```
+
+## ASA Experiment 4
+
+```{r}
+plot_accuracy(
+  filename = "nhanes_experiment_4_accuracy.csv",
+  title_text = "nhanes...",
+  subtitle_text = "nhanes experiment 4"
+)
+```
