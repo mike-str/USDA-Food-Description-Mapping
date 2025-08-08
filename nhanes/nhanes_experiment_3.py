@@ -62,16 +62,23 @@ def nhanes_experiment_3_run():
     # join filtered predictions into df
     df = df.merge(df_o3_filtered, on="input_desc", how="left")
 
+    ### topk LLM results ###
+    df_topk_llm = pd.read_csv("ollama_topk_llm_method/nhanes_joined_predictions.csv")
+    df_topk_llm = df_topk_llm[["input_desc", "predicted_target"]]
+    df_topk_llm.columns = ["input_desc", "match_top5_llm"]
+    df = df.merge(df_topk_llm, on="input_desc", how="left")
+
     # results
-    acc_fuzzy = compute_accuracy_simple(df, "fuzzy")
-    acc_tfidf = compute_accuracy_simple(df, "tfidf")
-    acc_embed = compute_accuracy_simple(df, "embed")
-    acc_o3    = compute_accuracy_simple(df, "o3")
+    acc_fuzzy       = compute_accuracy_simple(df, "fuzzy")
+    acc_tfidf       = compute_accuracy_simple(df, "tfidf")
+    acc_embed       = compute_accuracy_simple(df, "embed")
+    acc_o3          = compute_accuracy_simple(df, "o3")
+    acc_top5_llm    = compute_accuracy_simple(df, "top5_llm")
 
     # saving the results
     df_accuracy = pd.DataFrame({
-        "method": ["fuzzy", "tfidf", "embed", "o3"],
-        "accuracy": [acc_fuzzy, acc_tfidf, acc_embed, acc_o3]
+        "method": ["fuzzy", "tfidf", "embed", "o3", "top5_llm"],
+        "accuracy": [acc_fuzzy, acc_tfidf, acc_embed, acc_o3, acc_top5_llm]
     })
 
     df_accuracy.to_csv("results/accuracy_tables/nhanes_experiment_3_accuracy.csv", index=False)

@@ -10,11 +10,17 @@ def asa24_experiment_2_run():
 
     # targets are loaded in from all of foodb...
     input_desc_list = df["input_desc"].to_list()
+    # read in foodb for entire database, as is it is seemingly encoded in latin 1
     target_desc_list = pd.read_csv("data/FooDB_Unique_Descriptions.csv", encoding="latin-1")
+    # convert latin 1 to utf-8
     target_desc_list["orig_food_common_name_uncleaned"] = [s.encode("utf-8").decode("utf-8") for s in target_desc_list["orig_food_common_name_uncleaned"]]
+    # drop na
     target_desc_list = target_desc_list.dropna(subset=["orig_food_common_name_uncleaned"])
+    # take unique only
     target_desc_list = list(set(target_desc_list["orig_food_common_name_uncleaned"].to_list()))
+    # lowercase
     target_desc_list = [s.lower() for s in target_desc_list]
+    # unique again - probably a simpler way to do this
     target_desc_list = list(set(target_desc_list))
 
     input_desc_clean_list = clean_text(input_desc_list)
@@ -64,16 +70,23 @@ def asa24_experiment_2_run():
     # join filtered predictions into df
     df = df.merge(df_o3_filtered, on="input_desc", how="left")
 
+    ### topk LLM results ###
+    df_topk_llm = pd.read_csv("ollama_topk_llm_method/asa_joined_predictions.csv")
+    df_topk_llm = df_topk_llm[["input_desc", "predicted_target"]]
+    df_topk_llm.columns = ["input_desc", "match_top5_llm"]
+    df = df.merge(df_topk_llm, on="input_desc", how="left")
+
     # results
-    acc_fuzzy = compute_accuracy_simple(df, "fuzzy")
-    acc_tfidf = compute_accuracy_simple(df, "tfidf")
-    acc_embed = compute_accuracy_simple(df, "embed")
-    acc_o3    = compute_accuracy_simple(df, "o3")
+    acc_fuzzy       = compute_accuracy_simple(df, "fuzzy")
+    acc_tfidf       = compute_accuracy_simple(df, "tfidf")
+    acc_embed       = compute_accuracy_simple(df, "embed")
+    acc_o3          = compute_accuracy_simple(df, "o3")
+    acc_top5_llm    = compute_accuracy_simple(df, "top5_llm")
 
     # saving the results
     df_accuracy = pd.DataFrame({
-        "method": ["fuzzy", "tfidf", "embed", "o3"],
-        "accuracy": [acc_fuzzy, acc_tfidf, acc_embed, acc_o3]
+        "method": ["fuzzy", "tfidf", "embed", "o3", "top5_llm"],
+        "accuracy": [acc_fuzzy, acc_tfidf, acc_embed, acc_o3, acc_top5_llm]
     })
 
     df_accuracy.to_csv("results/accuracy_tables/asa24_experiment_2_accuracy.csv", index=False)
