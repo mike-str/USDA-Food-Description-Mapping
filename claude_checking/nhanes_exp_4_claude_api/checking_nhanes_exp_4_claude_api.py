@@ -88,5 +88,5 @@ if __name__ == "__main__":
     print("merged_df_label_1_only number of rows: ", len(merged_df_label_1_only))
     print("accuracy when only checking label == 1 (a valid match does exist):", merged_df_label_1_only["is_match"].sum() / len(merged_df_label_1_only))
 
-    merged_df_label_1_only[merged_df_label_1_only["is_match"] == 0].to_csv("label_is_1_and_pred_is_wrong.csv", index=False)
+    merged_df_label_1_only[merged_df_label_1_only["is_match"] == 0].to_csv("claude_checking/nhanes_exp_4_claude_api/label_is_1_and_pred_is_wrong.csv", index=False)
     merged_df.to_csv("predictions_merged.csv", index=False)
