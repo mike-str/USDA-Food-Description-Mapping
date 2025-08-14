@@ -22,6 +22,22 @@ Platform:   ChatGPT
 Model:      o3
 Date: 7/25/2025
 
+Title: asa24_experiment_3
+Inputs:  ASA24_FooDB_codematches_6-26-2025.xlsx (FooDB matches but with non-direct matches removed, inputs and targets don't match)
+Targets: ASA24_FooDB_codematches_6-26-2025.xlsx  (FooDB matches but with non-direct matches removed, inputs and targets don't match)
+LLM Prompt: 
+Platform:   ChatGPT
+Model:      o3
+Date: 
+
+Title: asa24_experiment_4
+Inputs: 
+Targets:
+LLM Prompt: 
+Platform:   
+Model:      
+Date: 
+
 Title: nhanes_experiment_1
 Inputs:  nhanes_dfg2_labels.csv and label == 1 (all outputs of ASA24 from NHANES dataset that are mappable to DFG2)
 Targets: nhanes_dfg2_labels.csv and label == 1 (includes all targets in DFG2 that are mappable)
