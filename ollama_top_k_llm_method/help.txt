@@ -1,7 +1,0 @@
-
-asa24_exp_2_top_k_llm.py -> does embedding to find top k (5) matches, prompts LLM to pick best match. The output file is a pickle (pkl) - not for any particular reason it was just easier to work with in the moment.
-asa24_exp_2_top_k_llm.py_evaulate.py -> evaluates matches
-
-nhanes_exp_3_top_k_llm.py -> does embedding to find top k (5) matches, prompts LLM to pick best match - not for any particular reason it was just easier to work with in the moment.
-nhanes_exp_3_top_k_llm_evaulate.py -> evaluates matches
-
