@@ -5,18 +5,26 @@ date: "2025-08-06"
 ---
 
 ```{r}
+library(readr)
+```
+
+
+```{r}
 library(ggplot2)
 library(dplyr)
 library(scales)
 
-plot_accuracy <- function(filename, title_text, subtitle_text) {
+plot_accuracy <- function(filename, title_text, subtitle_text=NULL) {
   # relative file path
   file_path <- file.path("..", "results", "accuracy_tables", filename)
   
   # load respective table
   accuracy_data <- read.csv(file_path)
   accuracy_data <- accuracy_data %>%
-    mutate(method = factor(method, levels = unique(method)))
+    mutate(
+      method = factor(method, levels = unique(method)),
+      method = recode(method, "top5_llm" = "embed top5\nLLM")
+    )
   
   # plot
   ggplot(accuracy_data, aes(x = method, y = accuracy * 100)) +
@@ -37,12 +45,16 @@ plot_accuracy <- function(filename, title_text, subtitle_text) {
     ) +
     theme_classic(base_size = 14, base_family = "Helvetica") +
     theme(
-      axis.text.x = element_text(angle = 0, hjust = 0.5),
+      axis.title.x = element_text(size = 18),
+      axis.title.y = element_text(size = 18),
+      axis.text.x = element_text(size = 18, angle = 0, hjust = 0.5),
+      axis.text.y = element_text(size = 14),
       plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
       plot.subtitle = element_text(size = 13, hjust = 0.5),
       legend.position = "none"
     )
 }
+
 ```
 
 ## ASA Experiment 1
@@ -104,3 +116,72 @@ plot_accuracy(
   subtitle_text = "nhanes experiment 4"
 )
 ```
+
+# overlayed histogram of 
+```{r}
+library(ggplot2)
+library(readr)
+library(dplyr)
+
+# Load data
+asa24_path <- file.path("..", "results", "csv_files", "asa24_experiment_1.csv")
+nhanes_path <- file.path("..", "results", "csv_files", "nhanes_experiment_3.csv")
+
+asa24 <- read_csv(asa24_path) %>%
+  filter(!is.na(score_tfidf), score_tfidf >= 0, score_tfidf <= 1) %>%
+  mutate(Source = "ASA24")
+
+nhanes <- read_csv(nhanes_path) %>%
+  filter(!is.na(score_tfidf), score_tfidf >= 0, score_tfidf <= 1) %>%
+  mutate(Source = "NHANES")
+
+# Combine and relabel Source for legend
+combined <- bind_rows(asa24, nhanes) %>%
+  mutate(Source = recode(Source,
+                         "ASA24" = "ASA24 to FooDB",
+                         "NHANES" = "AMPM to Davis Food Glycopedia"))
+
+# Density estimates for both groups
+density_list <- combined %>%
+  group_by(Source) %>%
+  summarise(density = list(density(score_tfidf, adjust = 1.25)),
+            .groups = "drop")
+
+# Convert to plottable data
+density_df <- bind_rows(lapply(1:nrow(density_list), function(i) {
+  data.frame(x = density_list$density[[i]]$x,
+             y = density_list$density[[i]]$y,
+             Source = density_list$Source[i])
+}))
+
+# Max y for clean scaling
+y_max <- max(density_df$y) * 1.05
+
+# Plot with filled densities and custom legend labels
+ggplot(density_df, aes(x = x, y = y, fill = Source)) +
+  geom_area(alpha = 0.4, position = "identity", color = NA) +
+  scale_fill_manual(
+    name = "",
+    values = c(
+      "ASA24 to FooDB" = "blue",
+      "AMPM to Davis Food Glycopedia" = "firebrick"
+    )
+  ) +
+  scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.1), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, y_max), expand = c(0, 0)) +
+  labs(
+    title = "Overlayed Similarity Score Density Plot",
+    x = "TF-IDF Cosine Similarity Score",
+    y = NULL
+  ) +
+  theme_classic(base_size = 14) +
+  theme(
+    plot.title = element_text(size = 16, face = "bold", hjust = 0.5),
+    axis.text.y = element_blank(),
+    axis.ticks.y = element_blank(),
+    legend.position = "top",
+    plot.margin = margin(5, 15, 5, 15)
+  )
+
+```
+
