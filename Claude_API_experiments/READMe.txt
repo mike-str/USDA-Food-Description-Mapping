@@ -1,1 +1,1 @@
-This folder contains experiments accessing Claude Sonnet 4 via API.
+This folder contains experiments accessing Claude via API.
