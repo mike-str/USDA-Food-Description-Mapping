@@ -1,3 +1,17 @@
+##############################################################################################
+# haiku_NHANES_match_ClaudeAPI.py                           
+# Purpose: match each Food Description from the AMPM output of NHANES 
+# (vocabulary = FNDDS database) to a different target database.
+# The target database is sufficiently small that it is sent with each API call.
+# This version uses HAIKU model claude-3-haiku-20240307.
+#
+# Inputs: list_a.txt, list_b.txt
+# Output: file with two columns, item from List A, best Match from List B
+#
+# Author: Claude Sonnet 4 & D.Lemay
+# Date: 8/10/2025
+################################################################################################
+
 import anthropic
 import os
 import time
