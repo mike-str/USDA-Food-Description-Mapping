@@ -1,0 +1,289 @@
+List_A_Item	Best_Match_from_List_B
+pepperoni, beef and pork, sliced	pepperoni, pork, beef
+snacks, tortilla chips, plain, white corn, salted	snacks, tortilla chips, plain, white corn, salted
+beverages, water, tap, drinking	water, tap, drinking
+pork sausage, link/patty, cooked, pan-fried	pork sausage, link/patty, cooked, pan-fried
+beverages, tea, black, brewed, prepared with tap water	tea, black, brewed, prepared with tap water
+salad dressing, mayonnaise, regular	salad dressing, mayonnaise
+rice, brown, long-grain, cooked (includes foods for usda's food distribution program)	rice, brown, long-grain, cooked (includes foods for usda's food distribution program)
+rice, white, long-grain, regular, enriched, cooked	rice, white, long-grain, regular, cooked, enriched
+blueberries, frozen, unsweetened (includes foods for usda's food distribution program)	blueberries, frozen, unsweetened
+soup, chicken broth, ready-to-serve	soup, chicken broth, ready-to-serve
+pasta, cooked, enriched, without added salt	pasta, cooked, enriched, without added salt
+wheat flour, whole-grain (includes foods for usda's food distribution program)	wheat flour, whole-grain
+gravy, chicken, canned or bottled, ready-to-serve	gravy, chicken, canned, ready-to-serve
+beverages, water, tap, municipal	water, tap, municipal
+rice, white, glutinous, unenriched, cooked	rice, white, glutinous, cooked
+potatoes, baked, flesh and skin, without salt	potatoes, baked, flesh and skin, without salt
+cake, pudding-type, yellow, dry mix	cake, yellow, dry mix, pudding-type
+cheese, mozzarella, low moisture, part-skim	cheese, mozzarella, low moisture, part-skim
+beverages, fruit flavored drink, less than 3% juice, not fortified with vitamin c	fruit flavored drink, less than 3% juice, not fortified with vitamin c
+beverages, coffee, brewed, espresso, restaurant-prepared	coffee, brewed, espresso, restaurant-prepared
+noodles, egg, enriched, cooked	noodles, egg, cooked, enriched
+beverages, tea, herb, other than chamomile, brewed	tea, herb, other than chamomile, brewed
+pork, cured, bacon, pre-sliced, cooked, pan-fried	pork, cured, bacon, cooked, pan-fried
+beverages, cocoa mix, no sugar added, powder	cocoa mix, with aspartame, powder, prepared with water
+cereals ready-to-eat, post, shredded wheat, original big biscuit	cereals ready-to-eat, post, shredded wheat, original big biscuit
+cereals ready-to-eat, post, shredded wheat, original spoon-size	cereals ready-to-eat, post, shredded wheat, original spoon-size
+beverages, chocolate-flavor beverage mix for milk, powder, with added nutrients	chocolate-flavor beverage mix for milk, powder, with added nutrients
+fish, fish sticks, frozen, prepared	fish, fish portions and sticks, frozen, preheated
+salad dressing, italian dressing, commercial, reduced fat	salad dressing, italian dressing, reduced fat
+cranberries, dried, sweetened (includes foods for usda's food distribution program)	cranberries, dried, sweetened
+rice flour, white, unenriched	rice flour, white
+chayote, fruit, raw	chayote, fruit, raw
+cereals ready-to-eat, general mills, corn chex	corn chex
+crustaceans, shrimp, mixed species, raw (may contain additives to retain moisture)	crustaceans, shrimp, mixed species, raw
+apples, raw, with skin (includes foods for usda's food distribution program)	apples, raw, with skin
+bread, crumbs, dry, grated, plain	bread crumbs, dry, grated, plain
+beverages, coffee, brewed, prepared with tap water	coffee, brewed from grounds, prepared with tap water
+sweet potato, cooked, baked in skin, flesh, without salt	sweet potato, cooked, baked in skin, without salt
+beverages, carbonated, club soda	carbonated beverage, club soda
+lemon juice from concentrate, canned or bottled	lemon juice, canned or bottled
+applesauce, canned, sweetened, without salt	applesauce, canned, sweetened, without salt
+beverages, tea, black, brewed, prepared with tap water, decaffeinated	tea, black, brewed, prepared with tap water
+peaches, yellow, raw	peaches, yellow, raw
+refried beans, canned, traditional style	refried beans, canned, traditional style (includes usda commodity)
+beverages, whiskey sour mix, bottled	whiskey sour mix, bottled
+salad dressing, ranch dressing, regular	salad dressing, ranch dressing, regular
+pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, raw	pork, fresh, loin, top loin (chops), boneless, separable lean and fat, with added solution, raw
+peanut butter, smooth style, with salt (includes foods for usda's food distribution program)	peanut butter, smooth style, with salt
+beverages, fruit juice drink, greater than 3% juice, high vitamin c	fruit juice drink, greater than 3% juice, high vitamin c
+muffins, english, wheat	english muffins, whole-wheat, toasted
+restaurant, chinese, fried rice, without meat	restaurant, chinese, fried rice, without meat
+fast foods, submarine sandwich, cold cut on white bread with lettuce and tomato	fast foods, submarine sandwich, with cold cuts
+beverages, carbonated, cola, without caffeine	carbonated beverage, low calorie, other than cola or pepper, with sodium saccharin, without caffeine
+raisins, dark, seedless (includes foods for usda's food distribution program)	raisins, dark, seedless (includes foods for usda's food distribution program)
+egg rolls, vegetable, frozen, prepared	egg rolls, vegetable, refrigerated, heated
+beverages, lemonade-flavor drink, powder	lemonade-flavor drink, powder
+beef, short loin, top loin, steak, separable lean and fat, trimmed to 1/8 fat, choice, cooked, grilled	tea
+beef, round, top round steak, boneless, separable lean and fat, trimmed to 0 fat, all grades, cooked, grilled	tea
+ham, sliced, pre-packaged, deli meat (96%fat free, water added)	ham, sliced, prepackaged (96% fat free, water added)
+beverages, carbonated, low calorie, cola or pepper-type, with aspartame, contains caffeine	carbonated beverage, low calorie, cola or pepper-type, with aspartame, contains caffeine
+beverages, coffee, instant, regular, powder	coffee, instant, regular, powder
+sweeteners, tabletop, saccharin (sodium saccharin)	sweeteners, tabletop, saccharin
+muffins, english, plain, enriched, with ca prop (includes sourdough)	english muffins, plain, enriched, with ca prop (includes sourdough)
+beverages, carbonated, low calorie, other than cola or pepper, with aspartame, contains caffeine	carbonated beverage, low calorie, other than cola or pepper, with aspartame, contains caffeine
+beef, round, bottom round , roast, separable lean only, trimmed to 1/8 fat, select, cooked, roasted	beef, round, bottom round, roast, separable lean only, trimmed to 1/8 fat, select, cooked, roasted
+beverages, carbonated, low calorie, cola or pepper-type, with aspartame, without caffeine	carbonated beverage, low calorie, other than cola or pepper, with sodium saccharin, without caffeine
+beverages, carbonated, low calorie, other than cola or pepper,  without caffeine	none
+beans, black turtle, mature seeds, cooked, boiled, without salt	beans, black, mature seeds, cooked, boiled, without salt
+beverages, carbonated, ginger ale	carbonated beverage, ginger ale
+beverages, coffee, brewed, prepared with tap water, decaffeinated	coffee, brewed from grounds, prepared with tap water
+sausage, italian, pork, mild, cooked, pan-fried	sausage, italian, pork, cooked
+pineapple juice, canned or bottled, unsweetened, with added ascorbic acid	pineapple juice, canned or bottled, unsweetened, with added ascorbic acid
+beverages, pepsico quaker, gatorade, g performance o 2, ready-to-drink.	none
+fish, cod, pacific, cooked, dry heat (may contain additives to retain moisture)	fish, cod, pacific, cooked, dry heat
+potatoes, flesh and skin, raw	potatoes, white, flesh and skin, raw
+beverages, fruit-flavored drink, dry powdered mix, low calorie, with aspartame	fruit-flavored drink, dry powdered mix, low calorie, with aspartame
+bread, white wheat	bread, white wheat
+beverages, mixed vegetable and fruit juice drink, with added nutrients	fruit punch drink, without added nutrients, canned
+sausage, turkey, breakfast links, mild, raw	turkey
+beverages, carbonated, root beer	beer
+beef, round, top round steak, boneless, separable lean only, trimmed to 0 fat, all grades, cooked, grilled	tea
+fish, cod, pacific, raw (may have been previously frozen)	fish, cod, pacific, raw (may have been previously frozen)
+pork, fresh, loin, tenderloin, separable lean and fat, with added solution, raw	pork, fresh, loin, tenderloin, separable lean and fat, with added solution, raw
+bread, sticks, plain	crackers, melba toast, plain, without salt
+beverages, energy drink, rockstar, sugar free	energy drink, rockstar, sugar free
+applesauce, canned, unsweetened, without added ascorbic acid (includes foods for usda's food distribution program)	applesauce, canned, unsweetened, without added ascorbic acid (includes usda commodity)
+cereals ready-to-eat, quaker, oatmeal squares	cereals ready-to-eat, quaker, quaker oatmeal squares
+bagels, wheat	bagels, plain, unenriched, with calcium propionate (includes onion, poppy, sesame)
+cake, cheesecake, commercially prepared	cheesecake commercially prepared
+beverages, chocolate-flavored drink, whey and milk based	chocolate-flavored drink, whey and milk based
+syrups, sugar free	none
+snacks, granola bar, quaker, chewy, 90 calorie bar	snacks, granola bar, kashi golean, crunchy, mixed flavors
+beverages, energy drink, red bull, sugar free, with added caffeine, niacin, pantothenic acid, vitamins b6 and b12	energy drink, red bull, sugar free, with added caffeine, niacin, pantothenic acid, vitamins b6 and b12
+cereals ready-to-eat, post bran flakes	cereals ready-to-eat, post, 100% bran cereal
+cabbage, chinese (pak-choi), raw	cabbage, chinese (pak-choi), raw
+frozen novelties, no sugar added, fudgsicle pops	frozen novelties, no sugar added, fudgesicle pops
+orange juice, chilled, includes from concentrate, with added calcium	orange juice, chilled, includes from concentrate, fortified with calcium
+orange juice, chilled, includes from concentrate, with added calcium and vitamin d	orange juice, chilled, includes from concentrate, fortified with calcium and vitamin d
+bread, stuffing, dry mix	bread stuffing, bread, dry mix
+cake, pound, commercially prepared, butter (includes fresh and frozen)	cake, pound, commercially prepared, butter (includes fresh and frozen)
+beverages, carbonated, sprite, lemon-lime, without caffeine	carbonated beverage, sprite, lemon-lime, without caffeine
+crustaceans, shrimp, mixed species, cooked, moist heat (may contain additives to retain moisture)	crustaceans, shrimp, mixed species, cooked, moist heat
+fast foods, potatoes, hash browns, round pieces or patty	mcdonald's, hash browns
+snacks, kellogg, kellogg's, nutri-grain cereal bars, fruit	snacks, kellogg's, nutri-grain cereal bars, fruit
+fish, pollock, raw	fish, pollock, raw
+beverages, pepsico quaker, gatorade g2, low calorie	sports drink, pepsico quaker gatorade, gatorade, original, fruit-flavored, ready-to-drink
+tomato products, canned, paste, without salt added (includes foods for usda's food distribution program)	tomato products, canned, paste, without salt added
+beverages, cranberry-apple juice drink, low calorie, with vitamin c added	cranberry-apple juice drink, low calorie, with vitamin c added
+pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, raw	pork, fresh, loin, top loin (chops), boneless, separable lean only, with added solution, raw
+soup, chicken broth, less/reduced sodium, ready to serve	campbell soup company, campbell's low sodium soups, chicken broth
+beverages, coffee, brewed, espresso, restaurant-prepared, decaffeinated	coffee, brewed, espresso, restaurant-prepared, decaffeinated
+beverages, carbonated, tonic water	carbonated beverage, tonic water
+pineapple juice, canned or bottled, unsweetened, without added ascorbic acid	pineapple juice, canned
+pork, cured, bacon, unprepared	pork, cured, bacon, raw
+beverages, coca-cola, powerade, lemon-lime flavored, ready-to-drink	sports drink, coca-cola, powerade, lemon-lime flavored, ready-to-drink
+pork, fresh, shoulder, (boston butt), blade (steaks), separable lean only, with added solution, raw	pork, fresh, shoulder, (boston butt), blade (steaks), separable lean only, with added solution, raw
+candies, hershey's skor toffee bar	candies, skor toffee bar
+beverages, wine, non-alcoholic	wine [white]
+plantains, yellow, raw	plantains, yellow, fried, latino restaurant
+orange juice, raw (includes foods for usda's food distribution program)	orange juice, raw
+beverages, cocoa mix, powder	cocoa mix, powder
+sweet potato, raw, unprepared (includes foods for usda's food distribution program)	sweet potato, raw, unprepared (includes foods for usda's food distribution program)
+grapefruit juice, white, canned or bottled, unsweetened	juice, grapefruit, white, canned, unsweetened
+bread, cornbread, dry mix, prepared with 2% milk, 80% margarine, and eggs	bread, cornbread, dry mix, prepared with 2% milk, 80% margarine, and eggs
+pork, fresh, shoulder, (boston butt), blade (steaks), separable lean and fat,with added solution, raw	pork, fresh, shoulder, (boston butt), blade (steaks), separable lean and fat, raw
+beverages, fruit flavored drink containing less than 3% fruit juice, with high vitamin c	fruit flavored drink containing less than 3% fruit juice, with high vitamin c
+cake, pudding-type, chocolate, dry mix	cake, chocolate, dry mix, pudding-type
+beef, ground, 85% lean meat / 15% fat, raw (includes foods for usda's food distribution program)	beef, ground, 85% lean meat / 15% fat, raw
+potatoes, hash brown, frozen, plain, prepared, pan fried in canola oil	potatoes, hashed brown, frozen, plain, prepared
+cheese, cheddar (includes foods for usda's food distribution program)	cheese, cheddar (includes foods for usda's food distribution program)
+yogurt, plain, skim milk	yogurt, plain, skim milk, 13 grams protein per 8 ounce
+yogurt, plain, low fat	yogurt, plain, low fat, 12 grams protein per 8 ounce
+yogurt, plain, whole milk	yogurt, plain, whole milk
+milk, chocolate, lowfat, with added vitamin a and vitamin d	milk, chocolate, fluid, commercial, reduced fat, with added vitamin a and vitamin d
+pancakes, whole wheat, dry mix, incomplete	pancakes, plain, dry mix, incomplete (includes buttermilk)
+chicken breast, deli, rotisserie seasoned, sliced, prepackaged	none
+chicken, broiler, rotisserie, bbq, drumstick, meat only	chicken, flesh and skin, grilled
+chicken, broiler, rotisserie, bbq, drumstick, meat and skin	chicken, flesh and skin, grilled
+chicken, broiler, rotisserie, bbq, breast, meat only	chicken, flesh and skin, grilled
+cheese, cheddar, reduced fat (includes foods for usda's food distribution program)	cheese, cheddar, reduced fat (includes foods for usda's food distribution program)
+chicken, broiler, rotisserie, bbq, wing, meat and skin	chicken, flesh and skin, grilled
+chicken, broiler or fryers, breast, skinless, boneless, meat only, raw	chicken, broiler or fryers, breast, skinless, boneless, meat only, raw
+fast foods, fried chicken, breast, meat and skin and breading	chicken, flesh and skin, grilled
+turkey, whole, meat only, with added solution, roasted	turkey, whole, meat only, with added solution, roasted
+turkey, whole, meat only, cooked, roasted	turkey, whole, meat only, cooked, roasted
+bread, naan, whole wheat, commercially prepared, refrigerated	none
+chicken, broiler, rotisserie, bbq, thigh, meat only	chicken, flesh and skin, grilled
+orange juice, frozen concentrate, unsweetened, undiluted, with added calcium	orange juice, frozen concentrate, unsweetened, undiluted
+rice and vermicelli mix, rice pilaf flavor, unprepared	none
+duck, domesticated, meat and skin, cooked, roasted	duck, domesticated, meat and skin, cooked, roasted
+restaurant, chinese, vegetable chow mein, without meat or noodles	none
+beverages, nestle, boost plus, nutritional drink, ready-to-drink	nutritional drink
+potatoes, mashed, ready-to-eat	potatoes, mashed, ready-to-eat
+cabbage, kimchi	none
+guava nectar, with sucralose, canned	none
+sauce, horseradish	horseradish
+cake, snack cakes, not chocolate, with icing or filling, low-fat, with added fiber	cake, snack cakes, creme-filled, sponge
+blueberries, dried, sweetened	blueberries, dried, sweetened
+pizza, cheese topping, thin crust, frozen, cooked	pizza, cheese topping, thin crust, frozen, cooked
+turkey from whole, light meat, meat only, with added solution, cooked, roasted	turkey, from whole, light meat, meat only, with added solution, cooked, roasted
+strawberries, frozen, unsweetened (includes foods for usda's food distribution program)	strawberries, frozen, unsweetened
+crackers, multigrain	crackers, whole-wheat, low salt
+bread, wheat, sprouted	wheat, sprouted
+fast foods, fried chicken, wing, meat and skin and breading	none
+chicken patty, frozen, cooked	morningstar farms chik patties, frozen, unprepared
+crackers, cheese, whole grain	crackers, whole-wheat, low salt
+fast foods, chicken tenders	none
+lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4 fat, choice, cooked	lamb, composite of trimmed retail cuts, separable lean and fat, trimmed to 1/4 fat, choice, cooked
+turkey breast, sliced, prepackaged	turkey, breast, boiled/smoked, sliced
+fast foods, fried chicken, drumstick, meat and skin with breading	chicken, flesh and skin, deepfried
+turkey, ground, cooked	pork, ground, 96% lean / 4% fat, cooked, crumbles
+beef, round, eye of round roast, boneless, separable lean only, trimmed to 0 fat, all grades, raw	none
+beef, round, top round roast, boneless, separable lean only, trimmed to 0 fat, all grades, raw	none
+restaurant, chinese, chicken and vegetables	none
+jams, preserves, marmalade, reduced sugar	jams, preserves, marmalade, reduced sugar
+rice crackers	rice cakes
+fast food, biscuit	fast foods, biscuit, with egg and sausage
+sausage, pork, chorizo, link or ground, cooked, pan-fried	pork sausage, fresh, cooked
+tortillas, ready-to-bake or -fry, whole wheat	tortillas, ready-to-bake or -fry, whole wheat
+cereals ready-to-eat, nature's path, organic flax plus flakes	cereals ready-to-eat, nature's path, organic flax plus flakes
+pizza rolls, frozen, unprepared	none
+bacon, turkey, microwaved	turkey
+cookies, sugar wafer, chocolate-covered	cookies, sugar wafer, chocolate-covered
+restaurant, family style, coleslaw	kentucky fried chicken, coleslaw
+sauce, enchilada, red, mild, ready to serve	campbell soup company, pace, enchilada sauce
+cookie, chocolate, with icing or coating	cookies, chocolate sandwich, with creme filling, regular, chocolate-coated
+rolls, dinner, sweet	none
+soup, beef barley, ready to serve	campbell's chunky soups, hearty beef barley soup
+restaurant, chinese, orange chicken	none
+jams, preserves, marmalades, sweetened with fruit juice	jams and preserves
+beverages, chocolate powder, no sugar added	none
+snacks, potato chips, lightly salted	snacks, potato chips, lightly salted
+lamb, ground, cooked, broiled	lamb, leg, average values, raw
+cookies, coconut macaroon	cookies, coconut macaroons, prepared from recipe
+jellies, no sugar (with sodium saccharin), any flavors	none
+ice cream bar, stick or nugget, with crunch coating	frozen novelties, ice cream type, chocolate or caramel covered, with nuts
+turkey ham, sliced, extra lean, prepackaged or deli-sliced	turkey ham, sliced, extra lean, prepackaged or deli-sliced
+peppers, hot pickled, canned	sauce, ready-to-serve, pepper or hot
+beef, round, top round roast, boneless, separable lean and fat, trimmed to 0 fat, all grades, cooked, roasted	none
+salad dressing, mayonnaise-type, light	salad dressing, mayonnaise, light
+frankfurter, meat and poultry, unheated	frankfurter, meat and poultry, unheated
+bread, cinnamon	cinnamon buns, frosted (includes honey buns)
+canadian bacon, cooked, pan-fried	pork, cured, canadian-style bacon, grilled
+cookies, brownies, commercially prepared, reduced fat, with added fiber	none
+mayonnaise, reduced fat, with olive oil	mayonnaise, low fat
+kielbasa, fully cooked, grilled	sausage
+beef, loin, top loin steak, boneless, lip off, separable lean only, trimmed to 0 fat, all grades, raw	beef, top loin petite roast/filet, boneless, separable lean only, trimmed to 1/8 fat, all grades, raw
+bread, french or vienna, whole wheat	bread, whole meal, commercially prepared, with added soy flour or soy protein
+game meat, bison, separable lean only, cooked, roasted	bison
+fast foods, breakfast burrito, with egg, cheese, and sausage	fast foods, burrito, with beans
+fast foods, submarine sandwich, turkey breast on white bread with lettuce and tomato	none
+macaroni or noodles with cheese, microwaveable, unprepared	macaroni and cheese dinner with dry sauce mix, boxed, prepared with 2% milk and 60% vegetable oil spread
+sweet potatoes, french fried, frozen as packaged, salt added in processing	potatoes, french fried, crinkle or regular cut, salt added in processing, frozen, oven-heated
+turkey, all classes, light meat, cooked, roasted	turkey, breast, boiled/smoked, sliced
+chicken, broilers or fryers, wing, meat and skin, cooked, roasted	chicken, broilers or fryers, wing, meat and skin, cooked, roasted
+chicken, broilers or fryers, thigh, meat and skin, cooked, roasted	chicken, broilers or fryers, thigh, meat and skin, cooked, roasted
+chicken, broiler, rotisserie, bbq, thigh, meat and skin	chicken, flesh and skin, grilled
+chicken, broiler, rotisserie, bbq, breast, meat and skin	chicken, flesh and skin, grilled
+beverages, abbott, eas whey protein powder	none
+chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted	chicken, broilers or fryers, drumstick, meat and skin, cooked, roasted
+chicken, broilers or fryers, thigh, meat only, cooked, roasted	chicken, broilers or fryers, thigh, meat only, cooked, roasted
+beverages, protein powder soy based	none
+chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted	chicken, broilers or fryers, dark meat, drumstick, meat only, cooked, roasted
+chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised	chicken, broilers or fryers, dark meat, drumstick, meat and skin, cooked, braised
+syrup, nestle, chocolate	none
+chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised	chicken, broilers or fryers, dark meat, thigh, meat only, cooked, braised
+chicken, broilers or fryers, drumstick, meat only, cooked, braised	chicken, broilers or fryers, drumstick, meat only, cooked, braised
+beverages, tropical punch, ready-to-drink	fruit juice drink, greater than 3% fruit juice, high vitamin c and added thiamin
+chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised	chicken, broilers or fryers, dark meat, thigh, meat and skin, cooked, braised
+beverages, aloe vera juice drink, fortified with vitamin c	none
+chicken, broilers or fryers, thigh, meat and skin, raw	chicken, flesh and skin, grilled
+beverages, whey protein powder isolate	none
+fast foods, fried chicken, thigh, meat and skin and breading	none
+bologna, meat and poultry	bologna, chicken, pork
+fast foods, submarine sandwich, sweet onion chicken teriyaki on white bread with lettuce, tomato and sweet onion sauce	none
+crackers, water biscuits	crackers, saltines (includes oyster, soda, soup)
+lamb, rib, separable lean only, trimmed to 1/4 fat, choice, cooked, broiled	lamb, rib, separable lean only, trimmed to 1/4 fat, choice, cooked, broiled
+beverages, rice milk, unsweetened	rice drink, unsweetened, with added calcium, vitamins a and d
+beverages, tea, instant, decaffeinated, unsweetened	tea, instant, unsweetened, powder, decaffeinated
+chicken, broilers or fryers, skin only, raw	chicken, broilers or fryers, skin only, raw
+beverages, tea, instant, lemon, diet	tea, instant, unsweetened, powder, prepared
+pasta, whole-wheat, cooked (includes foods for usda's food distribution program)	pasta, whole-wheat, cooked (includes foods for usda's food distribution program)
+beverages, tea, instant, lemon, sweetened, powder	tea, instant, sweetened with sodium saccharin, lemon-flavored, powder
+beverages, tea, instant, lemon, unsweetened	tea, instant, unsweetened, lemon-flavored, powder
+mango, dried, sweetened	raisins, seeded
+turkey, whole, neck, meat only, cooked, simmered	turkey, flesh only, raw
+bread, roll, mexican, bollilo	none
+dip, bean, original flavor	beans, navy, mature seeds, cooked, boiled, with salt
+beverages, carbonated, cola, regular	carbonated beverage, cola, contains caffeine
+beverages, coffee, instant, mocha, sweetened	coffee, instant, with sugar, mocha-flavor, powder
+roast beef, deli style, prepackaged, sliced	beef, round, bottom round, roast, separable lean only, trimmed to 0 fat, choice, cooked, roasted
+sausage, breakfast sausage, beef, pre-cooked, unprepared	pork sausage, fresh, raw
+milk, chocolate, fat free, with added vitamin a and vitamin d	milk, chocolate, fluid, commercial, whole, with added vitamin a and vitamin d
+beverages, energy drink, monster, fortified with vitamins c, b2, b3, b6, b12	energy drink, monster
+beverages, energy drink, red bull	energy drink, red bull, with added caffeine, niacin, pantothenic acid, vitamins b6 and b12
+dip, salsa con queso, cheese and salsa- medium	none
+schiff,tiger's milk bar	none
+fast foods, fried chicken, breast, meat only, skin and breading removed	chicken, broiler or fryers, breast, skinless, boneless, meat only, cooked, braised
+fast foods, chicken, breaded and fried, boneless pieces, plain	chicken, breaded and fried, boneless pieces, plain
+beverages, yellow green colored citrus soft drink with caffeine	none
+sausage, egg and cheese breakfast biscuit	fast foods, biscuit, with egg and sausage
+taquitos, frozen, beef and cheese, oven-heated	none
+reduced sodium: chicken breast, deli, rotisserie seasoned, sliced, prepackaged	none
+beverages, coconut water, ready-to-drink, unsweetened	coconut water, ready-to-drink, unsweetened
+fast foods, fried chicken, drumstick, meat only, skin and breading removed	chicken, drumstick, flesh and skin, raw
+reduced sodium: ham, sliced, pre-packaged, deli meat (96%fat free, water added)	ham, sliced, prepackaged (96% fat free, water added)
+fast foods, breadstick, soft, prepared with garlic and parmesan cheese	none
+cereals ready-to-eat, nature's path, organic flax plus, pumpkin granola	nature's path, organic flax plus, pumpkin granola
+cookie, butter or sugar, with chocolate icing or filling	cookies, chocolate sandwich, with creme filling, special dietary
+sauce, peanut, made from peanut butter, water, soy sauce	peanut butter with omega-3, creamy
+beverages, protein powder whey based	whey
+beverages, the coca-cola company, nos energy drink, original, grape, loaded cherry, charged citrus, fortified with vitamins b6 and b12	none
+beverages, slimfast, meal replacement,  high protein shake, ready-to-drink, 3-2-1 plan	none
+alcoholic beverage, malt beer, hard lemonade	none
+candies, m&m mars pretzel chocolate candies	snacks, m&m mars, combos snacks cheddar cheese pretzel
+bread, gluten-free, white, made with rice flour, corn starch, and/or tapioca	bread, gluten-free, white, made with rice flour, corn starch, and/or tapioca
+yellow rice with seasoning, dry packet mix, unprepared	rice, white, long-grain, precooked or instant, enriched, dry
+cookie, with peanut butter filling, chocolate-coated	cookies, peanut butter sandwich, regular
+lamb, loin, separable lean only, trimmed to 1/4 fat, choice, cooked, broiled	lamb, loin, separable lean only, trimmed to 1/4 fat, choice, cooked, broiled
+beverages, abbott, ensure, nutritional shake, ready-to-drink	ensure fiber with fos, liquid
+lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4 fat, choice, cooked, roasted	lamb, leg, whole (shank and sirloin), separable lean only, trimmed to 1/4 fat, choice, cooked, roasted
+lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4 fat, choice, cooked, roasted	lamb, shoulder, whole (arm and blade), separable lean only, trimmed to 1/4 fat, choice, cooked, roasted
+candies, toblerone, milk chocolate with honey and almond nougat	none
+syrup, fruit flavored	fruit punch drink, without added nutrients, canned
+fast foods, fried chicken, thigh, meat only, skin and breading removed	none
+sweetener, herbal extract powder from stevia leaf	none
+potsticker or wonton, pork and vegetable, frozen, unprepared	none
+beverages, cytosport, muscle milk, ready-to-drink	protein supplement, milk based, muscle milk, powder
