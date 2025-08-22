@@ -14,6 +14,31 @@ This repository contains two experiments that evaluate string-matching methods f
 
 ---
 
+## Setup and Installation
+
+### Prerequisites
+- [Anaconda](https://www.anaconda.com/products/distribution) or [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
+
+### 1. Clone the Repository and Change Directory
+`git clone https://github.com/mike-str/USDA-Food-Description-Mapping-main`<br>
+`cd USDA-Food-Description-Mapping-main`
+### 2. Create the Conda Environment and Activate
+`conda env create -f environment.yml`
+`conda activate USDA-food-database-mapping`
+### 3. Download the SpaCy Language Model
+`python -m spacy download en_core_web_sm`
+### 4. Run All Experiments
+`python main.py`
+
+This will:
+
+1. Create a results/ directory with subdirectories for accuracy tables and CSV files
+2. Run ASA24 experiments 1 and 2
+3. Run NHANES experiments 1-4
+4. Save results to the results/ directory
+
+---
+
 ## Data
 - **ASA24**<br>
 ***File***: `ASA24_FooDB_codematches_6-26-2025.xlsx`<br>
