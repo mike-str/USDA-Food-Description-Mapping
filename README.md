@@ -23,7 +23,7 @@ This repository contains two experiments that evaluate string-matching methods f
 `git clone https://github.com/mike-str/USDA-Food-Description-Mapping-main`<br>
 `cd USDA-Food-Description-Mapping-main`
 ### 2. Create the Conda Environment and Activate
-`conda env create -f environment.yml`
+`conda env create -f environment.yml`<br>
 `conda activate USDA-food-database-mapping`
 ### 3. Download the SpaCy Language Model
 `python -m spacy download en_core_web_sm`
