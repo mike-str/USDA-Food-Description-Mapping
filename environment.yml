@@ -1,0 +1,15 @@
+name: USDA-food-database-mapping
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pandas
+  - rapidfuzz
+  - spacy
+  - openpyxl
+  - scikit-learn
+  - numpy
+  - pip
+  - pip:
+    - sentence-transformers
