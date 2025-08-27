@@ -1,0 +1,95 @@
+
+================================================================================
+STRATEGY EVALUATION RESULTS
+================================================================================
+
+1. OVERALL PERFORMANCE RANKINGS
+--------------------------------------------------------------------------------
+Rank  Strategy                  ID     Format   Overall    Match      No-Match  
+--------------------------------------------------------------------------------
+1     text_minimal              (S11) text     65.5%      49.3%      83.7%
+2     number_strict             (S05) number   64.4%      48.0%      82.8%
+3     text_smart_categ          (S18) text     64.0%      59.1%      69.6%
+4     text_semantic             (S15) text     63.0%      66.8%      58.8%
+5     text_validation           (S20) text     62.3%      66.1%      58.0%
+6     text_simple               (S12) text     60.1%      57.2%      63.4%
+7     text_ruler_fewshot        (S14) text     59.4%      36.2%      85.3%
+8     text_point_game           (S19) text     58.7%      62.4%      54.6%
+9     text_strict               (S16) text     58.6%      27.7%      93.2%
+10    text_detailed             (S13) text     56.9%      48.1%      66.8%
+11    text_contextual           (S17) text     51.9%      75.0%      25.9%
+12    number_point_game         (S09) number   50.2%      69.1%      29.0%
+13    number_validation         (S10) number   47.1%      68.2%      23.3%
+14    number_minimal            (S01) number   40.9%      62.8%      16.3%
+15    number_contextual         (S07) number   37.3%      67.8%      3.1%
+16    number_ruler_fewshot      (S04) number   34.1%      64.2%      0.3%
+17    number_smart_categ        (S08) number   33.3%      52.6%      11.6%
+18    number_semantic           (S06) number   30.9%      54.6%      4.3%
+19    number_detailed           (S03) number   30.7%      57.8%      0.3%
+20    number_simple             (S02) number   27.9%      51.1%      1.8%
+
+2. RESPONSE FORMAT COMPARISON
+--------------------------------------------------------------------------------
+Number-based strategies:
+  Average accuracy: 39.7%
+  Average per-item response time: 7.982s
+  Average throughput: 11.3 items/sec
+  Best performer: number_strict (S05) (64.4%)
+
+Text-based strategies:
+  Average accuracy: 60.0%
+  Average per-item response time: 5.824s
+  Average throughput: 15.5 items/sec
+  Best performer: text_minimal (S11) (65.5%)
+
+3. ERROR PATTERN ANALYSIS
+--------------------------------------------------------------------------------
+Average error rates per strategy (sample size: 1317):
+  Missed matches: 140.4 (20.2% of items that should match)
+  Wrong matches: 157.4 (22.6% of items that should match)
+  False positives: 362.6 (58.4% of items that should be 'none')
+
+Best strategies by error type:
+  Fewest missed matches: number_contextual (S07) (0)
+  Fewest wrong matches: text_minimal (S11) (14)
+  Fewest false positives: text_strict (S16) (42)
+
+4. PERFORMANCE CHARACTERISTICS
+--------------------------------------------------------------------------------
+Conservative strategies (high precision at rejecting non-matches): 4
+  - text_minimal (S11): 83.7%
+  - number_strict (S05): 82.8%
+  - text_ruler_fewshot (S14): 85.3%
+
+Consistent performance strategies (similar match/no-match accuracy): 4
+  - text_semantic (S15): Match:66.8% NoMatch:58.8%
+  - text_validation (S20): Match:66.1% NoMatch:58.0%
+  - text_simple (S12): Match:57.2% NoMatch:63.4%
+
+5. RECOMMENDATIONS
+--------------------------------------------------------------------------------
+For Gemma3 27b:
+
+Best Overall Performance:
+  Strategy: text_minimal (S11)
+  Format: text
+  Accuracy: 65.5%
+  Description: Minimal instructions with text response
+
+Highest Throughput:
+  Strategy: text_strict (S16)
+  Throughput: 16.7 items/sec
+  Total time for 1317 items: 79.1s
+  Average per-item latency: 5.463s
+
+Most Conservative (fewer false positives):
+  Strategy: text_strict (S16)
+  No-match accuracy: 93.2%
+
+Most Aggressive (fewer missed matches):
+  Strategy: text_contextual (S17)
+  Match accuracy: 75.0%
+
+PERFORMANCE OBSERVATION: Text-based prompts achieve 20.4% higher accuracy
+  Numerical indexing encounters challenges with 256-item target database.
+  Trade-off: Higher accuracy at cost of increased output tokens.

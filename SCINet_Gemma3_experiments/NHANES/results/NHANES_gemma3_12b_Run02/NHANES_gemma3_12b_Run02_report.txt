@@ -1,0 +1,95 @@
+
+================================================================================
+STRATEGY EVALUATION RESULTS
+================================================================================
+
+1. OVERALL PERFORMANCE RANKINGS
+--------------------------------------------------------------------------------
+Rank  Strategy                  ID     Format   Overall    Match      No-Match  
+--------------------------------------------------------------------------------
+1     text_minimal              (S11) text     57.9%      30.0%      89.2%
+2     text_smart_categ          (S18) text     57.8%      34.3%      84.1%
+3     number_strict             (S05) number   57.6%      25.3%      93.9%
+4     text_semantic             (S15) text     57.3%      54.7%      60.1%
+5     text_validation           (S20) text     56.9%      52.0%      62.5%
+6     text_simple               (S12) text     55.4%      23.1%      91.6%
+7     text_point_game           (S19) text     54.5%      27.2%      85.2%
+8     text_detailed             (S13) text     54.1%      23.7%      88.2%
+9     text_ruler_fewshot        (S14) text     53.2%      15.7%      95.2%
+10    text_strict               (S16) text     52.5%      16.8%      92.6%
+11    text_contextual           (S17) text     50.9%      54.2%      47.2%
+12    number_smart_categ        (S08) number   45.3%      31.5%      60.7%
+13    number_point_game         (S09) number   44.4%      21.1%      70.5%
+14    number_validation         (S10) number   31.8%      40.8%      21.7%
+15    number_minimal            (S01) number   31.1%      35.5%      26.2%
+16    number_contextual         (S07) number   25.9%      48.3%      0.8%
+17    number_simple             (S02) number   23.8%      40.5%      5.2%
+18    number_semantic           (S06) number   23.2%      37.5%      7.2%
+19    number_detailed           (S03) number   21.1%      33.3%      7.4%
+20    number_ruler_fewshot      (S04) number   19.4%      24.3%      13.8%
+
+2. RESPONSE FORMAT COMPARISON
+--------------------------------------------------------------------------------
+Number-based strategies:
+  Average accuracy: 32.4%
+  Average per-item response time: 3.643s
+  Average throughput: 25.1 items/sec
+  Best performer: number_strict (S05) (57.6%)
+
+Text-based strategies:
+  Average accuracy: 55.1%
+  Average per-item response time: 2.724s
+  Average throughput: 34.2 items/sec
+  Best performer: text_minimal (S11) (57.9%)
+
+3. ERROR PATTERN ANALYSIS
+--------------------------------------------------------------------------------
+Average error rates per strategy (sample size: 1317):
+  Missed matches: 257.9 (37.0% of items that should match)
+  Wrong matches: 205.1 (29.5% of items that should match)
+  False positives: 278.4 (44.8% of items that should be 'none')
+
+Best strategies by error type:
+  Fewest missed matches: number_contextual (S07) (0)
+  Fewest wrong matches: text_strict (S16) (13)
+  Fewest false positives: text_ruler_fewshot (S14) (30)
+
+4. PERFORMANCE CHARACTERISTICS
+--------------------------------------------------------------------------------
+Conservative strategies (high precision at rejecting non-matches): 8
+  - text_minimal (S11): 89.2%
+  - text_smart_categ (S18): 84.1%
+  - number_strict (S05): 93.9%
+
+Consistent performance strategies (similar match/no-match accuracy): 3
+  - text_semantic (S15): Match:54.7% NoMatch:60.1%
+  - text_contextual (S17): Match:54.2% NoMatch:47.2%
+  - number_minimal (S01): Match:35.5% NoMatch:26.2%
+
+5. RECOMMENDATIONS
+--------------------------------------------------------------------------------
+For Gemma3 12b:
+
+Best Overall Performance:
+  Strategy: text_minimal (S11)
+  Format: text
+  Accuracy: 57.9%
+  Description: Minimal instructions with text response
+
+Highest Throughput:
+  Strategy: text_strict (S16)
+  Throughput: 36.3 items/sec
+  Total time for 1317 items: 36.3s
+  Average per-item latency: 2.572s
+
+Most Conservative (fewer false positives):
+  Strategy: text_ruler_fewshot (S14)
+  No-match accuracy: 95.2%
+
+Most Aggressive (fewer missed matches):
+  Strategy: text_semantic (S15)
+  Match accuracy: 54.7%
+
+PERFORMANCE OBSERVATION: Text-based prompts achieve 22.7% higher accuracy
+  Numerical indexing encounters challenges with 256-item target database.
+  Trade-off: Higher accuracy at cost of increased output tokens.

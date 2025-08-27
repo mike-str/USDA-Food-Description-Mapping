@@ -1,0 +1,358 @@
+{
+  "experiment": {
+    "dataset": "NHANES",
+    "model_family": "Gemma3",
+    "model_size": "27b",
+    "full_model": "gemma3-27b",
+    "infrastructure": "SCINet Atlas vLLM Farm (6x A100 80GB)",
+    "timestamp": "2025-08-25 14:02:56"
+  },
+  "test_configuration": {
+    "test_size": 1317,
+    "with_matches": 696,
+    "without_matches": 621,
+    "strategies_tested": 20
+  },
+  "results": [
+    {
+      "strategy_name": "text_minimal",
+      "strategy_id": "S11",
+      "response_format": "text",
+      "description": "Minimal instructions with text response",
+      "overall_accuracy": 0.6552771450265755,
+      "match_accuracy": 0.492816091954023,
+      "no_match_accuracy": 0.8373590982286635,
+      "avg_response_time": 5.764146233111869,
+      "actual_throughput": 15.430011976859339,
+      "total_elapsed_time": 85.35314178466797,
+      "errors": {
+        "missed_match": 339,
+        "wrong_match": 14,
+        "false_positive": 101
+      }
+    },
+    {
+      "strategy_name": "number_strict",
+      "strategy_id": "S05",
+      "response_format": "number",
+      "description": "Strict matching with default-to-none bias",
+      "overall_accuracy": 0.6438876233864844,
+      "match_accuracy": 0.47988505747126436,
+      "no_match_accuracy": 0.8276972624798712,
+      "avg_response_time": 7.786504203655906,
+      "actual_throughput": 11.741256727407958,
+      "total_elapsed_time": 112.16857194900513,
+      "errors": {
+        "missed_match": 274,
+        "wrong_match": 88,
+        "false_positive": 107
+      }
+    },
+    {
+      "strategy_name": "text_smart_categ",
+      "strategy_id": "S18",
+      "response_format": "text",
+      "description": "Smart categorization with text output",
+      "overall_accuracy": 0.6400911161731208,
+      "match_accuracy": 0.5905172413793104,
+      "no_match_accuracy": 0.6956521739130435,
+      "avg_response_time": 6.370320223458536,
+      "actual_throughput": 14.203434662476498,
+      "total_elapsed_time": 92.72405099868774,
+      "errors": {
+        "missed_match": 195,
+        "wrong_match": 90,
+        "false_positive": 189
+      }
+    },
+    {
+      "strategy_name": "text_semantic",
+      "strategy_id": "S15",
+      "response_format": "text",
+      "description": "Semantic text matching",
+      "overall_accuracy": 0.6302201974183751,
+      "match_accuracy": 0.6681034482758621,
+      "no_match_accuracy": 0.5877616747181964,
+      "avg_response_time": 5.829287747134742,
+      "actual_throughput": 15.001091219112912,
+      "total_elapsed_time": 87.79361319541931,
+      "errors": {
+        "missed_match": 139,
+        "wrong_match": 92,
+        "false_positive": 256
+      }
+    },
+    {
+      "strategy_name": "text_validation",
+      "strategy_id": "S20",
+      "response_format": "text",
+      "description": "Two-step validation with text response",
+      "overall_accuracy": 0.6226271829916477,
+      "match_accuracy": 0.6609195402298851,
+      "no_match_accuracy": 0.5797101449275363,
+      "avg_response_time": 5.635798707909899,
+      "actual_throughput": 16.069422064907585,
+      "total_elapsed_time": 81.9568989276886,
+      "errors": {
+        "missed_match": 126,
+        "wrong_match": 110,
+        "false_positive": 261
+      }
+    },
+    {
+      "strategy_name": "text_simple",
+      "strategy_id": "S12",
+      "response_format": "text",
+      "description": "Simple text matching",
+      "overall_accuracy": 0.6013667425968109,
+      "match_accuracy": 0.5718390804597702,
+      "no_match_accuracy": 0.6344605475040258,
+      "avg_response_time": 5.751698633532861,
+      "actual_throughput": 16.006223139334253,
+      "total_elapsed_time": 82.28049731254578,
+      "errors": {
+        "missed_match": 226,
+        "wrong_match": 72,
+        "false_positive": 227
+      }
+    },
+    {
+      "strategy_name": "text_ruler_fewshot",
+      "strategy_id": "S14",
+      "response_format": "text",
+      "description": "Ruler + few-shot guidance for text output",
+      "overall_accuracy": 0.5937737281700836,
+      "match_accuracy": 0.3620689655172414,
+      "no_match_accuracy": 0.8534621578099839,
+      "avg_response_time": 5.685154262780238,
+      "actual_throughput": 16.221119706762806,
+      "total_elapsed_time": 81.19044947624207,
+      "errors": {
+        "missed_match": 423,
+        "wrong_match": 21,
+        "false_positive": 91
+      }
+    },
+    {
+      "strategy_name": "text_point_game",
+      "strategy_id": "S19",
+      "response_format": "text",
+      "description": "Gamified text matching with balanced scoring",
+      "overall_accuracy": 0.5869400151860289,
+      "match_accuracy": 0.6235632183908046,
+      "no_match_accuracy": 0.5458937198067633,
+      "avg_response_time": 5.995203230719541,
+      "actual_throughput": 15.21955293151382,
+      "total_elapsed_time": 86.5334222316742,
+      "errors": {
+        "missed_match": 154,
+        "wrong_match": 108,
+        "false_positive": 282
+      }
+    },
+    {
+      "strategy_name": "text_strict",
+      "strategy_id": "S16",
+      "response_format": "text",
+      "description": "Strict text matching with default-to-none bias",
+      "overall_accuracy": 0.5861807137433561,
+      "match_accuracy": 0.27729885057471265,
+      "no_match_accuracy": 0.9323671497584541,
+      "avg_response_time": 5.462692546047943,
+      "actual_throughput": 16.657090577177662,
+      "total_elapsed_time": 79.06542825698853,
+      "errors": {
+        "missed_match": 483,
+        "wrong_match": 20,
+        "false_positive": 42
+      }
+    },
+    {
+      "strategy_name": "text_detailed",
+      "strategy_id": "S13",
+      "response_format": "text",
+      "description": "Detailed criteria with text response",
+      "overall_accuracy": 0.5694760820045558,
+      "match_accuracy": 0.4813218390804598,
+      "no_match_accuracy": 0.6682769726247987,
+      "avg_response_time": 5.806191190771742,
+      "actual_throughput": 15.11810393878382,
+      "total_elapsed_time": 87.11409878730774,
+      "errors": {
+        "missed_match": 289,
+        "wrong_match": 72,
+        "false_positive": 206
+      }
+    },
+    {
+      "strategy_name": "text_contextual",
+      "strategy_id": "S17",
+      "response_format": "text",
+      "description": "Contextual understanding with text response",
+      "overall_accuracy": 0.5186028853454822,
+      "match_accuracy": 0.75,
+      "no_match_accuracy": 0.25925925925925924,
+      "avg_response_time": 5.942432069199142,
+      "actual_throughput": 15.201983471529262,
+      "total_elapsed_time": 86.6334319114685,
+      "errors": {
+        "missed_match": 46,
+        "wrong_match": 128,
+        "false_positive": 460
+      }
+    },
+    {
+      "strategy_name": "number_point_game",
+      "strategy_id": "S09",
+      "response_format": "number",
+      "description": "Gamified matching with point-based motivation for balanced accuracy",
+      "overall_accuracy": 0.5018982536066818,
+      "match_accuracy": 0.6910919540229885,
+      "no_match_accuracy": 0.2898550724637681,
+      "avg_response_time": 8.252846443933706,
+      "actual_throughput": 10.586546657226043,
+      "total_elapsed_time": 124.40317344665527,
+      "errors": {
+        "missed_match": 41,
+        "wrong_match": 174,
+        "false_positive": 441
+      }
+    },
+    {
+      "strategy_name": "number_validation",
+      "strategy_id": "S10",
+      "response_format": "number",
+      "description": "Two-step validation process",
+      "overall_accuracy": 0.47076689445709946,
+      "match_accuracy": 0.6824712643678161,
+      "no_match_accuracy": 0.23349436392914655,
+      "avg_response_time": 7.959770952107423,
+      "actual_throughput": 11.366047310972432,
+      "total_elapsed_time": 115.87141633033752,
+      "errors": {
+        "missed_match": 7,
+        "wrong_match": 214,
+        "false_positive": 476
+      }
+    },
+    {
+      "strategy_name": "number_minimal",
+      "strategy_id": "S01",
+      "response_format": "number",
+      "description": "Minimal instructions with number response",
+      "overall_accuracy": 0.4085041761579347,
+      "match_accuracy": 0.6278735632183908,
+      "no_match_accuracy": 0.16264090177133655,
+      "avg_response_time": 7.8149397375009775,
+      "actual_throughput": 11.537338130141622,
+      "total_elapsed_time": 114.151113986969,
+      "errors": {
+        "missed_match": 40,
+        "wrong_match": 219,
+        "false_positive": 520
+      }
+    },
+    {
+      "strategy_name": "number_contextual",
+      "strategy_id": "S07",
+      "response_format": "number",
+      "description": "Contextual understanding with number response",
+      "overall_accuracy": 0.37281700835231585,
+      "match_accuracy": 0.6781609195402298,
+      "no_match_accuracy": 0.030595813204508857,
+      "avg_response_time": 7.881680899528092,
+      "actual_throughput": 11.714858565897508,
+      "total_elapsed_time": 112.42133164405823,
+      "errors": {
+        "missed_match": 0,
+        "wrong_match": 224,
+        "false_positive": 602
+      }
+    },
+    {
+      "strategy_name": "number_ruler_fewshot",
+      "strategy_id": "S04",
+      "response_format": "number",
+      "description": "Ruler + few-shot guidance for numeric output",
+      "overall_accuracy": 0.34092634776006076,
+      "match_accuracy": 0.6422413793103449,
+      "no_match_accuracy": 0.00322061191626409,
+      "avg_response_time": 7.917735980692106,
+      "actual_throughput": 11.310460649466789,
+      "total_elapsed_time": 116.44088077545166,
+      "errors": {
+        "missed_match": 0,
+        "wrong_match": 249,
+        "false_positive": 619
+      }
+    },
+    {
+      "strategy_name": "number_smart_categ",
+      "strategy_id": "S08",
+      "response_format": "number",
+      "description": "Smart categorization with dynamic analysis",
+      "overall_accuracy": 0.3325740318906606,
+      "match_accuracy": 0.5258620689655172,
+      "no_match_accuracy": 0.11594202898550725,
+      "avg_response_time": 8.202561034156956,
+      "actual_throughput": 11.085232430566151,
+      "total_elapsed_time": 118.80671048164368,
+      "errors": {
+        "missed_match": 13,
+        "wrong_match": 317,
+        "false_positive": 549
+      }
+    },
+    {
+      "strategy_name": "number_semantic",
+      "strategy_id": "S06",
+      "response_format": "number",
+      "description": "Semantic similarity focus with number response",
+      "overall_accuracy": 0.3090356871678056,
+      "match_accuracy": 0.5459770114942529,
+      "no_match_accuracy": 0.043478260869565216,
+      "avg_response_time": 7.857434619079509,
+      "actual_throughput": 11.57719786760523,
+      "total_elapsed_time": 113.75809717178345,
+      "errors": {
+        "missed_match": 14,
+        "wrong_match": 302,
+        "false_positive": 594
+      }
+    },
+    {
+      "strategy_name": "number_detailed",
+      "strategy_id": "S03",
+      "response_format": "number",
+      "description": "Detailed criteria with number response",
+      "overall_accuracy": 0.3067577828397874,
+      "match_accuracy": 0.5775862068965517,
+      "no_match_accuracy": 0.00322061191626409,
+      "avg_response_time": 8.078413348715687,
+      "actual_throughput": 11.087561654972104,
+      "total_elapsed_time": 118.78175210952759,
+      "errors": {
+        "missed_match": 0,
+        "wrong_match": 294,
+        "false_positive": 619
+      }
+    },
+    {
+      "strategy_name": "number_simple",
+      "strategy_id": "S02",
+      "response_format": "number",
+      "description": "Simple clear instructions with number response",
+      "overall_accuracy": 0.27866362946089596,
+      "match_accuracy": 0.5114942528735632,
+      "no_match_accuracy": 0.017713365539452495,
+      "avg_response_time": 8.064508726312612,
+      "actual_throughput": 10.866287892978866,
+      "total_elapsed_time": 121.20054364204407,
+      "errors": {
+        "missed_match": 0,
+        "wrong_match": 340,
+        "false_positive": 610
+      }
+    }
+  ]
+}
