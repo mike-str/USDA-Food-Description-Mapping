@@ -98,7 +98,6 @@ All Gemma 3 model sizes consistently struggle with:
 - Baby food categories
 - Imitation/substitute foods  
 - Complex mixed dishes with multiple ingredients
-- Green variants of common vegetables
 
 These categories represent opportunities for targeted model improvements.
 
