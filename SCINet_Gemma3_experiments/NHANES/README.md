@@ -64,7 +64,6 @@ For detailed documentation on specific components:
 - **Prompt Strategies**: [`../docs/prompt_strategies.md`](../docs/prompt_strategies.md)
 - **Script Architecture**: [`scripts/SCRIPT_ARCHITECTURE.md`](scripts/SCRIPT_ARCHITECTURE.md)
 - **Results Analysis**: [`results/README.md`](results/README.md)
-- **Reproduction Guide**: [`../docs/reproduction_guide.md`](../docs/reproduction_guide.md)
 
 ## Current Status
 
@@ -72,7 +71,6 @@ Completed testing shows:
 - **27b model**: Achieves 65.3% overall accuracy (S11: text_minimal strategy)
 - **12b model**: Achieves 57.9% overall accuracy (S05: number_strict strategy)
 - **4b model**: Achieves 55.7% overall accuracy (S13: text_detailed strategy)
-- **Diminishing returns**: 12b model provides optimal cost-performance ratio
 
 All models correctly identify no-match cases but struggle with:
 - Baby food categories
