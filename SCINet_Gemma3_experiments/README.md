@@ -32,9 +32,6 @@ Will replicate the NHANES experiment methodology using ASA24 dataset to test mod
 ```
 SCINet_Gemma3_experiments/
 │
-├── archive/                        # Archived files and backups
-│   └── scripts_txt_backup/         # Original .txt versions of documentation
-│
 ├── docs/                           # Strategy documentation
 │   ├── prompt_strategies.md       # Details on all 20 prompt strategies
 │   ├── reproduction_guide.md      # Guide for reproducing experiments
